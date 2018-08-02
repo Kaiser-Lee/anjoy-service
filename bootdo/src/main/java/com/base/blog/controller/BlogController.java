@@ -26,6 +26,7 @@ public class BlogController {
 
 	@GetMapping()
 	String blog() {
+		
 		return "blog/index/main";
 	}
 
