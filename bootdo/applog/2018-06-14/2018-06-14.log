@@ -1,0 +1,1724 @@
+2018-06-14 15:47:43 -Starting JghmallApplication on PC-20170307RFXE with PID 12336 (D:\eclipse-workspace\bootdo\target\classes started by Administrator in D:\eclipse-workspace\bootdo)
+2018-06-14 15:47:43 -The following profiles are active: dev
+2018-06-14 15:47:44 -HV000001: Hibernate Validator 5.3.6.Final
+2018-06-14 15:47:44 -Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@14b80bbb: startup date [Thu Jun 14 15:47:44 CST 2018]; root of context hierarchy
+2018-06-14 15:47:45 -Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-06-14 15:47:45 -Bean 'org.springframework.cache.annotation.ProxyCachingConfiguration' of type [org.springframework.cache.annotation.ProxyCachingConfiguration$$EnhancerBySpringCGLIB$$1eb222c9] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-06-14 15:47:45 -Bean 'org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration' of type [org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration$$EnhancerBySpringCGLIB$$1325e76d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-06-14 15:47:45 -Bean 'spring.cache-org.springframework.boot.autoconfigure.cache.CacheProperties' of type [org.springframework.boot.autoconfigure.cache.CacheProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-06-14 15:47:45 -Bean 'cacheManagerCustomizers' of type [org.springframework.boot.autoconfigure.cache.CacheManagerCustomizers] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-06-14 15:47:45 -Bean 'org.springframework.boot.autoconfigure.cache.EhCacheCacheConfiguration' of type [org.springframework.boot.autoconfigure.cache.EhCacheCacheConfiguration$$EnhancerBySpringCGLIB$$adc4b46b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-06-14 15:47:46 -Bean 'ehCacheCacheManager' of type [net.sf.ehcache.CacheManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-06-14 15:47:46 -Bean 'cacheManager' of type [org.springframework.cache.ehcache.EhCacheCacheManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-06-14 15:47:46 -Bean 'cacheAutoConfigurationValidator' of type [org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration$CacheManagerValidator] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-06-14 15:47:46 -Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$d59fecab] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-06-14 15:47:46 -Bean 'shiroConfig' of type [com.jghmall.system.config.ShiroConfig$$EnhancerBySpringCGLIB$$1187ce3a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-06-14 15:47:46 -Bean 'userRealm' of type [com.jghmall.system.shiro.UserRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-06-14 15:47:46 -No configuration found. Configuring ehcache from ehcache-failsafe.xml  found in the classpath: jar:file:/D:/Maven/repo/net/sf/ehcache/ehcache-core/2.5.3/ehcache-core-2.5.3.jar!/ehcache-failsafe.xml
+2018-06-14 15:47:46 -Bean 'ehCacheManager' of type [org.apache.shiro.cache.ehcache.EhCacheManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-06-14 15:47:46 -Cache with name 'com.jghmall.system.shiro.UserRealm.authorizationCache' does not yet exist.  Creating now.
+2018-06-14 15:47:46 -Added EhCache named [com.jghmall.system.shiro.UserRealm.authorizationCache]
+2018-06-14 15:47:46 -Bean 'sessionDAO' of type [org.apache.shiro.session.mgt.eis.MemorySessionDAO] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-06-14 15:47:46 -Bean 'sessionManager' of type [org.apache.shiro.web.session.mgt.DefaultWebSessionManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-06-14 15:47:46 -Bean 'securityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-06-14 15:47:46 -Bean 'authorizationAttributeSourceAdvisor' of type [org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-06-14 15:47:46 -Tomcat initialized with port(s): 80 (http)
+2018-06-14 15:47:46 -Starting service [Tomcat]
+2018-06-14 15:47:46 -Starting Servlet Engine: Apache Tomcat/8.5.23
+2018-06-14 15:47:46 -Initializing Spring embedded WebApplicationContext
+2018-06-14 15:47:46 -Root WebApplicationContext: initialization completed in 2603 ms
+2018-06-14 15:47:47 -Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-06-14 15:47:47 -Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-06-14 15:47:47 -Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-06-14 15:47:47 -Mapping filter: 'requestContextFilter' to: [/*]
+2018-06-14 15:47:47 -Filter xssFilter was not registered (disabled)
+2018-06-14 15:47:47 -Mapping filter: 'webStatFilter' to urls: [/*]
+2018-06-14 15:47:47 -Mapping filter: 'shiroFilterFactoryBean' to: [/*]
+2018-06-14 15:47:47 -Mapping servlet: 'statViewServlet' to [/druid/*]
+2018-06-14 15:47:47 -Mapping servlet: 'dispatcherServlet' to [/]
+2018-06-14 15:47:47 -{dataSource-1} inited
+2018-06-14 15:47:48 -Using default implementation for ThreadExecutor
+2018-06-14 15:47:48 -Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2018-06-14 15:47:48 -Quartz Scheduler v.2.2.1 created.
+2018-06-14 15:47:48 -RAMJobStore initialized.
+2018-06-14 15:47:48 -Scheduler meta-data: Quartz Scheduler (v2.2.1) 'schedulerFactoryBean' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2018-06-14 15:47:48 -Quartz scheduler 'schedulerFactoryBean' initialized from an externally provided properties instance.
+2018-06-14 15:47:48 -Quartz scheduler version: 2.2.1
+2018-06-14 15:47:48 -JobFactory set to: com.jghmall.common.quartz.factory.JobFactory@7596699e
+2018-06-14 15:47:48 -Initializing ExecutorService  'clientInboundChannelExecutor'
+2018-06-14 15:47:48 -Initializing ExecutorService  'clientOutboundChannelExecutor'
+2018-06-14 15:47:49 -Mapped "{[/blog/open/post/{cid}],methods=[GET]}" onto java.lang.String com.jghmall.blog.controller.BlogController.post(java.lang.Long,org.springframework.ui.Model)
+2018-06-14 15:47:49 -Mapped "{[/blog/open/page/{categories}],methods=[GET]}" onto java.lang.String com.jghmall.blog.controller.BlogController.about(java.lang.String,org.springframework.ui.Model)
+2018-06-14 15:47:49 -Mapped "{[/blog],methods=[GET]}" onto java.lang.String com.jghmall.blog.controller.BlogController.blog()
+2018-06-14 15:47:49 -Mapped "{[/blog/open/list],methods=[GET]}" onto public com.jghmall.common.utils.PageUtils com.jghmall.blog.controller.BlogController.opentList(java.util.Map<java.lang.String, java.lang.Object>)
+2018-06-14 15:47:49 -Mapped "{[/blog/bContent/add],methods=[GET]}" onto java.lang.String com.jghmall.blog.controller.ContentController.add()
+2018-06-14 15:47:49 -Mapped "{[/blog/bContent/remove],methods=[POST]}" onto public com.jghmall.common.utils.R com.jghmall.blog.controller.ContentController.remove(java.lang.Long)
+2018-06-14 15:47:49 -Mapped "{[/blog/bContent/batchRemove],methods=[POST]}" onto public com.jghmall.common.utils.R com.jghmall.blog.controller.ContentController.remove(java.lang.Long[])
+2018-06-14 15:47:49 -Mapped "{[/blog/bContent/update]}" onto public com.jghmall.common.utils.R com.jghmall.blog.controller.ContentController.update(com.jghmall.blog.domain.ContentDO)
+2018-06-14 15:47:49 -Mapped "{[/blog/bContent/list],methods=[GET]}" onto public com.jghmall.common.utils.PageUtils com.jghmall.blog.controller.ContentController.list(java.util.Map<java.lang.String, java.lang.Object>)
+2018-06-14 15:47:49 -Mapped "{[/blog/bContent/save],methods=[POST]}" onto public com.jghmall.common.utils.R com.jghmall.blog.controller.ContentController.save(com.jghmall.blog.domain.ContentDO)
+2018-06-14 15:47:49 -Mapped "{[/blog/bContent],methods=[GET]}" onto java.lang.String com.jghmall.blog.controller.ContentController.bContent()
+2018-06-14 15:47:49 -Mapped "{[/blog/bContent/edit/{cid}],methods=[GET]}" onto java.lang.String com.jghmall.blog.controller.ContentController.edit(java.lang.Long,org.springframework.ui.Model)
+2018-06-14 15:47:49 -Mapped "{[/common/dict/add],methods=[GET]}" onto java.lang.String com.jghmall.common.controller.DictController.add()
+2018-06-14 15:47:49 -Mapped "{[/common/dict/remove],methods=[POST]}" onto public com.jghmall.common.utils.R com.jghmall.common.controller.DictController.remove(java.lang.Long)
+2018-06-14 15:47:49 -Mapped "{[/common/dict/batchRemove],methods=[POST]}" onto public com.jghmall.common.utils.R com.jghmall.common.controller.DictController.remove(java.lang.Long[])
+2018-06-14 15:47:49 -Mapped "{[/common/dict/update]}" onto public com.jghmall.common.utils.R com.jghmall.common.controller.DictController.update(com.jghmall.common.domain.DictDO)
+2018-06-14 15:47:49 -Mapped "{[/common/dict/list],methods=[GET]}" onto public com.jghmall.common.utils.PageUtils com.jghmall.common.controller.DictController.list(java.util.Map<java.lang.String, java.lang.Object>)
+2018-06-14 15:47:49 -Mapped "{[/common/dict/save],methods=[POST]}" onto public com.jghmall.common.utils.R com.jghmall.common.controller.DictController.save(com.jghmall.common.domain.DictDO)
+2018-06-14 15:47:49 -Mapped "{[/common/dict/type],methods=[GET]}" onto public java.util.List<com.jghmall.common.domain.DictDO> com.jghmall.common.controller.DictController.listType()
+2018-06-14 15:47:49 -Mapped "{[/common/dict/edit/{id}],methods=[GET]}" onto java.lang.String com.jghmall.common.controller.DictController.edit(java.lang.Long,org.springframework.ui.Model)
+2018-06-14 15:47:49 -Mapped "{[/common/dict],methods=[GET]}" onto java.lang.String com.jghmall.common.controller.DictController.dict()
+2018-06-14 15:47:49 -Mapped "{[/common/dict/add/{type}/{description}],methods=[GET]}" onto java.lang.String com.jghmall.common.controller.DictController.addD(org.springframework.ui.Model,java.lang.String,java.lang.String)
+2018-06-14 15:47:49 -Mapped "{[/common/dict/list/{type}],methods=[GET]}" onto public java.util.List<com.jghmall.common.domain.DictDO> com.jghmall.common.controller.DictController.listByType(java.lang.String)
+2018-06-14 15:47:49 -Mapped "{[/common/sysFile/add],methods=[GET]}" onto java.lang.String com.jghmall.common.controller.FileController.add()
+2018-06-14 15:47:49 -Mapped "{[/common/sysFile/remove],methods=[POST]}" onto public com.jghmall.common.utils.R com.jghmall.common.controller.FileController.remove(java.lang.Long,javax.servlet.http.HttpServletRequest)
+2018-06-14 15:47:49 -Mapped "{[/common/sysFile/batchRemove],methods=[POST]}" onto public com.jghmall.common.utils.R com.jghmall.common.controller.FileController.remove(java.lang.Long[])
+2018-06-14 15:47:49 -Mapped "{[/common/sysFile/update]}" onto public com.jghmall.common.utils.R com.jghmall.common.controller.FileController.update(com.jghmall.common.domain.FileDO)
+2018-06-14 15:47:49 -Mapped "{[/common/sysFile/list],methods=[GET]}" onto public com.jghmall.common.utils.PageUtils com.jghmall.common.controller.FileController.list(java.util.Map<java.lang.String, java.lang.Object>)
+2018-06-14 15:47:49 -Mapped "{[/common/sysFile/save],methods=[POST]}" onto public com.jghmall.common.utils.R com.jghmall.common.controller.FileController.save(com.jghmall.common.domain.FileDO)
+2018-06-14 15:47:49 -Mapped "{[/common/sysFile/info/{id}]}" onto public com.jghmall.common.utils.R com.jghmall.common.controller.FileController.info(java.lang.Long)
+2018-06-14 15:47:49 -Mapped "{[/common/sysFile/edit],methods=[GET]}" onto java.lang.String com.jghmall.common.controller.FileController.edit(java.lang.Long,org.springframework.ui.Model)
+2018-06-14 15:47:49 -Mapped "{[/common/sysFile],methods=[GET]}" onto java.lang.String com.jghmall.common.controller.FileController.sysFile(org.springframework.ui.Model)
+2018-06-14 15:47:49 -Mapped "{[/common/sysFile/upload],methods=[POST]}" onto com.jghmall.common.utils.R com.jghmall.common.controller.FileController.upload(org.springframework.web.multipart.MultipartFile,javax.servlet.http.HttpServletRequest)
+2018-06-14 15:47:49 -Mapped "{[/common/generator/update],methods=[POST]}" onto com.jghmall.common.utils.R com.jghmall.common.controller.GeneratorController.update(java.util.Map<java.lang.String, java.lang.Object>)
+2018-06-14 15:47:49 -Mapped "{[/common/generator/list],methods=[GET]}" onto java.util.List<java.util.Map<java.lang.String, java.lang.Object>> com.jghmall.common.controller.GeneratorController.list()
+2018-06-14 15:47:49 -Mapped "{[/common/generator/code/{tableName}]}" onto public void com.jghmall.common.controller.GeneratorController.code(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.String) throws java.io.IOException
+2018-06-14 15:47:49 -Mapped "{[/common/generator],methods=[GET]}" onto java.lang.String com.jghmall.common.controller.GeneratorController.generator()
+2018-06-14 15:47:49 -Mapped "{[/common/generator/edit],methods=[GET]}" onto public java.lang.String com.jghmall.common.controller.GeneratorController.edit(org.springframework.ui.Model)
+2018-06-14 15:47:49 -Mapped "{[/common/generator/batchCode]}" onto public void com.jghmall.common.controller.GeneratorController.batchCode(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.String) throws java.io.IOException
+2018-06-14 15:47:49 -Mapped "{[/common/job/add],methods=[GET]}" onto java.lang.String com.jghmall.common.controller.JobController.add()
+2018-06-14 15:47:49 -Mapped "{[/common/job/remove],methods=[POST]}" onto public com.jghmall.common.utils.R com.jghmall.common.controller.JobController.remove(java.lang.Long)
+2018-06-14 15:47:49 -Mapped "{[/common/job/batchRemove],methods=[POST]}" onto public com.jghmall.common.utils.R com.jghmall.common.controller.JobController.remove(java.lang.Long[])
+2018-06-14 15:47:49 -Mapped "{[/common/job/update],methods=[POST]}" onto public com.jghmall.common.utils.R com.jghmall.common.controller.JobController.update(com.jghmall.common.domain.TaskDO)
+2018-06-14 15:47:49 -Mapped "{[/common/job/list],methods=[GET]}" onto public com.jghmall.common.utils.PageUtils com.jghmall.common.controller.JobController.list(java.util.Map<java.lang.String, java.lang.Object>)
+2018-06-14 15:47:49 -Mapped "{[/common/job/save],methods=[POST]}" onto public com.jghmall.common.utils.R com.jghmall.common.controller.JobController.save(com.jghmall.common.domain.TaskDO)
+2018-06-14 15:47:49 -Mapped "{[/common/job/info/{id}]}" onto public com.jghmall.common.utils.R com.jghmall.common.controller.JobController.info(java.lang.Long)
+2018-06-14 15:47:49 -Mapped "{[/common/job/edit/{id}],methods=[GET]}" onto java.lang.String com.jghmall.common.controller.JobController.edit(java.lang.Long,org.springframework.ui.Model)
+2018-06-14 15:47:49 -Mapped "{[/common/job/changeJobStatus],methods=[POST]}" onto public com.jghmall.common.utils.R com.jghmall.common.controller.JobController.changeJobStatus(java.lang.Long,java.lang.String)
+2018-06-14 15:47:49 -Mapped "{[/common/job],methods=[GET]}" onto java.lang.String com.jghmall.common.controller.JobController.taskScheduleJob()
+2018-06-14 15:47:49 -Mapped "{[/common/log/remove],methods=[POST]}" onto com.jghmall.common.utils.R com.jghmall.common.controller.LogController.remove(java.lang.Long)
+2018-06-14 15:47:49 -Mapped "{[/common/log],methods=[GET]}" onto java.lang.String com.jghmall.common.controller.LogController.log()
+2018-06-14 15:47:49 -Mapped "{[/common/log/list],methods=[GET]}" onto com.jghmall.common.domain.PageDO<com.jghmall.common.domain.LogDO> com.jghmall.common.controller.LogController.list(java.util.Map<java.lang.String, java.lang.Object>)
+2018-06-14 15:47:49 -Mapped "{[/common/log/batchRemove],methods=[POST]}" onto com.jghmall.common.utils.R com.jghmall.common.controller.LogController.batchRemove(java.lang.Long[])
+2018-06-14 15:47:49 -Mapped "{[/error]}" onto public com.jghmall.common.utils.R com.jghmall.common.exception.MainsiteErrorController.handleError(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-06-14 15:47:49 -Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView com.jghmall.common.exception.MainsiteErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-06-14 15:47:49 -Mapped "{[/goodsgroup/goodsGroup/add],methods=[GET]}" onto java.lang.String com.jghmall.goodsgroup.controller.GoodsGroupController.add()
+2018-06-14 15:47:49 -Mapped "{[/goodsgroup/goodsGroup/remove],methods=[POST]}" onto public com.jghmall.common.utils.R com.jghmall.goodsgroup.controller.GoodsGroupController.remove(java.lang.Integer)
+2018-06-14 15:47:49 -Mapped "{[/goodsgroup/goodsGroup/batchRemove],methods=[POST]}" onto public com.jghmall.common.utils.R com.jghmall.goodsgroup.controller.GoodsGroupController.remove(java.lang.Integer[])
+2018-06-14 15:47:49 -Mapped "{[/goodsgroup/goodsGroup/update]}" onto public com.jghmall.common.utils.R com.jghmall.goodsgroup.controller.GoodsGroupController.update(com.jghmall.goodsgroup.domain.GoodsGroupDO)
+2018-06-14 15:47:49 -Mapped "{[/goodsgroup/goodsGroup/list],methods=[GET]}" onto public com.jghmall.common.utils.PageUtils com.jghmall.goodsgroup.controller.GoodsGroupController.list(java.util.Map<java.lang.String, java.lang.Object>)
+2018-06-14 15:47:49 -Mapped "{[/goodsgroup/goodsGroup/save],methods=[POST]}" onto public com.jghmall.common.utils.R com.jghmall.goodsgroup.controller.GoodsGroupController.save(com.jghmall.goodsgroup.domain.GoodsGroupDO)
+2018-06-14 15:47:49 -Mapped "{[/goodsgroup/goodsGroup/edit/{id}],methods=[GET]}" onto java.lang.String com.jghmall.goodsgroup.controller.GoodsGroupController.edit(java.lang.Integer,org.springframework.ui.Model)
+2018-06-14 15:47:49 -Mapped "{[/goodsgroup/goodsGroup],methods=[GET]}" onto java.lang.String com.jghmall.goodsgroup.controller.GoodsGroupController.GoodsGroup()
+2018-06-14 15:47:49 -Mapped "{[/jghmall/goods/add],methods=[GET]}" onto java.lang.String com.jghmall.jghmall.controller.GoodsController.add()
+2018-06-14 15:47:49 -Mapped "{[/jghmall/goods/remove],methods=[POST]}" onto public com.jghmall.common.utils.R com.jghmall.jghmall.controller.GoodsController.remove(java.lang.Integer)
+2018-06-14 15:47:49 -Mapped "{[/jghmall/goods/batchRemove],methods=[POST]}" onto public com.jghmall.common.utils.R com.jghmall.jghmall.controller.GoodsController.remove(java.lang.Integer[])
+2018-06-14 15:47:49 -Mapped "{[/jghmall/goods/update]}" onto public com.jghmall.common.utils.R com.jghmall.jghmall.controller.GoodsController.update(com.jghmall.jghmall.domain.GoodsDO)
+2018-06-14 15:47:49 -Mapped "{[/jghmall/goods/list],methods=[GET]}" onto public com.jghmall.common.utils.PageUtils com.jghmall.jghmall.controller.GoodsController.list(java.util.Map<java.lang.String, java.lang.Object>)
+2018-06-14 15:47:49 -Mapped "{[/jghmall/goods/save],methods=[POST]}" onto public com.jghmall.common.utils.R com.jghmall.jghmall.controller.GoodsController.save(com.jghmall.jghmall.domain.GoodsDO)
+2018-06-14 15:47:49 -Mapped "{[/jghmall/goods/edit/{id}],methods=[GET]}" onto java.lang.String com.jghmall.jghmall.controller.GoodsController.edit(java.lang.Integer,org.springframework.ui.Model)
+2018-06-14 15:47:49 -Mapped "{[/jghmall/goods],methods=[GET]}" onto java.lang.String com.jghmall.jghmall.controller.GoodsController.Goods()
+2018-06-14 15:47:49 -Mapped "{[/oa/notify/add],methods=[GET]}" onto java.lang.String com.jghmall.oa.controller.NotifyController.add()
+2018-06-14 15:47:49 -Mapped "{[/oa/notify/remove],methods=[POST]}" onto public com.jghmall.common.utils.R com.jghmall.oa.controller.NotifyController.remove(java.lang.Long)
+2018-06-14 15:47:49 -Mapped "{[/oa/notify/batchRemove],methods=[POST]}" onto public com.jghmall.common.utils.R com.jghmall.oa.controller.NotifyController.remove(java.lang.Long[])
+2018-06-14 15:47:49 -Mapped "{[/oa/notify/update]}" onto public com.jghmall.common.utils.R com.jghmall.oa.controller.NotifyController.update(com.jghmall.oa.domain.NotifyDO)
+2018-06-14 15:47:49 -Mapped "{[/oa/notify/read/{id}],methods=[GET]}" onto java.lang.String com.jghmall.oa.controller.NotifyController.read(java.lang.Long,org.springframework.ui.Model)
+2018-06-14 15:47:49 -Mapped "{[/oa/notify/list],methods=[GET]}" onto public com.jghmall.common.utils.PageUtils com.jghmall.oa.controller.NotifyController.list(java.util.Map<java.lang.String, java.lang.Object>)
+2018-06-14 15:47:49 -Mapped "{[/oa/notify/save],methods=[POST]}" onto public com.jghmall.common.utils.R com.jghmall.oa.controller.NotifyController.save(com.jghmall.oa.domain.NotifyDO)
+2018-06-14 15:47:49 -Mapped "{[/oa/notify/message],methods=[GET]}" onto com.jghmall.common.utils.PageUtils com.jghmall.oa.controller.NotifyController.message()
+2018-06-14 15:47:49 -Mapped "{[/oa/notify/selfList],methods=[GET]}" onto com.jghmall.common.utils.PageUtils com.jghmall.oa.controller.NotifyController.selfList(java.util.Map<java.lang.String, java.lang.Object>)
+2018-06-14 15:47:49 -Mapped "{[/oa/notify/edit/{id}],methods=[GET]}" onto java.lang.String com.jghmall.oa.controller.NotifyController.edit(java.lang.Long,org.springframework.ui.Model)
+2018-06-14 15:47:49 -Mapped "{[/oa/notify],methods=[GET]}" onto java.lang.String com.jghmall.oa.controller.NotifyController.oaNotify()
+2018-06-14 15:47:49 -Mapped "{[/oa/notify/selfNotify],methods=[GET]}" onto java.lang.String com.jghmall.oa.controller.NotifyController.selefNotify()
+2018-06-14 15:47:49 -Mapped "{[/system/sysDept/add/{pId}],methods=[GET]}" onto java.lang.String com.jghmall.system.controller.DeptController.add(java.lang.Long,org.springframework.ui.Model)
+2018-06-14 15:47:49 -Mapped "{[/system/sysDept/remove],methods=[POST]}" onto public com.jghmall.common.utils.R com.jghmall.system.controller.DeptController.remove(java.lang.Long)
+2018-06-14 15:47:49 -Mapped "{[/system/sysDept/batchRemove],methods=[POST]}" onto public com.jghmall.common.utils.R com.jghmall.system.controller.DeptController.remove(java.lang.Long[])
+2018-06-14 15:47:49 -Mapped "{[/system/sysDept/update],methods=[POST]}" onto public com.jghmall.common.utils.R com.jghmall.system.controller.DeptController.update(com.jghmall.system.domain.DeptDO)
+2018-06-14 15:47:49 -Mapped "{[/system/sysDept/list],methods=[GET]}" onto public java.util.List<com.jghmall.system.domain.DeptDO> com.jghmall.system.controller.DeptController.list()
+2018-06-14 15:47:49 -Mapped "{[/system/sysDept/save],methods=[POST]}" onto public com.jghmall.common.utils.R com.jghmall.system.controller.DeptController.save(com.jghmall.system.domain.DeptDO)
+2018-06-14 15:47:49 -Mapped "{[/system/sysDept/tree],methods=[GET]}" onto public com.jghmall.common.domain.Tree<com.jghmall.system.domain.DeptDO> com.jghmall.system.controller.DeptController.tree()
+2018-06-14 15:47:49 -Mapped "{[/system/sysDept/edit/{deptId}],methods=[GET]}" onto java.lang.String com.jghmall.system.controller.DeptController.edit(java.lang.Long,org.springframework.ui.Model)
+2018-06-14 15:47:49 -Mapped "{[/system/sysDept],methods=[GET]}" onto java.lang.String com.jghmall.system.controller.DeptController.dept()
+2018-06-14 15:47:49 -Mapped "{[/system/sysDept/treeView],methods=[GET]}" onto java.lang.String com.jghmall.system.controller.DeptController.treeView()
+2018-06-14 15:47:49 -Mapped "{[/index],methods=[GET]}" onto java.lang.String com.jghmall.system.controller.LoginController.index(org.springframework.ui.Model)
+2018-06-14 15:47:49 -Mapped "{[/main],methods=[GET]}" onto java.lang.String com.jghmall.system.controller.LoginController.main()
+2018-06-14 15:47:49 -Mapped "{[/login],methods=[GET]}" onto java.lang.String com.jghmall.system.controller.LoginController.login()
+2018-06-14 15:47:49 -Mapped "{[/logout],methods=[GET]}" onto java.lang.String com.jghmall.system.controller.LoginController.logout()
+2018-06-14 15:47:49 -Mapped "{[/ || ],methods=[GET]}" onto java.lang.String com.jghmall.system.controller.LoginController.welcome(org.springframework.ui.Model)
+2018-06-14 15:47:49 -Mapped "{[/login],methods=[POST]}" onto com.jghmall.common.utils.R com.jghmall.system.controller.LoginController.ajaxLogin(java.lang.String,java.lang.String)
+2018-06-14 15:47:49 -Mapped "{[/sys/menu/add/{pId}],methods=[GET]}" onto java.lang.String com.jghmall.system.controller.MenuController.add(org.springframework.ui.Model,java.lang.Long)
+2018-06-14 15:47:49 -Mapped "{[/sys/menu/remove],methods=[POST]}" onto com.jghmall.common.utils.R com.jghmall.system.controller.MenuController.remove(java.lang.Long)
+2018-06-14 15:47:49 -Mapped "{[/sys/menu/update],methods=[POST]}" onto com.jghmall.common.utils.R com.jghmall.system.controller.MenuController.update(com.jghmall.system.domain.MenuDO)
+2018-06-14 15:47:49 -Mapped "{[/sys/menu/list],methods=[GET]}" onto java.util.List<com.jghmall.system.domain.MenuDO> com.jghmall.system.controller.MenuController.list(java.util.Map<java.lang.String, java.lang.Object>)
+2018-06-14 15:47:49 -Mapped "{[/sys/menu/save],methods=[POST]}" onto com.jghmall.common.utils.R com.jghmall.system.controller.MenuController.save(com.jghmall.system.domain.MenuDO)
+2018-06-14 15:47:49 -Mapped "{[/sys/menu/tree/{roleId}],methods=[GET]}" onto com.jghmall.common.domain.Tree<com.jghmall.system.domain.MenuDO> com.jghmall.system.controller.MenuController.tree(java.lang.Long)
+2018-06-14 15:47:49 -Mapped "{[/sys/menu/tree],methods=[GET]}" onto com.jghmall.common.domain.Tree<com.jghmall.system.domain.MenuDO> com.jghmall.system.controller.MenuController.tree()
+2018-06-14 15:47:49 -Mapped "{[/sys/menu/edit/{id}],methods=[GET]}" onto java.lang.String com.jghmall.system.controller.MenuController.edit(org.springframework.ui.Model,java.lang.Long)
+2018-06-14 15:47:49 -Mapped "{[/sys/menu],methods=[GET]}" onto java.lang.String com.jghmall.system.controller.MenuController.menu(org.springframework.ui.Model)
+2018-06-14 15:47:49 -Mapped "{[/sys/role/add],methods=[GET]}" onto java.lang.String com.jghmall.system.controller.RoleController.add()
+2018-06-14 15:47:49 -Mapped "{[/sys/role/update],methods=[POST]}" onto com.jghmall.common.utils.R com.jghmall.system.controller.RoleController.update(com.jghmall.system.domain.RoleDO)
+2018-06-14 15:47:49 -Mapped "{[/sys/role/list],methods=[GET]}" onto java.util.List<com.jghmall.system.domain.RoleDO> com.jghmall.system.controller.RoleController.list()
+2018-06-14 15:47:49 -Mapped "{[/sys/role/remove],methods=[POST]}" onto com.jghmall.common.utils.R com.jghmall.system.controller.RoleController.save(java.lang.Long)
+2018-06-14 15:47:49 -Mapped "{[/sys/role/save],methods=[POST]}" onto com.jghmall.common.utils.R com.jghmall.system.controller.RoleController.save(com.jghmall.system.domain.RoleDO)
+2018-06-14 15:47:49 -Mapped "{[/sys/role/batchRemove],methods=[POST]}" onto com.jghmall.common.utils.R com.jghmall.system.controller.RoleController.batchRemove(java.lang.Long[])
+2018-06-14 15:47:49 -Mapped "{[/sys/role],methods=[GET]}" onto java.lang.String com.jghmall.system.controller.RoleController.role()
+2018-06-14 15:47:49 -Mapped "{[/sys/role/edit/{id}],methods=[GET]}" onto java.lang.String com.jghmall.system.controller.RoleController.edit(java.lang.Long,org.springframework.ui.Model)
+2018-06-14 15:47:49 -Mapped "{[/sys/online/list]}" onto public java.util.List<com.jghmall.system.domain.UserOnline> com.jghmall.system.controller.SessionController.list()
+2018-06-14 15:47:49 -Mapped "{[/sys/online/sessionList]}" onto public java.util.Collection<org.apache.shiro.session.Session> com.jghmall.system.controller.SessionController.sessionList()
+2018-06-14 15:47:49 -Mapped "{[/sys/online],methods=[GET]}" onto public java.lang.String com.jghmall.system.controller.SessionController.online()
+2018-06-14 15:47:49 -Mapped "{[/sys/online/forceLogout/{sessionId}]}" onto public com.jghmall.common.utils.R com.jghmall.system.controller.SessionController.forceLogout(java.lang.String,org.springframework.web.servlet.mvc.support.RedirectAttributes)
+2018-06-14 15:47:49 -Mapped "{[/sys/online/sysInfo]}" onto public com.jghmall.common.utils.R com.jghmall.system.controller.SessionController.sysInfo(javax.servlet.http.HttpServletRequest)
+2018-06-14 15:47:49 -Mapped "{[/sys/user/exit],methods=[POST]}" onto boolean com.jghmall.system.controller.UserController.exit(java.util.Map<java.lang.String, java.lang.Object>)
+2018-06-14 15:47:49 -Mapped "{[/sys/user/add],methods=[GET]}" onto java.lang.String com.jghmall.system.controller.UserController.add(org.springframework.ui.Model)
+2018-06-14 15:47:49 -Mapped "{[/sys/user/remove],methods=[POST]}" onto com.jghmall.common.utils.R com.jghmall.system.controller.UserController.remove(java.lang.Long)
+2018-06-14 15:47:49 -Mapped "{[/sys/user/update],methods=[POST]}" onto com.jghmall.common.utils.R com.jghmall.system.controller.UserController.update(com.jghmall.system.domain.UserDO)
+2018-06-14 15:47:49 -Mapped "{[/sys/user/list],methods=[GET]}" onto com.jghmall.common.utils.PageUtils com.jghmall.system.controller.UserController.list(java.util.Map<java.lang.String, java.lang.Object>)
+2018-06-14 15:47:49 -Mapped "{[/sys/user/save],methods=[POST]}" onto com.jghmall.common.utils.R com.jghmall.system.controller.UserController.save(com.jghmall.system.domain.UserDO)
+2018-06-14 15:47:49 -Mapped "{[/sys/user/batchRemove],methods=[POST]}" onto com.jghmall.common.utils.R com.jghmall.system.controller.UserController.batchRemove(java.lang.Long[])
+2018-06-14 15:47:49 -Mapped "{[/sys/user/tree],methods=[GET]}" onto public com.jghmall.common.domain.Tree<com.jghmall.system.domain.DeptDO> com.jghmall.system.controller.UserController.tree()
+2018-06-14 15:47:49 -Mapped "{[/sys/user],methods=[GET]}" onto java.lang.String com.jghmall.system.controller.UserController.user(org.springframework.ui.Model)
+2018-06-14 15:47:49 -Mapped "{[/sys/user/edit/{id}],methods=[GET]}" onto java.lang.String com.jghmall.system.controller.UserController.edit(org.springframework.ui.Model,java.lang.Long)
+2018-06-14 15:47:49 -Mapped "{[/sys/user/treeView],methods=[GET]}" onto java.lang.String com.jghmall.system.controller.UserController.treeView()
+2018-06-14 15:47:49 -Mapped "{[/sys/user/updatePeronal],methods=[POST]}" onto com.jghmall.common.utils.R com.jghmall.system.controller.UserController.updatePeronal(com.jghmall.system.domain.UserDO)
+2018-06-14 15:47:49 -Mapped "{[/sys/user/resetPwd],methods=[POST]}" onto com.jghmall.common.utils.R com.jghmall.system.controller.UserController.resetPwd(com.jghmall.system.vo.UserVO)
+2018-06-14 15:47:49 -Mapped "{[/sys/user/resetPwd/{id}],methods=[GET]}" onto java.lang.String com.jghmall.system.controller.UserController.resetPwd(java.lang.Long,org.springframework.ui.Model)
+2018-06-14 15:47:49 -Mapped "{[/sys/user/adminResetPwd],methods=[POST]}" onto com.jghmall.common.utils.R com.jghmall.system.controller.UserController.adminResetPwd(com.jghmall.system.vo.UserVO)
+2018-06-14 15:47:49 -Mapped "{[/sys/user/personal],methods=[GET]}" onto java.lang.String com.jghmall.system.controller.UserController.personal(org.springframework.ui.Model)
+2018-06-14 15:47:49 -Mapped "{[/sys/user/uploadImg],methods=[POST]}" onto com.jghmall.common.utils.R com.jghmall.system.controller.UserController.uploadImg(org.springframework.web.multipart.MultipartFile,java.lang.String,javax.servlet.http.HttpServletRequest)
+2018-06-14 15:47:49 -Mapped "{[/v2/api-docs],methods=[GET],produces=[application/json || application/hal+json]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)
+2018-06-14 15:47:49 -Mapped "{[/swagger-resources/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2018-06-14 15:47:49 -Mapped "{[/swagger-resources/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2018-06-14 15:47:49 -Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2018-06-14 15:47:49 -Initializing ExecutorService  'messageBrokerTaskScheduler'
+2018-06-14 15:47:49 -Mapped URL path [/endpointChat/**] onto handler of type [class org.springframework.web.socket.sockjs.support.SockJsHttpRequestHandler]
+2018-06-14 15:47:49 -Initializing ExecutorService  'brokerChannelExecutor'
+2018-06-14 15:47:49 -Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@14b80bbb: startup date [Thu Jun 14 15:47:44 CST 2018]; root of context hierarchy
+2018-06-14 15:47:49 -Mapped URL path [/files/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-06-14 15:47:49 -Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-06-14 15:47:49 -Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-06-14 15:47:49 -Detected @ExceptionHandler methods in BDExceptionHandler
+2018-06-14 15:47:49 -Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-06-14 15:47:50 -Unable to start LiveReload server
+2018-06-14 15:47:51 -Registering beans for JMX exposure on startup
+2018-06-14 15:47:51 -Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-06-14 15:47:51 -Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2018-06-14 15:47:51 -Starting beans in phase 2147483647
+2018-06-14 15:47:51 -Context refreshed
+2018-06-14 15:47:51 -Found 1 custom documentation plugin(s)
+2018-06-14 15:47:51 -Scanning for api listing references
+2018-06-14 15:47:51 -Generating unique operation named: removeUsingPOST_1
+2018-06-14 15:47:51 -Generating unique operation named: addUsingGET_1
+2018-06-14 15:47:51 -Generating unique operation named: editUsingGET_1
+2018-06-14 15:47:51 -Generating unique operation named: listUsingGET_1
+2018-06-14 15:47:51 -Generating unique operation named: removeUsingPOST_2
+2018-06-14 15:47:51 -Generating unique operation named: removeUsingPOST_3
+2018-06-14 15:47:51 -Generating unique operation named: saveUsingPOST_1
+2018-06-14 15:47:51 -Generating unique operation named: updateUsingPOST_1
+2018-06-14 15:47:51 -Generating unique operation named: addUsingGET_2
+2018-06-14 15:47:51 -Generating unique operation named: editUsingGET_2
+2018-06-14 15:47:51 -Generating unique operation named: listUsingGET_2
+2018-06-14 15:47:51 -Generating unique operation named: removeUsingPOST_4
+2018-06-14 15:47:51 -Generating unique operation named: removeUsingPOST_5
+2018-06-14 15:47:51 -Generating unique operation named: saveUsingPOST_2
+2018-06-14 15:47:51 -Generating unique operation named: updateUsingGET_1
+2018-06-14 15:47:51 -Generating unique operation named: updateUsingHEAD_1
+2018-06-14 15:47:51 -Generating unique operation named: updateUsingPOST_2
+2018-06-14 15:47:51 -Generating unique operation named: updateUsingPUT_1
+2018-06-14 15:47:51 -Generating unique operation named: updateUsingPATCH_1
+2018-06-14 15:47:51 -Generating unique operation named: updateUsingDELETE_1
+2018-06-14 15:47:51 -Generating unique operation named: updateUsingOPTIONS_1
+2018-06-14 15:47:51 -Generating unique operation named: updateUsingTRACE_1
+2018-06-14 15:47:51 -Generating unique operation named: addUsingGET_3
+2018-06-14 15:47:51 -Generating unique operation named: editUsingGET_3
+2018-06-14 15:47:51 -Generating unique operation named: listUsingGET_3
+2018-06-14 15:47:51 -Generating unique operation named: removeUsingPOST_6
+2018-06-14 15:47:51 -Generating unique operation named: removeUsingPOST_7
+2018-06-14 15:47:51 -Generating unique operation named: saveUsingPOST_3
+2018-06-14 15:47:51 -Generating unique operation named: updateUsingGET_2
+2018-06-14 15:47:51 -Generating unique operation named: updateUsingHEAD_2
+2018-06-14 15:47:51 -Generating unique operation named: updateUsingPOST_3
+2018-06-14 15:47:51 -Generating unique operation named: updateUsingPUT_2
+2018-06-14 15:47:51 -Generating unique operation named: updateUsingPATCH_2
+2018-06-14 15:47:51 -Generating unique operation named: updateUsingDELETE_2
+2018-06-14 15:47:51 -Generating unique operation named: updateUsingOPTIONS_2
+2018-06-14 15:47:51 -Generating unique operation named: updateUsingTRACE_2
+2018-06-14 15:47:51 -Generating unique operation named: editUsingGET_4
+2018-06-14 15:47:51 -Generating unique operation named: listUsingGET_4
+2018-06-14 15:47:51 -Generating unique operation named: updateUsingPOST_4
+2018-06-14 15:47:51 -Generating unique operation named: addUsingGET_4
+2018-06-14 15:47:51 -Generating unique operation named: editUsingGET_5
+2018-06-14 15:47:51 -Generating unique operation named: listUsingGET_5
+2018-06-14 15:47:51 -Generating unique operation named: removeUsingPOST_8
+2018-06-14 15:47:51 -Generating unique operation named: removeUsingPOST_9
+2018-06-14 15:47:51 -Generating unique operation named: saveUsingPOST_4
+2018-06-14 15:47:51 -Generating unique operation named: updateUsingGET_3
+2018-06-14 15:47:51 -Generating unique operation named: updateUsingHEAD_3
+2018-06-14 15:47:51 -Generating unique operation named: updateUsingPOST_5
+2018-06-14 15:47:51 -Generating unique operation named: updateUsingPUT_3
+2018-06-14 15:47:51 -Generating unique operation named: updateUsingPATCH_3
+2018-06-14 15:47:51 -Generating unique operation named: updateUsingDELETE_3
+2018-06-14 15:47:51 -Generating unique operation named: updateUsingOPTIONS_3
+2018-06-14 15:47:51 -Generating unique operation named: updateUsingTRACE_3
+2018-06-14 15:47:51 -Generating unique operation named: addUsingGET_5
+2018-06-14 15:47:51 -Generating unique operation named: editUsingGET_6
+2018-06-14 15:47:51 -Generating unique operation named: listUsingGET_6
+2018-06-14 15:47:51 -Generating unique operation named: removeUsingPOST_10
+2018-06-14 15:47:51 -Generating unique operation named: removeUsingPOST_11
+2018-06-14 15:47:51 -Generating unique operation named: saveUsingPOST_5
+2018-06-14 15:47:51 -Generating unique operation named: updateUsingGET_4
+2018-06-14 15:47:51 -Generating unique operation named: updateUsingHEAD_4
+2018-06-14 15:47:51 -Generating unique operation named: updateUsingPOST_6
+2018-06-14 15:47:51 -Generating unique operation named: updateUsingPUT_4
+2018-06-14 15:47:51 -Generating unique operation named: updateUsingPATCH_4
+2018-06-14 15:47:51 -Generating unique operation named: updateUsingDELETE_4
+2018-06-14 15:47:51 -Generating unique operation named: updateUsingOPTIONS_4
+2018-06-14 15:47:51 -Generating unique operation named: updateUsingTRACE_4
+2018-06-14 15:47:51 -Generating unique operation named: addUsingGET_6
+2018-06-14 15:47:51 -Generating unique operation named: editUsingGET_7
+2018-06-14 15:47:51 -Generating unique operation named: infoUsingGET_1
+2018-06-14 15:47:51 -Generating unique operation named: infoUsingHEAD_1
+2018-06-14 15:47:51 -Generating unique operation named: infoUsingPOST_1
+2018-06-14 15:47:51 -Generating unique operation named: infoUsingPUT_1
+2018-06-14 15:47:51 -Generating unique operation named: infoUsingPATCH_1
+2018-06-14 15:47:51 -Generating unique operation named: infoUsingDELETE_1
+2018-06-14 15:47:51 -Generating unique operation named: infoUsingOPTIONS_1
+2018-06-14 15:47:51 -Generating unique operation named: infoUsingTRACE_1
+2018-06-14 15:47:51 -Generating unique operation named: listUsingGET_7
+2018-06-14 15:47:51 -Generating unique operation named: removeUsingPOST_12
+2018-06-14 15:47:51 -Generating unique operation named: removeUsingPOST_13
+2018-06-14 15:47:51 -Generating unique operation named: saveUsingPOST_6
+2018-06-14 15:47:51 -Generating unique operation named: updateUsingPOST_7
+2018-06-14 15:47:51 -Generating unique operation named: listUsingGET_8
+2018-06-14 15:47:51 -Generating unique operation named: removeUsingPOST_14
+2018-06-14 15:47:51 -Generating unique operation named: welcomeUsingGET_1
+2018-06-14 15:47:51 -Generating unique operation named: addUsingGET_7
+2018-06-14 15:47:51 -Generating unique operation named: editUsingGET_8
+2018-06-14 15:47:51 -Generating unique operation named: listUsingGET_9
+2018-06-14 15:47:51 -Generating unique operation named: removeUsingPOST_15
+2018-06-14 15:47:51 -Generating unique operation named: saveUsingPOST_7
+2018-06-14 15:47:51 -Generating unique operation named: treeUsingGET_1
+2018-06-14 15:47:51 -Generating unique operation named: treeUsingGET_2
+2018-06-14 15:47:51 -Generating unique operation named: updateUsingPOST_8
+2018-06-14 15:47:51 -Generating unique operation named: addUsingGET_8
+2018-06-14 15:47:51 -Generating unique operation named: editUsingGET_9
+2018-06-14 15:47:51 -Generating unique operation named: listUsingGET_10
+2018-06-14 15:47:51 -Generating unique operation named: removeUsingPOST_16
+2018-06-14 15:47:51 -Generating unique operation named: removeUsingPOST_17
+2018-06-14 15:47:51 -Generating unique operation named: saveUsingPOST_8
+2018-06-14 15:47:51 -Generating unique operation named: updateUsingGET_5
+2018-06-14 15:47:51 -Generating unique operation named: updateUsingHEAD_5
+2018-06-14 15:47:51 -Generating unique operation named: updateUsingPOST_9
+2018-06-14 15:47:51 -Generating unique operation named: updateUsingPUT_5
+2018-06-14 15:47:51 -Generating unique operation named: updateUsingPATCH_5
+2018-06-14 15:47:51 -Generating unique operation named: updateUsingDELETE_5
+2018-06-14 15:47:51 -Generating unique operation named: updateUsingOPTIONS_5
+2018-06-14 15:47:51 -Generating unique operation named: updateUsingTRACE_5
+2018-06-14 15:47:51 -Generating unique operation named: addUsingGET_9
+2018-06-14 15:47:51 -Generating unique operation named: batchRemoveUsingPOST_1
+2018-06-14 15:47:51 -Generating unique operation named: editUsingGET_10
+2018-06-14 15:47:51 -Generating unique operation named: listUsingGET_11
+2018-06-14 15:47:51 -Generating unique operation named: saveUsingPOST_9
+2018-06-14 15:47:51 -Generating unique operation named: saveUsingPOST_10
+2018-06-14 15:47:51 -Generating unique operation named: updateUsingPOST_10
+2018-06-14 15:47:51 -Generating unique operation named: listUsingGET_12
+2018-06-14 15:47:51 -Generating unique operation named: addUsingGET_10
+2018-06-14 15:47:51 -Generating unique operation named: batchRemoveUsingPOST_2
+2018-06-14 15:47:51 -Generating unique operation named: editUsingGET_11
+2018-06-14 15:47:51 -Generating unique operation named: listUsingGET_13
+2018-06-14 15:47:51 -Generating unique operation named: removeUsingPOST_18
+2018-06-14 15:47:51 -Generating unique operation named: saveUsingPOST_11
+2018-06-14 15:47:51 -Generating unique operation named: treeUsingGET_3
+2018-06-14 15:47:51 -Generating unique operation named: treeViewUsingGET_1
+2018-06-14 15:47:51 -Generating unique operation named: updateUsingPOST_11
+2018-06-14 15:47:51 -Starting Quartz Scheduler now
+2018-06-14 15:47:51 -Scheduler schedulerFactoryBean_$_NON_CLUSTERED started.
+2018-06-14 15:47:51 -Starting...
+2018-06-14 15:47:51 -BrokerAvailabilityEvent[available=true, SimpleBrokerMessageHandler [DefaultSubscriptionRegistry[cache[0 destination(s)], registry[0 sessions]]]]
+2018-06-14 15:47:51 -Started.
+2018-06-14 15:47:51 -Initializing ProtocolHandler ["http-nio-80"]
+2018-06-14 15:47:51 -Starting ProtocolHandler ["http-nio-80"]
+2018-06-14 15:47:51 -Using a shared selector for servlet write/read
+2018-06-14 15:47:51 -Tomcat started on port(s): 80 (http)
+2018-06-14 15:47:52 -Scheduler schedulerFactoryBean_$_NON_CLUSTERED started.
+2018-06-14 15:47:52 -Started JghmallApplication in 8.447 seconds (JVM running for 9.115)
+2018-06-14 15:48:04 -Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-06-14 15:48:04 -FrameworkServlet 'dispatcherServlet': initialization started
+2018-06-14 15:48:04 -FrameworkServlet 'dispatcherServlet': initialization completed in 62 ms
+2018-06-14 15:48:04 -Enabling session validation scheduler...
+2018-06-14 15:48:05 -请求地址 : http://localhost/login
+2018-06-14 15:48:05 -HTTP METHOD : GET
+2018-06-14 15:48:05 -CLASS_METHOD : com.jghmall.system.controller.LoginController.login
+2018-06-14 15:48:05 -参数 : []
+2018-06-14 15:48:05 -耗时 : 15
+2018-06-14 15:48:05 -[THYMELEAF] INITIALIZING TEMPLATE ENGINE
+2018-06-14 15:48:05 -[THYMELEAF] INITIALIZING TEMPLATE RESOLVER: org.thymeleaf.spring4.templateresolver.SpringResourceTemplateResolver
+2018-06-14 15:48:05 -[THYMELEAF] TEMPLATE RESOLVER INITIALIZED OK
+2018-06-14 15:48:05 -[THYMELEAF] INITIALIZING MESSAGE RESOLVER: org.thymeleaf.spring4.messageresolver.SpringMessageResolver
+2018-06-14 15:48:05 -[THYMELEAF] MESSAGE RESOLVER INITIALIZED OK
+2018-06-14 15:48:05 -[THYMELEAF] TEMPLATE ENGINE CONFIGURATION:
+[THYMELEAF] * Cache Factory implementation: org.thymeleaf.cache.StandardCacheManager
+[THYMELEAF] * Template modes:
+[THYMELEAF]     * XHTML
+[THYMELEAF]     * VALIDXHTML
+[THYMELEAF]     * VALIDXML
+[THYMELEAF]     * LEGACYHTML5
+[THYMELEAF]     * XML
+[THYMELEAF]     * HTML5
+[THYMELEAF] * Template resolvers (in order):
+[THYMELEAF]     * org.thymeleaf.spring4.templateresolver.SpringResourceTemplateResolver
+[THYMELEAF] * Message resolvers (in order):
+[THYMELEAF]     * org.thymeleaf.spring4.messageresolver.SpringMessageResolver
+[THYMELEAF] * Dialect [1 of 3]: org.thymeleaf.spring4.dialect.SpringStandardDialect
+[THYMELEAF]     * Prefix: "th"
+[THYMELEAF] * Dialect [2 of 3]: at.pollux.thymeleaf.shiro.dialect.ShiroDialect
+[THYMELEAF]     * Prefix: "shiro"
+[THYMELEAF] * Dialect [3 of 3]: nz.net.ultraq.thymeleaf.LayoutDialect
+[THYMELEAF]     * Prefix: "layout"
+[THYMELEAF] TEMPLATE ENGINE CONFIGURED OK
+2018-06-14 15:48:05 -[THYMELEAF] TEMPLATE ENGINE INITIALIZED
+2018-06-14 15:48:06 -请求地址 : http://localhost/login
+2018-06-14 15:48:06 -HTTP METHOD : POST
+2018-06-14 15:48:06 -CLASS_METHOD : com.jghmall.system.controller.LoginController.ajaxLogin
+2018-06-14 15:48:06 -参数 : [admin, admin123]
+2018-06-14 15:48:06 -耗时 : 10
+2018-06-14 15:48:06 -More than one TaskExecutor bean found within the context, and none is named 'taskExecutor'. Mark one of them as primary or name it 'taskExecutor' (possibly as an alias) in order to use it for async processing: [clientInboundChannelExecutor, clientOutboundChannelExecutor, brokerChannelExecutor, messageBrokerTaskScheduler]
+2018-06-14 15:48:07 -请求地址 : http://localhost/index
+2018-06-14 15:48:07 -HTTP METHOD : GET
+2018-06-14 15:48:07 -CLASS_METHOD : com.jghmall.system.controller.LoginController.index
+2018-06-14 15:48:07 -参数 : [{}]
+2018-06-14 15:48:07 -耗时 : 54
+2018-06-14 15:48:07 -请求地址 : http://localhost/main
+2018-06-14 15:48:07 -HTTP METHOD : GET
+2018-06-14 15:48:07 -CLASS_METHOD : com.jghmall.system.controller.LoginController.main
+2018-06-14 15:48:07 -参数 : []
+2018-06-14 15:48:07 -耗时 : 1
+2018-06-14 15:48:07 -请求地址 : http://localhost/oa/notify/message
+2018-06-14 15:48:07 -HTTP METHOD : GET
+2018-06-14 15:48:07 -CLASS_METHOD : com.jghmall.oa.controller.NotifyController.message
+2018-06-14 15:48:07 -参数 : []
+2018-06-14 15:48:07 -耗时 : 33
+2018-06-14 15:48:07 -请求地址 : http://localhost/main
+2018-06-14 15:48:07 -HTTP METHOD : GET
+2018-06-14 15:48:07 -CLASS_METHOD : com.jghmall.system.controller.LoginController.main
+2018-06-14 15:48:07 -参数 : []
+2018-06-14 15:48:07 -耗时 : 1
+2018-06-14 15:48:10 -请求地址 : http://localhost/jghmall/goods
+2018-06-14 15:48:10 -HTTP METHOD : GET
+2018-06-14 15:48:10 -CLASS_METHOD : com.jghmall.jghmall.controller.GoodsController.Goods
+2018-06-14 15:48:10 -参数 : []
+2018-06-14 15:48:10 -耗时 : 0
+2018-06-14 15:48:10 -请求地址 : http://localhost/jghmall/goods/list
+2018-06-14 15:48:10 -HTTP METHOD : GET
+2018-06-14 15:48:10 -CLASS_METHOD : com.jghmall.jghmall.controller.GoodsController.list
+2018-06-14 15:48:10 -参数 : [{limit=10, offset=0}]
+2018-06-14 15:48:10 -耗时 : 19
+2018-06-14 15:48:12 -请求地址 : http://localhost/goodsgroup/goodsGroup/
+2018-06-14 15:48:12 -HTTP METHOD : GET
+2018-06-14 15:48:12 -CLASS_METHOD : com.jghmall.goodsgroup.controller.GoodsGroupController.GoodsGroup
+2018-06-14 15:48:12 -参数 : []
+2018-06-14 15:48:12 -耗时 : 0
+2018-06-14 15:48:12 -请求地址 : http://localhost/goodsgroup/goodsGroup/list
+2018-06-14 15:48:12 -HTTP METHOD : GET
+2018-06-14 15:48:12 -CLASS_METHOD : com.jghmall.goodsgroup.controller.GoodsGroupController.list
+2018-06-14 15:48:12 -参数 : [{limit=10, offset=0}]
+2018-06-14 15:48:12 -耗时 : 17
+2018-06-14 15:48:49 -WebSocketSession[1 current WS(1)-HttpStream(0)-HttpPoll(0), 1 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(1)-CONNECTED(1)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 8, active threads = 0, queued tasks = 0, completed tasks = 9], outboundChannelpool size = 5, active threads = 0, queued tasks = 0, completed tasks = 5], sockJsScheduler[pool size = 4, active threads = 1, queued tasks = 2, completed tasks = 9]
+2018-06-14 15:49:25 -请求地址 : http://localhost/index
+2018-06-14 15:49:25 -HTTP METHOD : GET
+2018-06-14 15:49:25 -CLASS_METHOD : com.jghmall.system.controller.LoginController.index
+2018-06-14 15:49:25 -参数 : [{}]
+2018-06-14 15:49:25 -耗时 : 15
+2018-06-14 15:49:25 -请求地址 : http://localhost/oa/notify/message
+2018-06-14 15:49:25 -HTTP METHOD : GET
+2018-06-14 15:49:25 -CLASS_METHOD : com.jghmall.oa.controller.NotifyController.message
+2018-06-14 15:49:25 -参数 : []
+2018-06-14 15:49:25 -耗时 : 5
+2018-06-14 15:49:25 -请求地址 : http://localhost/main
+2018-06-14 15:49:25 -HTTP METHOD : GET
+2018-06-14 15:49:25 -CLASS_METHOD : com.jghmall.system.controller.LoginController.main
+2018-06-14 15:49:25 -参数 : []
+2018-06-14 15:49:25 -耗时 : 0
+2018-06-14 15:49:25 -请求地址 : http://localhost/main
+2018-06-14 15:49:25 -HTTP METHOD : GET
+2018-06-14 15:49:25 -CLASS_METHOD : com.jghmall.system.controller.LoginController.main
+2018-06-14 15:49:25 -参数 : []
+2018-06-14 15:49:25 -耗时 : 0
+2018-06-14 15:49:27 -请求地址 : http://localhost/jghmall/goods
+2018-06-14 15:49:27 -HTTP METHOD : GET
+2018-06-14 15:49:27 -CLASS_METHOD : com.jghmall.jghmall.controller.GoodsController.Goods
+2018-06-14 15:49:27 -参数 : []
+2018-06-14 15:49:27 -耗时 : 0
+2018-06-14 15:49:27 -请求地址 : http://localhost/jghmall/goods/list
+2018-06-14 15:49:27 -HTTP METHOD : GET
+2018-06-14 15:49:27 -CLASS_METHOD : com.jghmall.jghmall.controller.GoodsController.list
+2018-06-14 15:49:27 -参数 : [{limit=10, offset=0}]
+2018-06-14 15:49:27 -耗时 : 3
+2018-06-14 15:49:28 -请求地址 : http://localhost/goodsgroup/goodsGroup/
+2018-06-14 15:49:28 -HTTP METHOD : GET
+2018-06-14 15:49:28 -CLASS_METHOD : com.jghmall.goodsgroup.controller.GoodsGroupController.GoodsGroup
+2018-06-14 15:49:28 -参数 : []
+2018-06-14 15:49:28 -耗时 : 0
+2018-06-14 15:49:28 -请求地址 : http://localhost/goodsgroup/goodsGroup/list
+2018-06-14 15:49:28 -HTTP METHOD : GET
+2018-06-14 15:49:28 -CLASS_METHOD : com.jghmall.goodsgroup.controller.GoodsGroupController.list
+2018-06-14 15:49:28 -参数 : [{limit=10, offset=0}]
+2018-06-14 15:49:28 -耗时 : 7
+2018-06-14 15:49:31 -请求地址 : http://localhost/goodsgroup/goodsGroup/add
+2018-06-14 15:49:31 -HTTP METHOD : GET
+2018-06-14 15:49:31 -CLASS_METHOD : com.jghmall.goodsgroup.controller.GoodsGroupController.add
+2018-06-14 15:49:31 -参数 : []
+2018-06-14 15:49:31 -耗时 : 0
+2018-06-14 15:49:40 -请求地址 : http://localhost/jghmall/goods/add
+2018-06-14 15:49:40 -HTTP METHOD : GET
+2018-06-14 15:49:40 -CLASS_METHOD : com.jghmall.jghmall.controller.GoodsController.add
+2018-06-14 15:49:40 -参数 : []
+2018-06-14 15:49:40 -耗时 : 0
+2018-06-14 15:50:12 -请求地址 : http://localhost/sys/menu/
+2018-06-14 15:50:12 -HTTP METHOD : GET
+2018-06-14 15:50:12 -CLASS_METHOD : com.jghmall.system.controller.MenuController.menu
+2018-06-14 15:50:12 -参数 : [{}]
+2018-06-14 15:50:12 -耗时 : 1
+2018-06-14 15:50:12 -请求地址 : http://localhost/sys/menu/list
+2018-06-14 15:50:12 -HTTP METHOD : GET
+2018-06-14 15:50:12 -CLASS_METHOD : com.jghmall.system.controller.MenuController.list
+2018-06-14 15:50:12 -参数 : [{sort=order_num}]
+2018-06-14 15:50:12 -耗时 : 21
+2018-06-14 15:50:50 -请求地址 : http://localhost/sys/role
+2018-06-14 15:50:50 -HTTP METHOD : GET
+2018-06-14 15:50:50 -CLASS_METHOD : com.jghmall.system.controller.RoleController.role
+2018-06-14 15:50:50 -参数 : []
+2018-06-14 15:50:50 -耗时 : 0
+2018-06-14 15:50:50 -请求地址 : http://localhost/sys/role/list
+2018-06-14 15:50:50 -HTTP METHOD : GET
+2018-06-14 15:50:50 -CLASS_METHOD : com.jghmall.system.controller.RoleController.list
+2018-06-14 15:50:50 -参数 : []
+2018-06-14 15:50:50 -耗时 : 5
+2018-06-14 15:50:51 -请求地址 : http://localhost/sys/user/
+2018-06-14 15:50:51 -HTTP METHOD : GET
+2018-06-14 15:50:51 -CLASS_METHOD : com.jghmall.system.controller.UserController.user
+2018-06-14 15:50:51 -参数 : [{}]
+2018-06-14 15:50:51 -耗时 : 0
+2018-06-14 15:50:52 -请求地址 : http://localhost/system/sysDept/tree
+2018-06-14 15:50:52 -HTTP METHOD : GET
+2018-06-14 15:50:52 -CLASS_METHOD : com.jghmall.system.controller.DeptController.tree
+2018-06-14 15:50:52 -参数 : []
+2018-06-14 15:50:52 -耗时 : 8
+2018-06-14 15:50:52 -请求地址 : http://localhost/sys/user/list
+2018-06-14 15:50:52 -HTTP METHOD : GET
+2018-06-14 15:50:52 -CLASS_METHOD : com.jghmall.system.controller.UserController.list
+2018-06-14 15:50:52 -参数 : [{limit=10, offset=0, name=, deptId=}]
+2018-06-14 15:50:52 -耗时 : 22
+2018-06-14 15:51:38 -请求地址 : http://localhost/sys/user/edit/1
+2018-06-14 15:51:38 -HTTP METHOD : GET
+2018-06-14 15:51:38 -CLASS_METHOD : com.jghmall.system.controller.UserController.edit
+2018-06-14 15:51:38 -参数 : [{}, 1]
+2018-06-14 15:51:38 -耗时 : 19
+2018-06-14 15:51:50 -请求地址 : http://localhost/common/dict
+2018-06-14 15:51:50 -HTTP METHOD : GET
+2018-06-14 15:51:50 -CLASS_METHOD : com.jghmall.common.controller.DictController.dict
+2018-06-14 15:51:50 -参数 : []
+2018-06-14 15:51:50 -耗时 : 0
+2018-06-14 15:51:50 -请求地址 : http://localhost/common/dict/type
+2018-06-14 15:51:50 -HTTP METHOD : GET
+2018-06-14 15:51:50 -CLASS_METHOD : com.jghmall.common.controller.DictController.listType
+2018-06-14 15:51:50 -参数 : []
+2018-06-14 15:51:50 -耗时 : 8
+2018-06-14 15:51:50 -请求地址 : http://localhost/common/dict/list
+2018-06-14 15:51:50 -HTTP METHOD : GET
+2018-06-14 15:51:50 -CLASS_METHOD : com.jghmall.common.controller.DictController.list
+2018-06-14 15:51:50 -参数 : [{limit=10, offset=0}]
+2018-06-14 15:51:50 -耗时 : 7
+2018-06-14 15:51:51 -请求地址 : http://localhost/common/sysFile
+2018-06-14 15:51:51 -HTTP METHOD : GET
+2018-06-14 15:51:51 -CLASS_METHOD : com.jghmall.common.controller.FileController.sysFile
+2018-06-14 15:51:51 -参数 : [{}]
+2018-06-14 15:51:51 -耗时 : 1
+2018-06-14 15:51:51 -请求地址 : http://localhost/common/sysFile/list
+2018-06-14 15:51:51 -HTTP METHOD : GET
+2018-06-14 15:51:51 -CLASS_METHOD : com.jghmall.common.controller.FileController.list
+2018-06-14 15:51:51 -参数 : [{limit=12, offset=0, type=}]
+2018-06-14 15:51:51 -耗时 : 7
+2018-06-14 15:51:58 -请求地址 : http://localhost/system/sysDept
+2018-06-14 15:51:58 -HTTP METHOD : GET
+2018-06-14 15:51:58 -CLASS_METHOD : com.jghmall.system.controller.DeptController.dept
+2018-06-14 15:51:58 -参数 : []
+2018-06-14 15:51:58 -耗时 : 0
+2018-06-14 15:51:58 -请求地址 : http://localhost/system/sysDept/list
+2018-06-14 15:51:58 -HTTP METHOD : GET
+2018-06-14 15:51:58 -CLASS_METHOD : com.jghmall.system.controller.DeptController.list
+2018-06-14 15:51:58 -参数 : []
+2018-06-14 15:51:58 -耗时 : 4
+2018-06-14 15:52:19 -请求地址 : http://localhost/sys/user/edit/1
+2018-06-14 15:52:19 -HTTP METHOD : GET
+2018-06-14 15:52:19 -CLASS_METHOD : com.jghmall.system.controller.UserController.edit
+2018-06-14 15:52:19 -参数 : [{}, 1]
+2018-06-14 15:52:19 -耗时 : 12
+2018-06-14 15:52:25 -请求地址 : http://localhost/sys/user/edit/141
+2018-06-14 15:52:25 -HTTP METHOD : GET
+2018-06-14 15:52:25 -CLASS_METHOD : com.jghmall.system.controller.UserController.edit
+2018-06-14 15:52:25 -参数 : [{}, 141]
+2018-06-14 15:52:25 -耗时 : 15
+2018-06-14 15:52:35 -请求地址 : http://localhost/sys/role/edit/1
+2018-06-14 15:52:35 -HTTP METHOD : GET
+2018-06-14 15:52:35 -CLASS_METHOD : com.jghmall.system.controller.RoleController.edit
+2018-06-14 15:52:35 -参数 : [1, {}]
+2018-06-14 15:52:35 -耗时 : 6
+2018-06-14 15:52:35 -请求地址 : http://localhost/sys/menu/tree/1
+2018-06-14 15:52:35 -HTTP METHOD : GET
+2018-06-14 15:52:35 -CLASS_METHOD : com.jghmall.system.controller.MenuController.tree
+2018-06-14 15:52:35 -参数 : [1]
+2018-06-14 15:52:35 -耗时 : 13
+2018-06-14 15:52:41 -请求地址 : http://localhost/sys/role/edit/1
+2018-06-14 15:52:41 -HTTP METHOD : GET
+2018-06-14 15:52:41 -CLASS_METHOD : com.jghmall.system.controller.RoleController.edit
+2018-06-14 15:52:41 -参数 : [1, {}]
+2018-06-14 15:52:41 -耗时 : 7
+2018-06-14 15:52:41 -请求地址 : http://localhost/sys/menu/tree/1
+2018-06-14 15:52:41 -HTTP METHOD : GET
+2018-06-14 15:52:41 -CLASS_METHOD : com.jghmall.system.controller.MenuController.tree
+2018-06-14 15:52:41 -参数 : [1]
+2018-06-14 15:52:41 -耗时 : 14
+2018-06-14 15:52:56 -请求地址 : http://localhost/
+2018-06-14 15:52:56 -HTTP METHOD : GET
+2018-06-14 15:52:56 -CLASS_METHOD : com.jghmall.system.controller.LoginController.welcome
+2018-06-14 15:52:56 -参数 : [{}]
+2018-06-14 15:52:56 -耗时 : 1
+2018-06-14 15:52:56 -请求地址 : http://localhost/blog
+2018-06-14 15:52:56 -HTTP METHOD : GET
+2018-06-14 15:52:56 -CLASS_METHOD : com.jghmall.blog.controller.BlogController.blog
+2018-06-14 15:52:56 -参数 : []
+2018-06-14 15:52:56 -耗时 : 0
+2018-06-14 15:52:56 -请求地址 : http://localhost/blog/open/list
+2018-06-14 15:52:56 -HTTP METHOD : GET
+2018-06-14 15:52:56 -CLASS_METHOD : com.jghmall.blog.controller.BlogController.opentList
+2018-06-14 15:52:56 -参数 : [{type=article, limit=10, offset=0}]
+2018-06-14 15:52:56 -耗时 : 41
+2018-06-14 15:52:58 -请求地址 : http://localhost/login
+2018-06-14 15:52:58 -HTTP METHOD : GET
+2018-06-14 15:52:58 -CLASS_METHOD : com.jghmall.system.controller.LoginController.login
+2018-06-14 15:52:58 -参数 : []
+2018-06-14 15:52:58 -耗时 : 1
+2018-06-14 15:53:08 -请求地址 : http://localhost/login
+2018-06-14 15:53:08 -HTTP METHOD : POST
+2018-06-14 15:53:08 -CLASS_METHOD : com.jghmall.system.controller.LoginController.ajaxLogin
+2018-06-14 15:53:08 -参数 : [0039260, 0039260]
+2018-06-14 15:53:08 -耗时 : 3
+2018-06-14 15:53:08 -请求地址 : http://localhost/index
+2018-06-14 15:53:08 -HTTP METHOD : GET
+2018-06-14 15:53:08 -CLASS_METHOD : com.jghmall.system.controller.LoginController.index
+2018-06-14 15:53:08 -参数 : [{}]
+2018-06-14 15:53:08 -耗时 : 15
+2018-06-14 15:53:08 -请求地址 : http://localhost/main
+2018-06-14 15:53:08 -HTTP METHOD : GET
+2018-06-14 15:53:08 -CLASS_METHOD : com.jghmall.system.controller.LoginController.main
+2018-06-14 15:53:08 -参数 : []
+2018-06-14 15:53:08 -耗时 : 0
+2018-06-14 15:53:08 -请求地址 : http://localhost/oa/notify/message
+2018-06-14 15:53:08 -HTTP METHOD : GET
+2018-06-14 15:53:08 -CLASS_METHOD : com.jghmall.oa.controller.NotifyController.message
+2018-06-14 15:53:08 -参数 : []
+2018-06-14 15:53:08 -耗时 : 5
+2018-06-14 15:53:08 -请求地址 : http://localhost/main
+2018-06-14 15:53:08 -HTTP METHOD : GET
+2018-06-14 15:53:08 -CLASS_METHOD : com.jghmall.system.controller.LoginController.main
+2018-06-14 15:53:08 -参数 : []
+2018-06-14 15:53:08 -耗时 : 0
+2018-06-14 15:53:11 -请求地址 : http://localhost/jghmall/goods
+2018-06-14 15:53:11 -HTTP METHOD : GET
+2018-06-14 15:53:11 -CLASS_METHOD : com.jghmall.jghmall.controller.GoodsController.Goods
+2018-06-14 15:53:11 -参数 : []
+2018-06-14 15:53:11 -耗时 : 1
+2018-06-14 15:53:11 -请求地址 : http://localhost/jghmall/goods/list
+2018-06-14 15:53:11 -HTTP METHOD : GET
+2018-06-14 15:53:11 -CLASS_METHOD : com.jghmall.jghmall.controller.GoodsController.list
+2018-06-14 15:53:11 -参数 : [{limit=10, offset=0}]
+2018-06-14 15:53:11 -耗时 : 6
+2018-06-14 15:53:11 -请求地址 : http://localhost/goodsgroup/goodsGroup/
+2018-06-14 15:53:11 -HTTP METHOD : GET
+2018-06-14 15:53:11 -CLASS_METHOD : com.jghmall.goodsgroup.controller.GoodsGroupController.GoodsGroup
+2018-06-14 15:53:11 -参数 : []
+2018-06-14 15:53:11 -耗时 : 0
+2018-06-14 15:53:11 -请求地址 : http://localhost/goodsgroup/goodsGroup/list
+2018-06-14 15:53:11 -HTTP METHOD : GET
+2018-06-14 15:53:11 -CLASS_METHOD : com.jghmall.goodsgroup.controller.GoodsGroupController.list
+2018-06-14 15:53:11 -参数 : [{limit=10, offset=0}]
+2018-06-14 15:53:11 -耗时 : 4
+2018-06-14 15:57:20 -请求地址 : http://localhost/index
+2018-06-14 15:57:20 -HTTP METHOD : GET
+2018-06-14 15:57:20 -CLASS_METHOD : com.jghmall.system.controller.LoginController.index
+2018-06-14 15:57:20 -参数 : [{}]
+2018-06-14 15:57:20 -耗时 : 12
+2018-06-14 15:57:20 -请求地址 : http://localhost/main
+2018-06-14 15:57:20 -HTTP METHOD : GET
+2018-06-14 15:57:20 -CLASS_METHOD : com.jghmall.system.controller.LoginController.main
+2018-06-14 15:57:20 -参数 : []
+2018-06-14 15:57:20 -耗时 : 0
+2018-06-14 15:57:21 -请求地址 : http://localhost/oa/notify/message
+2018-06-14 15:57:21 -HTTP METHOD : GET
+2018-06-14 15:57:21 -CLASS_METHOD : com.jghmall.oa.controller.NotifyController.message
+2018-06-14 15:57:21 -参数 : []
+2018-06-14 15:57:21 -耗时 : 6
+2018-06-14 15:57:21 -请求地址 : http://localhost/main
+2018-06-14 15:57:21 -HTTP METHOD : GET
+2018-06-14 15:57:21 -CLASS_METHOD : com.jghmall.system.controller.LoginController.main
+2018-06-14 15:57:21 -参数 : []
+2018-06-14 15:57:21 -耗时 : 1
+2018-06-14 15:58:26 -请求地址 : http://localhost/goodsgroup/goodsGroup/
+2018-06-14 15:58:26 -HTTP METHOD : GET
+2018-06-14 15:58:26 -CLASS_METHOD : com.jghmall.goodsgroup.controller.GoodsGroupController.GoodsGroup
+2018-06-14 15:58:26 -参数 : []
+2018-06-14 15:58:26 -耗时 : 1
+2018-06-14 15:58:27 -请求地址 : http://localhost/goodsgroup/goodsGroup/list
+2018-06-14 15:58:27 -HTTP METHOD : GET
+2018-06-14 15:58:27 -CLASS_METHOD : com.jghmall.goodsgroup.controller.GoodsGroupController.list
+2018-06-14 15:58:27 -参数 : [{limit=10, offset=0}]
+2018-06-14 15:58:27 -耗时 : 4
+2018-06-14 15:58:28 -请求地址 : http://localhost/jghmall/goods
+2018-06-14 15:58:28 -HTTP METHOD : GET
+2018-06-14 15:58:28 -CLASS_METHOD : com.jghmall.jghmall.controller.GoodsController.Goods
+2018-06-14 15:58:28 -参数 : []
+2018-06-14 15:58:28 -耗时 : 0
+2018-06-14 15:58:28 -请求地址 : http://localhost/jghmall/goods/list
+2018-06-14 15:58:28 -HTTP METHOD : GET
+2018-06-14 15:58:28 -CLASS_METHOD : com.jghmall.jghmall.controller.GoodsController.list
+2018-06-14 15:58:28 -参数 : [{limit=10, offset=0}]
+2018-06-14 15:58:28 -耗时 : 4
+2018-06-14 15:58:38 -请求地址 : http://localhost/oa/notify
+2018-06-14 15:58:38 -HTTP METHOD : GET
+2018-06-14 15:58:38 -CLASS_METHOD : com.jghmall.oa.controller.NotifyController.oaNotify
+2018-06-14 15:58:38 -参数 : []
+2018-06-14 15:58:38 -耗时 : 0
+2018-06-14 15:58:38 -请求地址 : http://localhost/oa/notify/list
+2018-06-14 15:58:38 -HTTP METHOD : GET
+2018-06-14 15:58:38 -CLASS_METHOD : com.jghmall.oa.controller.NotifyController.list
+2018-06-14 15:58:38 -参数 : [{limit=10, offset=0}]
+2018-06-14 15:58:38 -耗时 : 23
+2018-06-14 15:58:39 -请求地址 : http://localhost/oa/notify/selfNotify
+2018-06-14 15:58:39 -HTTP METHOD : GET
+2018-06-14 15:58:39 -CLASS_METHOD : com.jghmall.oa.controller.NotifyController.selefNotify
+2018-06-14 15:58:39 -参数 : []
+2018-06-14 15:58:39 -耗时 : 0
+2018-06-14 15:58:39 -请求地址 : http://localhost/oa/notify/selfList
+2018-06-14 15:58:39 -HTTP METHOD : GET
+2018-06-14 15:58:39 -CLASS_METHOD : com.jghmall.oa.controller.NotifyController.selfList
+2018-06-14 15:58:39 -参数 : [{limit=10, offset=0}]
+2018-06-14 15:58:39 -耗时 : 4
+2018-06-14 16:09:29 -请求地址 : http://localhost/index
+2018-06-14 16:09:29 -HTTP METHOD : GET
+2018-06-14 16:09:29 -CLASS_METHOD : com.jghmall.system.controller.LoginController.index
+2018-06-14 16:09:29 -参数 : [{}]
+2018-06-14 16:09:29 -耗时 : 10
+2018-06-14 16:09:29 -请求地址 : http://localhost/main
+2018-06-14 16:09:29 -HTTP METHOD : GET
+2018-06-14 16:09:29 -CLASS_METHOD : com.jghmall.system.controller.LoginController.main
+2018-06-14 16:09:29 -参数 : []
+2018-06-14 16:09:29 -耗时 : 0
+2018-06-14 16:09:29 -请求地址 : http://localhost/oa/notify/message
+2018-06-14 16:09:29 -HTTP METHOD : GET
+2018-06-14 16:09:29 -CLASS_METHOD : com.jghmall.oa.controller.NotifyController.message
+2018-06-14 16:09:29 -参数 : []
+2018-06-14 16:09:29 -耗时 : 4
+2018-06-14 16:09:29 -请求地址 : http://localhost/main
+2018-06-14 16:09:29 -HTTP METHOD : GET
+2018-06-14 16:09:29 -CLASS_METHOD : com.jghmall.system.controller.LoginController.main
+2018-06-14 16:09:29 -参数 : []
+2018-06-14 16:09:29 -耗时 : 0
+2018-06-14 16:09:31 -请求地址 : http://localhost/jghmall/goods
+2018-06-14 16:09:31 -HTTP METHOD : GET
+2018-06-14 16:09:31 -CLASS_METHOD : com.jghmall.jghmall.controller.GoodsController.Goods
+2018-06-14 16:09:31 -参数 : []
+2018-06-14 16:09:31 -耗时 : 0
+2018-06-14 16:09:31 -请求地址 : http://localhost/jghmall/goods/list
+2018-06-14 16:09:31 -HTTP METHOD : GET
+2018-06-14 16:09:31 -CLASS_METHOD : com.jghmall.jghmall.controller.GoodsController.list
+2018-06-14 16:09:31 -参数 : [{limit=10, offset=0}]
+2018-06-14 16:09:31 -耗时 : 3
+2018-06-14 16:09:32 -请求地址 : http://localhost/goodsgroup/goodsGroup/
+2018-06-14 16:09:32 -HTTP METHOD : GET
+2018-06-14 16:09:32 -CLASS_METHOD : com.jghmall.goodsgroup.controller.GoodsGroupController.GoodsGroup
+2018-06-14 16:09:32 -参数 : []
+2018-06-14 16:09:32 -耗时 : 0
+2018-06-14 16:09:32 -请求地址 : http://localhost/goodsgroup/goodsGroup/list
+2018-06-14 16:09:32 -HTTP METHOD : GET
+2018-06-14 16:09:32 -CLASS_METHOD : com.jghmall.goodsgroup.controller.GoodsGroupController.list
+2018-06-14 16:09:32 -参数 : [{limit=10, offset=0}]
+2018-06-14 16:09:32 -耗时 : 4
+2018-06-14 16:18:49 -WebSocketSession[1 current WS(1)-HttpStream(0)-HttpPoll(0), 5 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(5)-CONNECTED(5)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 57], outboundChannelpool size = 6, active threads = 0, queued tasks = 0, completed tasks = 192], sockJsScheduler[pool size = 4, active threads = 1, queued tasks = 2, completed tasks = 370]
+2018-06-14 16:43:41 -请求地址 : http://localhost/login;JSESSIONID=bb756bdb-7521-4689-93c2-c4ab743d6c80
+2018-06-14 16:43:41 -HTTP METHOD : GET
+2018-06-14 16:43:41 -CLASS_METHOD : com.jghmall.system.controller.LoginController.login
+2018-06-14 16:43:41 -参数 : []
+2018-06-14 16:43:41 -耗时 : 0
+2018-06-14 16:43:42 -请求地址 : http://localhost/login
+2018-06-14 16:43:42 -HTTP METHOD : POST
+2018-06-14 16:43:42 -CLASS_METHOD : com.jghmall.system.controller.LoginController.ajaxLogin
+2018-06-14 16:43:42 -参数 : [admin, admin123]
+2018-06-14 16:43:42 -耗时 : 2
+2018-06-14 16:43:42 -请求地址 : http://localhost/index
+2018-06-14 16:43:42 -HTTP METHOD : GET
+2018-06-14 16:43:42 -CLASS_METHOD : com.jghmall.system.controller.LoginController.index
+2018-06-14 16:43:42 -参数 : [{}]
+2018-06-14 16:43:42 -耗时 : 8
+2018-06-14 16:43:42 -请求地址 : http://localhost/main
+2018-06-14 16:43:42 -HTTP METHOD : GET
+2018-06-14 16:43:42 -CLASS_METHOD : com.jghmall.system.controller.LoginController.main
+2018-06-14 16:43:42 -参数 : []
+2018-06-14 16:43:42 -耗时 : 0
+2018-06-14 16:43:42 -请求地址 : http://localhost/oa/notify/message
+2018-06-14 16:43:42 -HTTP METHOD : GET
+2018-06-14 16:43:42 -CLASS_METHOD : com.jghmall.oa.controller.NotifyController.message
+2018-06-14 16:43:42 -参数 : []
+2018-06-14 16:43:42 -耗时 : 3
+2018-06-14 16:43:42 -请求地址 : http://localhost/main
+2018-06-14 16:43:42 -HTTP METHOD : GET
+2018-06-14 16:43:42 -CLASS_METHOD : com.jghmall.system.controller.LoginController.main
+2018-06-14 16:43:42 -参数 : []
+2018-06-14 16:43:42 -耗时 : 1
+2018-06-14 16:44:04 -Application shutdown requested.
+2018-06-14 16:44:04 -Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@14b80bbb: startup date [Thu Jun 14 15:47:44 CST 2018]; root of context hierarchy
+2018-06-14 16:44:04 -Stopping beans in phase 2147483647
+2018-06-14 16:44:04 -Scheduler schedulerFactoryBean_$_NON_CLUSTERED paused.
+2018-06-14 16:44:04 -Stopping...
+2018-06-14 16:44:04 -BrokerAvailabilityEvent[available=false, SimpleBrokerMessageHandler [DefaultSubscriptionRegistry[cache[0 destination(s)], registry[0 sessions]]]]
+2018-06-14 16:44:04 -Stopped.
+2018-06-14 16:44:04 -Unregistering JMX-exposed beans on shutdown
+2018-06-14 16:44:04 -Unregistering JMX-exposed beans
+2018-06-14 16:44:04 -Shutting down ExecutorService 'brokerChannelExecutor'
+2018-06-14 16:44:04 -Shutting down ExecutorService 'messageBrokerTaskScheduler'
+2018-06-14 16:44:04 -Shutting down ExecutorService 'clientOutboundChannelExecutor'
+2018-06-14 16:44:04 -Shutting down ExecutorService 'clientInboundChannelExecutor'
+2018-06-14 16:44:04 -Scheduler schedulerFactoryBean_$_NON_CLUSTERED shutting down.
+2018-06-14 16:44:04 -Scheduler schedulerFactoryBean_$_NON_CLUSTERED paused.
+2018-06-14 16:44:04 -Scheduler schedulerFactoryBean_$_NON_CLUSTERED shutdown complete.
+2018-06-14 16:44:04 -Shutting down Quartz Scheduler
+2018-06-14 16:44:04 -{dataSource-1} closed
+2018-06-14 16:44:04 -Disabled session validation scheduler.
+2018-06-14 16:44:17 -Starting JghmallApplication on PC-20170307RFXE with PID 13888 (D:\eclipse-workspace\bootdo\target\classes started by Administrator in D:\eclipse-workspace\bootdo)
+2018-06-14 16:44:17 -The following profiles are active: dev
+2018-06-14 16:44:17 -HV000001: Hibernate Validator 5.3.6.Final
+2018-06-14 16:44:17 -Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5cfc24e3: startup date [Thu Jun 14 16:44:17 CST 2018]; root of context hierarchy
+2018-06-14 16:44:18 -Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-06-14 16:44:19 -Bean 'org.springframework.cache.annotation.ProxyCachingConfiguration' of type [org.springframework.cache.annotation.ProxyCachingConfiguration$$EnhancerBySpringCGLIB$$2b1ef59e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-06-14 16:44:19 -Bean 'org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration' of type [org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration$$EnhancerBySpringCGLIB$$1f92ba42] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-06-14 16:44:19 -Bean 'spring.cache-org.springframework.boot.autoconfigure.cache.CacheProperties' of type [org.springframework.boot.autoconfigure.cache.CacheProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-06-14 16:44:19 -Bean 'cacheManagerCustomizers' of type [org.springframework.boot.autoconfigure.cache.CacheManagerCustomizers] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-06-14 16:44:19 -Bean 'org.springframework.boot.autoconfigure.cache.EhCacheCacheConfiguration' of type [org.springframework.boot.autoconfigure.cache.EhCacheCacheConfiguration$$EnhancerBySpringCGLIB$$ba318740] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-06-14 16:44:19 -Bean 'ehCacheCacheManager' of type [net.sf.ehcache.CacheManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-06-14 16:44:19 -Bean 'cacheManager' of type [org.springframework.cache.ehcache.EhCacheCacheManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-06-14 16:44:19 -Bean 'cacheAutoConfigurationValidator' of type [org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration$CacheManagerValidator] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-06-14 16:44:19 -Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$e20cbf80] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-06-14 16:44:19 -Bean 'shiroConfig' of type [com.jghmall.system.config.ShiroConfig$$EnhancerBySpringCGLIB$$1df4a10f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-06-14 16:44:19 -Bean 'userRealm' of type [com.jghmall.system.shiro.UserRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-06-14 16:44:19 -No configuration found. Configuring ehcache from ehcache-failsafe.xml  found in the classpath: jar:file:/D:/Maven/repo/net/sf/ehcache/ehcache-core/2.5.3/ehcache-core-2.5.3.jar!/ehcache-failsafe.xml
+2018-06-14 16:44:19 -Bean 'ehCacheManager' of type [org.apache.shiro.cache.ehcache.EhCacheManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-06-14 16:44:19 -Cache with name 'com.jghmall.system.shiro.UserRealm.authorizationCache' does not yet exist.  Creating now.
+2018-06-14 16:44:19 -Added EhCache named [com.jghmall.system.shiro.UserRealm.authorizationCache]
+2018-06-14 16:44:19 -Bean 'sessionDAO' of type [org.apache.shiro.session.mgt.eis.MemorySessionDAO] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-06-14 16:44:19 -Bean 'sessionManager' of type [org.apache.shiro.web.session.mgt.DefaultWebSessionManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-06-14 16:44:19 -Bean 'securityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-06-14 16:44:19 -Bean 'authorizationAttributeSourceAdvisor' of type [org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-06-14 16:44:20 -Tomcat initialized with port(s): 80 (http)
+2018-06-14 16:44:20 -Starting service [Tomcat]
+2018-06-14 16:44:20 -Starting Servlet Engine: Apache Tomcat/8.5.23
+2018-06-14 16:44:20 -Initializing Spring embedded WebApplicationContext
+2018-06-14 16:44:20 -Root WebApplicationContext: initialization completed in 2534 ms
+2018-06-14 16:44:20 -Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-06-14 16:44:20 -Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-06-14 16:44:20 -Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-06-14 16:44:20 -Mapping filter: 'requestContextFilter' to: [/*]
+2018-06-14 16:44:20 -Filter xssFilter was not registered (disabled)
+2018-06-14 16:44:20 -Mapping filter: 'webStatFilter' to urls: [/*]
+2018-06-14 16:44:20 -Mapping filter: 'shiroFilterFactoryBean' to: [/*]
+2018-06-14 16:44:20 -Mapping servlet: 'statViewServlet' to [/druid/*]
+2018-06-14 16:44:20 -Mapping servlet: 'dispatcherServlet' to [/]
+2018-06-14 16:44:20 -{dataSource-1} inited
+2018-06-14 16:44:21 -Using default implementation for ThreadExecutor
+2018-06-14 16:44:21 -Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2018-06-14 16:44:21 -Quartz Scheduler v.2.2.1 created.
+2018-06-14 16:44:21 -RAMJobStore initialized.
+2018-06-14 16:44:21 -Scheduler meta-data: Quartz Scheduler (v2.2.1) 'schedulerFactoryBean' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2018-06-14 16:44:21 -Quartz scheduler 'schedulerFactoryBean' initialized from an externally provided properties instance.
+2018-06-14 16:44:21 -Quartz scheduler version: 2.2.1
+2018-06-14 16:44:21 -JobFactory set to: com.jghmall.common.quartz.factory.JobFactory@48489f60
+2018-06-14 16:44:21 -Initializing ExecutorService  'clientInboundChannelExecutor'
+2018-06-14 16:44:21 -Initializing ExecutorService  'clientOutboundChannelExecutor'
+2018-06-14 16:44:22 -Mapped "{[/blog/open/post/{cid}],methods=[GET]}" onto java.lang.String com.jghmall.blog.controller.BlogController.post(java.lang.Long,org.springframework.ui.Model)
+2018-06-14 16:44:22 -Mapped "{[/blog/open/page/{categories}],methods=[GET]}" onto java.lang.String com.jghmall.blog.controller.BlogController.about(java.lang.String,org.springframework.ui.Model)
+2018-06-14 16:44:22 -Mapped "{[/blog/open/list],methods=[GET]}" onto public com.jghmall.common.utils.PageUtils com.jghmall.blog.controller.BlogController.opentList(java.util.Map<java.lang.String, java.lang.Object>)
+2018-06-14 16:44:22 -Mapped "{[/blog],methods=[GET]}" onto java.lang.String com.jghmall.blog.controller.BlogController.blog()
+2018-06-14 16:44:22 -Mapped "{[/blog/bContent/add],methods=[GET]}" onto java.lang.String com.jghmall.blog.controller.ContentController.add()
+2018-06-14 16:44:22 -Mapped "{[/blog/bContent/remove],methods=[POST]}" onto public com.jghmall.common.utils.R com.jghmall.blog.controller.ContentController.remove(java.lang.Long)
+2018-06-14 16:44:22 -Mapped "{[/blog/bContent/batchRemove],methods=[POST]}" onto public com.jghmall.common.utils.R com.jghmall.blog.controller.ContentController.remove(java.lang.Long[])
+2018-06-14 16:44:22 -Mapped "{[/blog/bContent/update]}" onto public com.jghmall.common.utils.R com.jghmall.blog.controller.ContentController.update(com.jghmall.blog.domain.ContentDO)
+2018-06-14 16:44:22 -Mapped "{[/blog/bContent/list],methods=[GET]}" onto public com.jghmall.common.utils.PageUtils com.jghmall.blog.controller.ContentController.list(java.util.Map<java.lang.String, java.lang.Object>)
+2018-06-14 16:44:22 -Mapped "{[/blog/bContent/save],methods=[POST]}" onto public com.jghmall.common.utils.R com.jghmall.blog.controller.ContentController.save(com.jghmall.blog.domain.ContentDO)
+2018-06-14 16:44:22 -Mapped "{[/blog/bContent/edit/{cid}],methods=[GET]}" onto java.lang.String com.jghmall.blog.controller.ContentController.edit(java.lang.Long,org.springframework.ui.Model)
+2018-06-14 16:44:22 -Mapped "{[/blog/bContent],methods=[GET]}" onto java.lang.String com.jghmall.blog.controller.ContentController.bContent()
+2018-06-14 16:44:22 -Mapped "{[/common/dict/add],methods=[GET]}" onto java.lang.String com.jghmall.common.controller.DictController.add()
+2018-06-14 16:44:22 -Mapped "{[/common/dict/remove],methods=[POST]}" onto public com.jghmall.common.utils.R com.jghmall.common.controller.DictController.remove(java.lang.Long)
+2018-06-14 16:44:22 -Mapped "{[/common/dict/batchRemove],methods=[POST]}" onto public com.jghmall.common.utils.R com.jghmall.common.controller.DictController.remove(java.lang.Long[])
+2018-06-14 16:44:22 -Mapped "{[/common/dict/update]}" onto public com.jghmall.common.utils.R com.jghmall.common.controller.DictController.update(com.jghmall.common.domain.DictDO)
+2018-06-14 16:44:22 -Mapped "{[/common/dict/list],methods=[GET]}" onto public com.jghmall.common.utils.PageUtils com.jghmall.common.controller.DictController.list(java.util.Map<java.lang.String, java.lang.Object>)
+2018-06-14 16:44:22 -Mapped "{[/common/dict/save],methods=[POST]}" onto public com.jghmall.common.utils.R com.jghmall.common.controller.DictController.save(com.jghmall.common.domain.DictDO)
+2018-06-14 16:44:22 -Mapped "{[/common/dict/type],methods=[GET]}" onto public java.util.List<com.jghmall.common.domain.DictDO> com.jghmall.common.controller.DictController.listType()
+2018-06-14 16:44:22 -Mapped "{[/common/dict/edit/{id}],methods=[GET]}" onto java.lang.String com.jghmall.common.controller.DictController.edit(java.lang.Long,org.springframework.ui.Model)
+2018-06-14 16:44:22 -Mapped "{[/common/dict],methods=[GET]}" onto java.lang.String com.jghmall.common.controller.DictController.dict()
+2018-06-14 16:44:22 -Mapped "{[/common/dict/add/{type}/{description}],methods=[GET]}" onto java.lang.String com.jghmall.common.controller.DictController.addD(org.springframework.ui.Model,java.lang.String,java.lang.String)
+2018-06-14 16:44:22 -Mapped "{[/common/dict/list/{type}],methods=[GET]}" onto public java.util.List<com.jghmall.common.domain.DictDO> com.jghmall.common.controller.DictController.listByType(java.lang.String)
+2018-06-14 16:44:22 -Mapped "{[/common/sysFile/add],methods=[GET]}" onto java.lang.String com.jghmall.common.controller.FileController.add()
+2018-06-14 16:44:22 -Mapped "{[/common/sysFile/remove],methods=[POST]}" onto public com.jghmall.common.utils.R com.jghmall.common.controller.FileController.remove(java.lang.Long,javax.servlet.http.HttpServletRequest)
+2018-06-14 16:44:22 -Mapped "{[/common/sysFile/batchRemove],methods=[POST]}" onto public com.jghmall.common.utils.R com.jghmall.common.controller.FileController.remove(java.lang.Long[])
+2018-06-14 16:44:22 -Mapped "{[/common/sysFile/update]}" onto public com.jghmall.common.utils.R com.jghmall.common.controller.FileController.update(com.jghmall.common.domain.FileDO)
+2018-06-14 16:44:22 -Mapped "{[/common/sysFile/list],methods=[GET]}" onto public com.jghmall.common.utils.PageUtils com.jghmall.common.controller.FileController.list(java.util.Map<java.lang.String, java.lang.Object>)
+2018-06-14 16:44:22 -Mapped "{[/common/sysFile/save],methods=[POST]}" onto public com.jghmall.common.utils.R com.jghmall.common.controller.FileController.save(com.jghmall.common.domain.FileDO)
+2018-06-14 16:44:22 -Mapped "{[/common/sysFile/info/{id}]}" onto public com.jghmall.common.utils.R com.jghmall.common.controller.FileController.info(java.lang.Long)
+2018-06-14 16:44:22 -Mapped "{[/common/sysFile/edit],methods=[GET]}" onto java.lang.String com.jghmall.common.controller.FileController.edit(java.lang.Long,org.springframework.ui.Model)
+2018-06-14 16:44:22 -Mapped "{[/common/sysFile],methods=[GET]}" onto java.lang.String com.jghmall.common.controller.FileController.sysFile(org.springframework.ui.Model)
+2018-06-14 16:44:22 -Mapped "{[/common/sysFile/upload],methods=[POST]}" onto com.jghmall.common.utils.R com.jghmall.common.controller.FileController.upload(org.springframework.web.multipart.MultipartFile,javax.servlet.http.HttpServletRequest)
+2018-06-14 16:44:22 -Mapped "{[/common/generator/update],methods=[POST]}" onto com.jghmall.common.utils.R com.jghmall.common.controller.GeneratorController.update(java.util.Map<java.lang.String, java.lang.Object>)
+2018-06-14 16:44:22 -Mapped "{[/common/generator/list],methods=[GET]}" onto java.util.List<java.util.Map<java.lang.String, java.lang.Object>> com.jghmall.common.controller.GeneratorController.list()
+2018-06-14 16:44:22 -Mapped "{[/common/generator/code/{tableName}]}" onto public void com.jghmall.common.controller.GeneratorController.code(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.String) throws java.io.IOException
+2018-06-14 16:44:22 -Mapped "{[/common/generator],methods=[GET]}" onto java.lang.String com.jghmall.common.controller.GeneratorController.generator()
+2018-06-14 16:44:22 -Mapped "{[/common/generator/edit],methods=[GET]}" onto public java.lang.String com.jghmall.common.controller.GeneratorController.edit(org.springframework.ui.Model)
+2018-06-14 16:44:22 -Mapped "{[/common/generator/batchCode]}" onto public void com.jghmall.common.controller.GeneratorController.batchCode(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.String) throws java.io.IOException
+2018-06-14 16:44:22 -Mapped "{[/common/job/add],methods=[GET]}" onto java.lang.String com.jghmall.common.controller.JobController.add()
+2018-06-14 16:44:22 -Mapped "{[/common/job/remove],methods=[POST]}" onto public com.jghmall.common.utils.R com.jghmall.common.controller.JobController.remove(java.lang.Long)
+2018-06-14 16:44:22 -Mapped "{[/common/job/batchRemove],methods=[POST]}" onto public com.jghmall.common.utils.R com.jghmall.common.controller.JobController.remove(java.lang.Long[])
+2018-06-14 16:44:22 -Mapped "{[/common/job/update],methods=[POST]}" onto public com.jghmall.common.utils.R com.jghmall.common.controller.JobController.update(com.jghmall.common.domain.TaskDO)
+2018-06-14 16:44:22 -Mapped "{[/common/job/list],methods=[GET]}" onto public com.jghmall.common.utils.PageUtils com.jghmall.common.controller.JobController.list(java.util.Map<java.lang.String, java.lang.Object>)
+2018-06-14 16:44:22 -Mapped "{[/common/job/save],methods=[POST]}" onto public com.jghmall.common.utils.R com.jghmall.common.controller.JobController.save(com.jghmall.common.domain.TaskDO)
+2018-06-14 16:44:22 -Mapped "{[/common/job/info/{id}]}" onto public com.jghmall.common.utils.R com.jghmall.common.controller.JobController.info(java.lang.Long)
+2018-06-14 16:44:22 -Mapped "{[/common/job/edit/{id}],methods=[GET]}" onto java.lang.String com.jghmall.common.controller.JobController.edit(java.lang.Long,org.springframework.ui.Model)
+2018-06-14 16:44:22 -Mapped "{[/common/job/changeJobStatus],methods=[POST]}" onto public com.jghmall.common.utils.R com.jghmall.common.controller.JobController.changeJobStatus(java.lang.Long,java.lang.String)
+2018-06-14 16:44:22 -Mapped "{[/common/job],methods=[GET]}" onto java.lang.String com.jghmall.common.controller.JobController.taskScheduleJob()
+2018-06-14 16:44:22 -Mapped "{[/common/log/remove],methods=[POST]}" onto com.jghmall.common.utils.R com.jghmall.common.controller.LogController.remove(java.lang.Long)
+2018-06-14 16:44:22 -Mapped "{[/common/log],methods=[GET]}" onto java.lang.String com.jghmall.common.controller.LogController.log()
+2018-06-14 16:44:22 -Mapped "{[/common/log/list],methods=[GET]}" onto com.jghmall.common.domain.PageDO<com.jghmall.common.domain.LogDO> com.jghmall.common.controller.LogController.list(java.util.Map<java.lang.String, java.lang.Object>)
+2018-06-14 16:44:22 -Mapped "{[/common/log/batchRemove],methods=[POST]}" onto com.jghmall.common.utils.R com.jghmall.common.controller.LogController.batchRemove(java.lang.Long[])
+2018-06-14 16:44:22 -Mapped "{[/error]}" onto public com.jghmall.common.utils.R com.jghmall.common.exception.MainsiteErrorController.handleError(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-06-14 16:44:22 -Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView com.jghmall.common.exception.MainsiteErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-06-14 16:44:22 -Mapped "{[/goodsgroup/goodsGroup/add],methods=[GET]}" onto java.lang.String com.jghmall.goodsgroup.controller.GoodsGroupController.add()
+2018-06-14 16:44:22 -Mapped "{[/goodsgroup/goodsGroup/remove],methods=[POST]}" onto public com.jghmall.common.utils.R com.jghmall.goodsgroup.controller.GoodsGroupController.remove(java.lang.Integer)
+2018-06-14 16:44:22 -Mapped "{[/goodsgroup/goodsGroup/batchRemove],methods=[POST]}" onto public com.jghmall.common.utils.R com.jghmall.goodsgroup.controller.GoodsGroupController.remove(java.lang.Integer[])
+2018-06-14 16:44:22 -Mapped "{[/goodsgroup/goodsGroup/update]}" onto public com.jghmall.common.utils.R com.jghmall.goodsgroup.controller.GoodsGroupController.update(com.jghmall.goodsgroup.domain.GoodsGroupDO)
+2018-06-14 16:44:22 -Mapped "{[/goodsgroup/goodsGroup/list],methods=[GET]}" onto public com.jghmall.common.utils.PageUtils com.jghmall.goodsgroup.controller.GoodsGroupController.list(java.util.Map<java.lang.String, java.lang.Object>)
+2018-06-14 16:44:22 -Mapped "{[/goodsgroup/goodsGroup/save],methods=[POST]}" onto public com.jghmall.common.utils.R com.jghmall.goodsgroup.controller.GoodsGroupController.save(com.jghmall.goodsgroup.domain.GoodsGroupDO)
+2018-06-14 16:44:22 -Mapped "{[/goodsgroup/goodsGroup/edit/{id}],methods=[GET]}" onto java.lang.String com.jghmall.goodsgroup.controller.GoodsGroupController.edit(java.lang.Integer,org.springframework.ui.Model)
+2018-06-14 16:44:22 -Mapped "{[/goodsgroup/goodsGroup],methods=[GET]}" onto java.lang.String com.jghmall.goodsgroup.controller.GoodsGroupController.GoodsGroup()
+2018-06-14 16:44:22 -Mapped "{[/jghmall/goods/add],methods=[GET]}" onto java.lang.String com.jghmall.jghmall.controller.GoodsController.add()
+2018-06-14 16:44:22 -Mapped "{[/jghmall/goods/remove],methods=[POST]}" onto public com.jghmall.common.utils.R com.jghmall.jghmall.controller.GoodsController.remove(java.lang.Integer)
+2018-06-14 16:44:22 -Mapped "{[/jghmall/goods/batchRemove],methods=[POST]}" onto public com.jghmall.common.utils.R com.jghmall.jghmall.controller.GoodsController.remove(java.lang.Integer[])
+2018-06-14 16:44:22 -Mapped "{[/jghmall/goods/update]}" onto public com.jghmall.common.utils.R com.jghmall.jghmall.controller.GoodsController.update(com.jghmall.jghmall.domain.GoodsDO)
+2018-06-14 16:44:22 -Mapped "{[/jghmall/goods/list],methods=[GET]}" onto public com.jghmall.common.utils.PageUtils com.jghmall.jghmall.controller.GoodsController.list(java.util.Map<java.lang.String, java.lang.Object>)
+2018-06-14 16:44:22 -Mapped "{[/jghmall/goods/save],methods=[POST]}" onto public com.jghmall.common.utils.R com.jghmall.jghmall.controller.GoodsController.save(com.jghmall.jghmall.domain.GoodsDO)
+2018-06-14 16:44:22 -Mapped "{[/jghmall/goods/edit/{id}],methods=[GET]}" onto java.lang.String com.jghmall.jghmall.controller.GoodsController.edit(java.lang.Integer,org.springframework.ui.Model)
+2018-06-14 16:44:22 -Mapped "{[/jghmall/goods],methods=[GET]}" onto java.lang.String com.jghmall.jghmall.controller.GoodsController.Goods()
+2018-06-14 16:44:22 -Mapped "{[/oa/notify/add],methods=[GET]}" onto java.lang.String com.jghmall.oa.controller.NotifyController.add()
+2018-06-14 16:44:22 -Mapped "{[/oa/notify/remove],methods=[POST]}" onto public com.jghmall.common.utils.R com.jghmall.oa.controller.NotifyController.remove(java.lang.Long)
+2018-06-14 16:44:22 -Mapped "{[/oa/notify/batchRemove],methods=[POST]}" onto public com.jghmall.common.utils.R com.jghmall.oa.controller.NotifyController.remove(java.lang.Long[])
+2018-06-14 16:44:22 -Mapped "{[/oa/notify/update]}" onto public com.jghmall.common.utils.R com.jghmall.oa.controller.NotifyController.update(com.jghmall.oa.domain.NotifyDO)
+2018-06-14 16:44:22 -Mapped "{[/oa/notify/read/{id}],methods=[GET]}" onto java.lang.String com.jghmall.oa.controller.NotifyController.read(java.lang.Long,org.springframework.ui.Model)
+2018-06-14 16:44:22 -Mapped "{[/oa/notify/list],methods=[GET]}" onto public com.jghmall.common.utils.PageUtils com.jghmall.oa.controller.NotifyController.list(java.util.Map<java.lang.String, java.lang.Object>)
+2018-06-14 16:44:22 -Mapped "{[/oa/notify/save],methods=[POST]}" onto public com.jghmall.common.utils.R com.jghmall.oa.controller.NotifyController.save(com.jghmall.oa.domain.NotifyDO)
+2018-06-14 16:44:22 -Mapped "{[/oa/notify/message],methods=[GET]}" onto com.jghmall.common.utils.PageUtils com.jghmall.oa.controller.NotifyController.message()
+2018-06-14 16:44:22 -Mapped "{[/oa/notify/selfList],methods=[GET]}" onto com.jghmall.common.utils.PageUtils com.jghmall.oa.controller.NotifyController.selfList(java.util.Map<java.lang.String, java.lang.Object>)
+2018-06-14 16:44:22 -Mapped "{[/oa/notify/edit/{id}],methods=[GET]}" onto java.lang.String com.jghmall.oa.controller.NotifyController.edit(java.lang.Long,org.springframework.ui.Model)
+2018-06-14 16:44:22 -Mapped "{[/oa/notify],methods=[GET]}" onto java.lang.String com.jghmall.oa.controller.NotifyController.oaNotify()
+2018-06-14 16:44:22 -Mapped "{[/oa/notify/selfNotify],methods=[GET]}" onto java.lang.String com.jghmall.oa.controller.NotifyController.selefNotify()
+2018-06-14 16:44:22 -Mapped "{[/system/sysDept/add/{pId}],methods=[GET]}" onto java.lang.String com.jghmall.system.controller.DeptController.add(java.lang.Long,org.springframework.ui.Model)
+2018-06-14 16:44:22 -Mapped "{[/system/sysDept/remove],methods=[POST]}" onto public com.jghmall.common.utils.R com.jghmall.system.controller.DeptController.remove(java.lang.Long)
+2018-06-14 16:44:22 -Mapped "{[/system/sysDept/batchRemove],methods=[POST]}" onto public com.jghmall.common.utils.R com.jghmall.system.controller.DeptController.remove(java.lang.Long[])
+2018-06-14 16:44:22 -Mapped "{[/system/sysDept/update],methods=[POST]}" onto public com.jghmall.common.utils.R com.jghmall.system.controller.DeptController.update(com.jghmall.system.domain.DeptDO)
+2018-06-14 16:44:22 -Mapped "{[/system/sysDept/list],methods=[GET]}" onto public java.util.List<com.jghmall.system.domain.DeptDO> com.jghmall.system.controller.DeptController.list()
+2018-06-14 16:44:22 -Mapped "{[/system/sysDept/save],methods=[POST]}" onto public com.jghmall.common.utils.R com.jghmall.system.controller.DeptController.save(com.jghmall.system.domain.DeptDO)
+2018-06-14 16:44:22 -Mapped "{[/system/sysDept/tree],methods=[GET]}" onto public com.jghmall.common.domain.Tree<com.jghmall.system.domain.DeptDO> com.jghmall.system.controller.DeptController.tree()
+2018-06-14 16:44:22 -Mapped "{[/system/sysDept/edit/{deptId}],methods=[GET]}" onto java.lang.String com.jghmall.system.controller.DeptController.edit(java.lang.Long,org.springframework.ui.Model)
+2018-06-14 16:44:22 -Mapped "{[/system/sysDept],methods=[GET]}" onto java.lang.String com.jghmall.system.controller.DeptController.dept()
+2018-06-14 16:44:22 -Mapped "{[/system/sysDept/treeView],methods=[GET]}" onto java.lang.String com.jghmall.system.controller.DeptController.treeView()
+2018-06-14 16:44:22 -Mapped "{[/index],methods=[GET]}" onto java.lang.String com.jghmall.system.controller.LoginController.index(org.springframework.ui.Model)
+2018-06-14 16:44:22 -Mapped "{[/main],methods=[GET]}" onto java.lang.String com.jghmall.system.controller.LoginController.main()
+2018-06-14 16:44:22 -Mapped "{[/login],methods=[GET]}" onto java.lang.String com.jghmall.system.controller.LoginController.login()
+2018-06-14 16:44:22 -Mapped "{[/logout],methods=[GET]}" onto java.lang.String com.jghmall.system.controller.LoginController.logout()
+2018-06-14 16:44:22 -Mapped "{[/ || ],methods=[GET]}" onto java.lang.String com.jghmall.system.controller.LoginController.welcome(org.springframework.ui.Model)
+2018-06-14 16:44:22 -Mapped "{[/login],methods=[POST]}" onto com.jghmall.common.utils.R com.jghmall.system.controller.LoginController.ajaxLogin(java.lang.String,java.lang.String)
+2018-06-14 16:44:22 -Mapped "{[/sys/menu/add/{pId}],methods=[GET]}" onto java.lang.String com.jghmall.system.controller.MenuController.add(org.springframework.ui.Model,java.lang.Long)
+2018-06-14 16:44:22 -Mapped "{[/sys/menu/remove],methods=[POST]}" onto com.jghmall.common.utils.R com.jghmall.system.controller.MenuController.remove(java.lang.Long)
+2018-06-14 16:44:22 -Mapped "{[/sys/menu/update],methods=[POST]}" onto com.jghmall.common.utils.R com.jghmall.system.controller.MenuController.update(com.jghmall.system.domain.MenuDO)
+2018-06-14 16:44:22 -Mapped "{[/sys/menu/list],methods=[GET]}" onto java.util.List<com.jghmall.system.domain.MenuDO> com.jghmall.system.controller.MenuController.list(java.util.Map<java.lang.String, java.lang.Object>)
+2018-06-14 16:44:22 -Mapped "{[/sys/menu/save],methods=[POST]}" onto com.jghmall.common.utils.R com.jghmall.system.controller.MenuController.save(com.jghmall.system.domain.MenuDO)
+2018-06-14 16:44:22 -Mapped "{[/sys/menu/tree/{roleId}],methods=[GET]}" onto com.jghmall.common.domain.Tree<com.jghmall.system.domain.MenuDO> com.jghmall.system.controller.MenuController.tree(java.lang.Long)
+2018-06-14 16:44:22 -Mapped "{[/sys/menu/tree],methods=[GET]}" onto com.jghmall.common.domain.Tree<com.jghmall.system.domain.MenuDO> com.jghmall.system.controller.MenuController.tree()
+2018-06-14 16:44:22 -Mapped "{[/sys/menu/edit/{id}],methods=[GET]}" onto java.lang.String com.jghmall.system.controller.MenuController.edit(org.springframework.ui.Model,java.lang.Long)
+2018-06-14 16:44:22 -Mapped "{[/sys/menu],methods=[GET]}" onto java.lang.String com.jghmall.system.controller.MenuController.menu(org.springframework.ui.Model)
+2018-06-14 16:44:22 -Mapped "{[/sys/role/add],methods=[GET]}" onto java.lang.String com.jghmall.system.controller.RoleController.add()
+2018-06-14 16:44:22 -Mapped "{[/sys/role/update],methods=[POST]}" onto com.jghmall.common.utils.R com.jghmall.system.controller.RoleController.update(com.jghmall.system.domain.RoleDO)
+2018-06-14 16:44:22 -Mapped "{[/sys/role/list],methods=[GET]}" onto java.util.List<com.jghmall.system.domain.RoleDO> com.jghmall.system.controller.RoleController.list()
+2018-06-14 16:44:22 -Mapped "{[/sys/role/remove],methods=[POST]}" onto com.jghmall.common.utils.R com.jghmall.system.controller.RoleController.save(java.lang.Long)
+2018-06-14 16:44:22 -Mapped "{[/sys/role/save],methods=[POST]}" onto com.jghmall.common.utils.R com.jghmall.system.controller.RoleController.save(com.jghmall.system.domain.RoleDO)
+2018-06-14 16:44:22 -Mapped "{[/sys/role/batchRemove],methods=[POST]}" onto com.jghmall.common.utils.R com.jghmall.system.controller.RoleController.batchRemove(java.lang.Long[])
+2018-06-14 16:44:22 -Mapped "{[/sys/role],methods=[GET]}" onto java.lang.String com.jghmall.system.controller.RoleController.role()
+2018-06-14 16:44:22 -Mapped "{[/sys/role/edit/{id}],methods=[GET]}" onto java.lang.String com.jghmall.system.controller.RoleController.edit(java.lang.Long,org.springframework.ui.Model)
+2018-06-14 16:44:22 -Mapped "{[/sys/online/list]}" onto public java.util.List<com.jghmall.system.domain.UserOnline> com.jghmall.system.controller.SessionController.list()
+2018-06-14 16:44:22 -Mapped "{[/sys/online/sessionList]}" onto public java.util.Collection<org.apache.shiro.session.Session> com.jghmall.system.controller.SessionController.sessionList()
+2018-06-14 16:44:22 -Mapped "{[/sys/online],methods=[GET]}" onto public java.lang.String com.jghmall.system.controller.SessionController.online()
+2018-06-14 16:44:22 -Mapped "{[/sys/online/forceLogout/{sessionId}]}" onto public com.jghmall.common.utils.R com.jghmall.system.controller.SessionController.forceLogout(java.lang.String,org.springframework.web.servlet.mvc.support.RedirectAttributes)
+2018-06-14 16:44:22 -Mapped "{[/sys/online/sysInfo]}" onto public com.jghmall.common.utils.R com.jghmall.system.controller.SessionController.sysInfo(javax.servlet.http.HttpServletRequest)
+2018-06-14 16:44:22 -Mapped "{[/sys/user/exit],methods=[POST]}" onto boolean com.jghmall.system.controller.UserController.exit(java.util.Map<java.lang.String, java.lang.Object>)
+2018-06-14 16:44:22 -Mapped "{[/sys/user/add],methods=[GET]}" onto java.lang.String com.jghmall.system.controller.UserController.add(org.springframework.ui.Model)
+2018-06-14 16:44:22 -Mapped "{[/sys/user/remove],methods=[POST]}" onto com.jghmall.common.utils.R com.jghmall.system.controller.UserController.remove(java.lang.Long)
+2018-06-14 16:44:22 -Mapped "{[/sys/user/update],methods=[POST]}" onto com.jghmall.common.utils.R com.jghmall.system.controller.UserController.update(com.jghmall.system.domain.UserDO)
+2018-06-14 16:44:22 -Mapped "{[/sys/user/list],methods=[GET]}" onto com.jghmall.common.utils.PageUtils com.jghmall.system.controller.UserController.list(java.util.Map<java.lang.String, java.lang.Object>)
+2018-06-14 16:44:22 -Mapped "{[/sys/user/save],methods=[POST]}" onto com.jghmall.common.utils.R com.jghmall.system.controller.UserController.save(com.jghmall.system.domain.UserDO)
+2018-06-14 16:44:22 -Mapped "{[/sys/user/batchRemove],methods=[POST]}" onto com.jghmall.common.utils.R com.jghmall.system.controller.UserController.batchRemove(java.lang.Long[])
+2018-06-14 16:44:22 -Mapped "{[/sys/user/tree],methods=[GET]}" onto public com.jghmall.common.domain.Tree<com.jghmall.system.domain.DeptDO> com.jghmall.system.controller.UserController.tree()
+2018-06-14 16:44:22 -Mapped "{[/sys/user],methods=[GET]}" onto java.lang.String com.jghmall.system.controller.UserController.user(org.springframework.ui.Model)
+2018-06-14 16:44:22 -Mapped "{[/sys/user/edit/{id}],methods=[GET]}" onto java.lang.String com.jghmall.system.controller.UserController.edit(org.springframework.ui.Model,java.lang.Long)
+2018-06-14 16:44:22 -Mapped "{[/sys/user/treeView],methods=[GET]}" onto java.lang.String com.jghmall.system.controller.UserController.treeView()
+2018-06-14 16:44:22 -Mapped "{[/sys/user/updatePeronal],methods=[POST]}" onto com.jghmall.common.utils.R com.jghmall.system.controller.UserController.updatePeronal(com.jghmall.system.domain.UserDO)
+2018-06-14 16:44:22 -Mapped "{[/sys/user/resetPwd],methods=[POST]}" onto com.jghmall.common.utils.R com.jghmall.system.controller.UserController.resetPwd(com.jghmall.system.vo.UserVO)
+2018-06-14 16:44:22 -Mapped "{[/sys/user/resetPwd/{id}],methods=[GET]}" onto java.lang.String com.jghmall.system.controller.UserController.resetPwd(java.lang.Long,org.springframework.ui.Model)
+2018-06-14 16:44:22 -Mapped "{[/sys/user/adminResetPwd],methods=[POST]}" onto com.jghmall.common.utils.R com.jghmall.system.controller.UserController.adminResetPwd(com.jghmall.system.vo.UserVO)
+2018-06-14 16:44:22 -Mapped "{[/sys/user/personal],methods=[GET]}" onto java.lang.String com.jghmall.system.controller.UserController.personal(org.springframework.ui.Model)
+2018-06-14 16:44:22 -Mapped "{[/sys/user/uploadImg],methods=[POST]}" onto com.jghmall.common.utils.R com.jghmall.system.controller.UserController.uploadImg(org.springframework.web.multipart.MultipartFile,java.lang.String,javax.servlet.http.HttpServletRequest)
+2018-06-14 16:44:22 -Mapped "{[/v2/api-docs],methods=[GET],produces=[application/json || application/hal+json]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)
+2018-06-14 16:44:22 -Mapped "{[/swagger-resources/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2018-06-14 16:44:22 -Mapped "{[/swagger-resources/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2018-06-14 16:44:22 -Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2018-06-14 16:44:22 -Initializing ExecutorService  'messageBrokerTaskScheduler'
+2018-06-14 16:44:22 -Mapped URL path [/endpointChat/**] onto handler of type [class org.springframework.web.socket.sockjs.support.SockJsHttpRequestHandler]
+2018-06-14 16:44:22 -Initializing ExecutorService  'brokerChannelExecutor'
+2018-06-14 16:44:22 -Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5cfc24e3: startup date [Thu Jun 14 16:44:17 CST 2018]; root of context hierarchy
+2018-06-14 16:44:22 -Mapped URL path [/files/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-06-14 16:44:22 -Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-06-14 16:44:22 -Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-06-14 16:44:22 -Detected @ExceptionHandler methods in BDExceptionHandler
+2018-06-14 16:44:23 -Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-06-14 16:44:23 -Unable to start LiveReload server
+2018-06-14 16:44:24 -Registering beans for JMX exposure on startup
+2018-06-14 16:44:24 -Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-06-14 16:44:24 -Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2018-06-14 16:44:24 -Starting beans in phase 2147483647
+2018-06-14 16:44:24 -Context refreshed
+2018-06-14 16:44:24 -Found 1 custom documentation plugin(s)
+2018-06-14 16:44:24 -Scanning for api listing references
+2018-06-14 16:44:24 -Generating unique operation named: removeUsingPOST_1
+2018-06-14 16:44:24 -Generating unique operation named: addUsingGET_1
+2018-06-14 16:44:24 -Generating unique operation named: editUsingGET_1
+2018-06-14 16:44:24 -Generating unique operation named: listUsingGET_1
+2018-06-14 16:44:24 -Generating unique operation named: removeUsingPOST_2
+2018-06-14 16:44:24 -Generating unique operation named: removeUsingPOST_3
+2018-06-14 16:44:24 -Generating unique operation named: saveUsingPOST_1
+2018-06-14 16:44:24 -Generating unique operation named: updateUsingPOST_1
+2018-06-14 16:44:24 -Generating unique operation named: addUsingGET_2
+2018-06-14 16:44:24 -Generating unique operation named: editUsingGET_2
+2018-06-14 16:44:24 -Generating unique operation named: listUsingGET_2
+2018-06-14 16:44:24 -Generating unique operation named: removeUsingPOST_4
+2018-06-14 16:44:24 -Generating unique operation named: removeUsingPOST_5
+2018-06-14 16:44:24 -Generating unique operation named: saveUsingPOST_2
+2018-06-14 16:44:24 -Generating unique operation named: updateUsingGET_1
+2018-06-14 16:44:24 -Generating unique operation named: updateUsingHEAD_1
+2018-06-14 16:44:24 -Generating unique operation named: updateUsingPOST_2
+2018-06-14 16:44:24 -Generating unique operation named: updateUsingPUT_1
+2018-06-14 16:44:24 -Generating unique operation named: updateUsingPATCH_1
+2018-06-14 16:44:24 -Generating unique operation named: updateUsingDELETE_1
+2018-06-14 16:44:24 -Generating unique operation named: updateUsingOPTIONS_1
+2018-06-14 16:44:24 -Generating unique operation named: updateUsingTRACE_1
+2018-06-14 16:44:24 -Generating unique operation named: addUsingGET_3
+2018-06-14 16:44:24 -Generating unique operation named: editUsingGET_3
+2018-06-14 16:44:24 -Generating unique operation named: listUsingGET_3
+2018-06-14 16:44:24 -Generating unique operation named: removeUsingPOST_6
+2018-06-14 16:44:24 -Generating unique operation named: removeUsingPOST_7
+2018-06-14 16:44:24 -Generating unique operation named: saveUsingPOST_3
+2018-06-14 16:44:24 -Generating unique operation named: updateUsingGET_2
+2018-06-14 16:44:24 -Generating unique operation named: updateUsingHEAD_2
+2018-06-14 16:44:24 -Generating unique operation named: updateUsingPOST_3
+2018-06-14 16:44:24 -Generating unique operation named: updateUsingPUT_2
+2018-06-14 16:44:24 -Generating unique operation named: updateUsingPATCH_2
+2018-06-14 16:44:24 -Generating unique operation named: updateUsingDELETE_2
+2018-06-14 16:44:24 -Generating unique operation named: updateUsingOPTIONS_2
+2018-06-14 16:44:24 -Generating unique operation named: updateUsingTRACE_2
+2018-06-14 16:44:24 -Generating unique operation named: editUsingGET_4
+2018-06-14 16:44:24 -Generating unique operation named: listUsingGET_4
+2018-06-14 16:44:24 -Generating unique operation named: updateUsingPOST_4
+2018-06-14 16:44:24 -Generating unique operation named: addUsingGET_4
+2018-06-14 16:44:24 -Generating unique operation named: editUsingGET_5
+2018-06-14 16:44:24 -Generating unique operation named: listUsingGET_5
+2018-06-14 16:44:24 -Generating unique operation named: removeUsingPOST_8
+2018-06-14 16:44:24 -Generating unique operation named: removeUsingPOST_9
+2018-06-14 16:44:24 -Generating unique operation named: saveUsingPOST_4
+2018-06-14 16:44:24 -Generating unique operation named: updateUsingGET_3
+2018-06-14 16:44:24 -Generating unique operation named: updateUsingHEAD_3
+2018-06-14 16:44:24 -Generating unique operation named: updateUsingPOST_5
+2018-06-14 16:44:24 -Generating unique operation named: updateUsingPUT_3
+2018-06-14 16:44:24 -Generating unique operation named: updateUsingPATCH_3
+2018-06-14 16:44:24 -Generating unique operation named: updateUsingDELETE_3
+2018-06-14 16:44:24 -Generating unique operation named: updateUsingOPTIONS_3
+2018-06-14 16:44:24 -Generating unique operation named: updateUsingTRACE_3
+2018-06-14 16:44:24 -Generating unique operation named: addUsingGET_5
+2018-06-14 16:44:24 -Generating unique operation named: editUsingGET_6
+2018-06-14 16:44:24 -Generating unique operation named: listUsingGET_6
+2018-06-14 16:44:24 -Generating unique operation named: removeUsingPOST_10
+2018-06-14 16:44:24 -Generating unique operation named: removeUsingPOST_11
+2018-06-14 16:44:24 -Generating unique operation named: saveUsingPOST_5
+2018-06-14 16:44:24 -Generating unique operation named: updateUsingGET_4
+2018-06-14 16:44:24 -Generating unique operation named: updateUsingHEAD_4
+2018-06-14 16:44:24 -Generating unique operation named: updateUsingPOST_6
+2018-06-14 16:44:24 -Generating unique operation named: updateUsingPUT_4
+2018-06-14 16:44:24 -Generating unique operation named: updateUsingPATCH_4
+2018-06-14 16:44:24 -Generating unique operation named: updateUsingDELETE_4
+2018-06-14 16:44:24 -Generating unique operation named: updateUsingOPTIONS_4
+2018-06-14 16:44:24 -Generating unique operation named: updateUsingTRACE_4
+2018-06-14 16:44:24 -Generating unique operation named: addUsingGET_6
+2018-06-14 16:44:24 -Generating unique operation named: editUsingGET_7
+2018-06-14 16:44:24 -Generating unique operation named: infoUsingGET_1
+2018-06-14 16:44:24 -Generating unique operation named: infoUsingHEAD_1
+2018-06-14 16:44:24 -Generating unique operation named: infoUsingPOST_1
+2018-06-14 16:44:24 -Generating unique operation named: infoUsingPUT_1
+2018-06-14 16:44:24 -Generating unique operation named: infoUsingPATCH_1
+2018-06-14 16:44:24 -Generating unique operation named: infoUsingDELETE_1
+2018-06-14 16:44:24 -Generating unique operation named: infoUsingOPTIONS_1
+2018-06-14 16:44:24 -Generating unique operation named: infoUsingTRACE_1
+2018-06-14 16:44:24 -Generating unique operation named: listUsingGET_7
+2018-06-14 16:44:24 -Generating unique operation named: removeUsingPOST_12
+2018-06-14 16:44:24 -Generating unique operation named: removeUsingPOST_13
+2018-06-14 16:44:24 -Generating unique operation named: saveUsingPOST_6
+2018-06-14 16:44:24 -Generating unique operation named: updateUsingPOST_7
+2018-06-14 16:44:24 -Generating unique operation named: listUsingGET_8
+2018-06-14 16:44:24 -Generating unique operation named: removeUsingPOST_14
+2018-06-14 16:44:24 -Generating unique operation named: welcomeUsingGET_1
+2018-06-14 16:44:24 -Generating unique operation named: addUsingGET_7
+2018-06-14 16:44:24 -Generating unique operation named: editUsingGET_8
+2018-06-14 16:44:24 -Generating unique operation named: listUsingGET_9
+2018-06-14 16:44:24 -Generating unique operation named: removeUsingPOST_15
+2018-06-14 16:44:24 -Generating unique operation named: saveUsingPOST_7
+2018-06-14 16:44:24 -Generating unique operation named: treeUsingGET_1
+2018-06-14 16:44:24 -Generating unique operation named: treeUsingGET_2
+2018-06-14 16:44:24 -Generating unique operation named: updateUsingPOST_8
+2018-06-14 16:44:24 -Generating unique operation named: addUsingGET_8
+2018-06-14 16:44:24 -Generating unique operation named: editUsingGET_9
+2018-06-14 16:44:24 -Generating unique operation named: listUsingGET_10
+2018-06-14 16:44:24 -Generating unique operation named: removeUsingPOST_16
+2018-06-14 16:44:24 -Generating unique operation named: removeUsingPOST_17
+2018-06-14 16:44:24 -Generating unique operation named: saveUsingPOST_8
+2018-06-14 16:44:24 -Generating unique operation named: updateUsingGET_5
+2018-06-14 16:44:24 -Generating unique operation named: updateUsingHEAD_5
+2018-06-14 16:44:24 -Generating unique operation named: updateUsingPOST_9
+2018-06-14 16:44:24 -Generating unique operation named: updateUsingPUT_5
+2018-06-14 16:44:24 -Generating unique operation named: updateUsingPATCH_5
+2018-06-14 16:44:24 -Generating unique operation named: updateUsingDELETE_5
+2018-06-14 16:44:24 -Generating unique operation named: updateUsingOPTIONS_5
+2018-06-14 16:44:24 -Generating unique operation named: updateUsingTRACE_5
+2018-06-14 16:44:24 -Generating unique operation named: addUsingGET_9
+2018-06-14 16:44:24 -Generating unique operation named: batchRemoveUsingPOST_1
+2018-06-14 16:44:24 -Generating unique operation named: editUsingGET_10
+2018-06-14 16:44:24 -Generating unique operation named: listUsingGET_11
+2018-06-14 16:44:24 -Generating unique operation named: saveUsingPOST_9
+2018-06-14 16:44:24 -Generating unique operation named: saveUsingPOST_10
+2018-06-14 16:44:24 -Generating unique operation named: updateUsingPOST_10
+2018-06-14 16:44:24 -Generating unique operation named: listUsingGET_12
+2018-06-14 16:44:24 -Generating unique operation named: addUsingGET_10
+2018-06-14 16:44:24 -Generating unique operation named: batchRemoveUsingPOST_2
+2018-06-14 16:44:24 -Generating unique operation named: editUsingGET_11
+2018-06-14 16:44:24 -Generating unique operation named: listUsingGET_13
+2018-06-14 16:44:24 -Generating unique operation named: removeUsingPOST_18
+2018-06-14 16:44:24 -Generating unique operation named: saveUsingPOST_11
+2018-06-14 16:44:24 -Generating unique operation named: treeUsingGET_3
+2018-06-14 16:44:24 -Generating unique operation named: treeViewUsingGET_1
+2018-06-14 16:44:24 -Generating unique operation named: updateUsingPOST_11
+2018-06-14 16:44:25 -Starting Quartz Scheduler now
+2018-06-14 16:44:25 -Scheduler schedulerFactoryBean_$_NON_CLUSTERED started.
+2018-06-14 16:44:25 -Starting...
+2018-06-14 16:44:25 -BrokerAvailabilityEvent[available=true, SimpleBrokerMessageHandler [DefaultSubscriptionRegistry[cache[0 destination(s)], registry[0 sessions]]]]
+2018-06-14 16:44:25 -Started.
+2018-06-14 16:44:25 -Initializing ProtocolHandler ["http-nio-80"]
+2018-06-14 16:44:25 -Starting ProtocolHandler ["http-nio-80"]
+2018-06-14 16:44:25 -Using a shared selector for servlet write/read
+2018-06-14 16:44:25 -Tomcat started on port(s): 80 (http)
+2018-06-14 16:44:25 -Scheduler schedulerFactoryBean_$_NON_CLUSTERED started.
+2018-06-14 16:44:25 -Started JghmallApplication in 8.097 seconds (JVM running for 8.607)
+2018-06-14 16:44:28 -Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-06-14 16:44:28 -FrameworkServlet 'dispatcherServlet': initialization started
+2018-06-14 16:44:28 -FrameworkServlet 'dispatcherServlet': initialization completed in 22 ms
+2018-06-14 16:44:28 -Enabling session validation scheduler...
+2018-06-14 16:44:28 -请求地址 : http://localhost/login;JSESSIONID=4a024503-f959-4287-ad68-093fb98821b7
+2018-06-14 16:44:28 -HTTP METHOD : GET
+2018-06-14 16:44:28 -CLASS_METHOD : com.jghmall.system.controller.LoginController.login
+2018-06-14 16:44:28 -参数 : []
+2018-06-14 16:44:28 -耗时 : 2
+2018-06-14 16:44:28 -[THYMELEAF] INITIALIZING TEMPLATE ENGINE
+2018-06-14 16:44:28 -[THYMELEAF] INITIALIZING TEMPLATE RESOLVER: org.thymeleaf.spring4.templateresolver.SpringResourceTemplateResolver
+2018-06-14 16:44:28 -[THYMELEAF] TEMPLATE RESOLVER INITIALIZED OK
+2018-06-14 16:44:28 -[THYMELEAF] INITIALIZING MESSAGE RESOLVER: org.thymeleaf.spring4.messageresolver.SpringMessageResolver
+2018-06-14 16:44:28 -[THYMELEAF] MESSAGE RESOLVER INITIALIZED OK
+2018-06-14 16:44:28 -[THYMELEAF] TEMPLATE ENGINE CONFIGURATION:
+[THYMELEAF] * Cache Factory implementation: org.thymeleaf.cache.StandardCacheManager
+[THYMELEAF] * Template modes:
+[THYMELEAF]     * XHTML
+[THYMELEAF]     * HTML5
+[THYMELEAF]     * LEGACYHTML5
+[THYMELEAF]     * XML
+[THYMELEAF]     * VALIDXML
+[THYMELEAF]     * VALIDXHTML
+[THYMELEAF] * Template resolvers (in order):
+[THYMELEAF]     * org.thymeleaf.spring4.templateresolver.SpringResourceTemplateResolver
+[THYMELEAF] * Message resolvers (in order):
+[THYMELEAF]     * org.thymeleaf.spring4.messageresolver.SpringMessageResolver
+[THYMELEAF] * Dialect [1 of 3]: org.thymeleaf.spring4.dialect.SpringStandardDialect
+[THYMELEAF]     * Prefix: "th"
+[THYMELEAF] * Dialect [2 of 3]: at.pollux.thymeleaf.shiro.dialect.ShiroDialect
+[THYMELEAF]     * Prefix: "shiro"
+[THYMELEAF] * Dialect [3 of 3]: nz.net.ultraq.thymeleaf.LayoutDialect
+[THYMELEAF]     * Prefix: "layout"
+[THYMELEAF] TEMPLATE ENGINE CONFIGURED OK
+2018-06-14 16:44:28 -[THYMELEAF] TEMPLATE ENGINE INITIALIZED
+2018-06-14 16:44:30 -请求地址 : http://localhost/login
+2018-06-14 16:44:30 -HTTP METHOD : POST
+2018-06-14 16:44:30 -CLASS_METHOD : com.jghmall.system.controller.LoginController.ajaxLogin
+2018-06-14 16:44:30 -参数 : [admin, admin123]
+2018-06-14 16:44:30 -耗时 : 7
+2018-06-14 16:44:30 -More than one TaskExecutor bean found within the context, and none is named 'taskExecutor'. Mark one of them as primary or name it 'taskExecutor' (possibly as an alias) in order to use it for async processing: [clientInboundChannelExecutor, clientOutboundChannelExecutor, brokerChannelExecutor, messageBrokerTaskScheduler]
+2018-06-14 16:44:30 -请求地址 : http://localhost/index
+2018-06-14 16:44:30 -HTTP METHOD : GET
+2018-06-14 16:44:30 -CLASS_METHOD : com.jghmall.system.controller.LoginController.index
+2018-06-14 16:44:30 -参数 : [{}]
+2018-06-14 16:44:30 -耗时 : 32
+2018-06-14 16:44:30 -请求地址 : http://localhost/main
+2018-06-14 16:44:30 -HTTP METHOD : GET
+2018-06-14 16:44:30 -CLASS_METHOD : com.jghmall.system.controller.LoginController.main
+2018-06-14 16:44:30 -参数 : []
+2018-06-14 16:44:30 -耗时 : 1
+2018-06-14 16:44:31 -请求地址 : http://localhost/oa/notify/message
+2018-06-14 16:44:31 -HTTP METHOD : GET
+2018-06-14 16:44:31 -CLASS_METHOD : com.jghmall.oa.controller.NotifyController.message
+2018-06-14 16:44:31 -参数 : []
+2018-06-14 16:44:31 -耗时 : 16
+2018-06-14 16:44:31 -请求地址 : http://localhost/main
+2018-06-14 16:44:31 -HTTP METHOD : GET
+2018-06-14 16:44:31 -CLASS_METHOD : com.jghmall.system.controller.LoginController.main
+2018-06-14 16:44:31 -参数 : []
+2018-06-14 16:44:31 -耗时 : 0
+2018-06-14 16:45:22 -WebSocketSession[1 current WS(1)-HttpStream(0)-HttpPoll(0), 1 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(1)-CONNECTED(1)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 8, active threads = 0, queued tasks = 0, completed tasks = 9], outboundChannelpool size = 6, active threads = 0, queued tasks = 0, completed tasks = 6], sockJsScheduler[pool size = 4, active threads = 1, queued tasks = 2, completed tasks = 11]
+2018-06-14 17:09:24 -Starting JghmallApplication on PC-20170307RFXE with PID 15292 (D:\eclipse-workspace\bootdo\target\classes started by Administrator in D:\eclipse-workspace\bootdo)
+2018-06-14 17:09:24 -The following profiles are active: dev
+2018-06-14 17:09:24 -HV000001: Hibernate Validator 5.3.6.Final
+2018-06-14 17:09:24 -Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@102519b7: startup date [Thu Jun 14 17:09:24 CST 2018]; root of context hierarchy
+2018-06-14 17:09:25 -Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-06-14 17:09:26 -Bean 'org.springframework.cache.annotation.ProxyCachingConfiguration' of type [org.springframework.cache.annotation.ProxyCachingConfiguration$$EnhancerBySpringCGLIB$$3907eb1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-06-14 17:09:26 -Bean 'org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration' of type [org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration$$EnhancerBySpringCGLIB$$f8044355] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-06-14 17:09:26 -Bean 'spring.cache-org.springframework.boot.autoconfigure.cache.CacheProperties' of type [org.springframework.boot.autoconfigure.cache.CacheProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-06-14 17:09:26 -Bean 'cacheManagerCustomizers' of type [org.springframework.boot.autoconfigure.cache.CacheManagerCustomizers] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-06-14 17:09:26 -Bean 'org.springframework.boot.autoconfigure.cache.EhCacheCacheConfiguration' of type [org.springframework.boot.autoconfigure.cache.EhCacheCacheConfiguration$$EnhancerBySpringCGLIB$$92a31053] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-06-14 17:09:26 -Bean 'ehCacheCacheManager' of type [net.sf.ehcache.CacheManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-06-14 17:09:26 -Bean 'cacheManager' of type [org.springframework.cache.ehcache.EhCacheCacheManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-06-14 17:09:26 -Bean 'cacheAutoConfigurationValidator' of type [org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration$CacheManagerValidator] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-06-14 17:09:26 -Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$ba7e4893] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-06-14 17:09:26 -Bean 'shiroConfig' of type [com.jghmall.system.config.ShiroConfig$$EnhancerBySpringCGLIB$$f6662a22] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-06-14 17:09:26 -Bean 'userRealm' of type [com.jghmall.system.shiro.UserRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-06-14 17:09:26 -No configuration found. Configuring ehcache from ehcache-failsafe.xml  found in the classpath: jar:file:/D:/Maven/repo/net/sf/ehcache/ehcache-core/2.5.3/ehcache-core-2.5.3.jar!/ehcache-failsafe.xml
+2018-06-14 17:09:26 -Bean 'ehCacheManager' of type [org.apache.shiro.cache.ehcache.EhCacheManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-06-14 17:09:26 -Cache with name 'com.jghmall.system.shiro.UserRealm.authorizationCache' does not yet exist.  Creating now.
+2018-06-14 17:09:26 -Added EhCache named [com.jghmall.system.shiro.UserRealm.authorizationCache]
+2018-06-14 17:09:26 -Bean 'sessionDAO' of type [org.apache.shiro.session.mgt.eis.MemorySessionDAO] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-06-14 17:09:26 -Bean 'sessionManager' of type [org.apache.shiro.web.session.mgt.DefaultWebSessionManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-06-14 17:09:26 -Bean 'securityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-06-14 17:09:26 -Bean 'authorizationAttributeSourceAdvisor' of type [org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-06-14 17:09:27 -Tomcat initialized with port(s): 80 (http)
+2018-06-14 17:09:27 -Starting service [Tomcat]
+2018-06-14 17:09:27 -Starting Servlet Engine: Apache Tomcat/8.5.23
+2018-06-14 17:09:27 -Initializing Spring embedded WebApplicationContext
+2018-06-14 17:09:27 -Root WebApplicationContext: initialization completed in 2609 ms
+2018-06-14 17:09:27 -Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-06-14 17:09:27 -Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-06-14 17:09:27 -Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-06-14 17:09:27 -Mapping filter: 'requestContextFilter' to: [/*]
+2018-06-14 17:09:27 -Filter xssFilter was not registered (disabled)
+2018-06-14 17:09:27 -Mapping filter: 'webStatFilter' to urls: [/*]
+2018-06-14 17:09:27 -Mapping filter: 'shiroFilterFactoryBean' to: [/*]
+2018-06-14 17:09:27 -Mapping servlet: 'statViewServlet' to [/druid/*]
+2018-06-14 17:09:27 -Mapping servlet: 'dispatcherServlet' to [/]
+2018-06-14 17:09:28 -{dataSource-1} inited
+2018-06-14 17:09:28 -Using default implementation for ThreadExecutor
+2018-06-14 17:09:28 -Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2018-06-14 17:09:28 -Quartz Scheduler v.2.2.1 created.
+2018-06-14 17:09:28 -RAMJobStore initialized.
+2018-06-14 17:09:28 -Scheduler meta-data: Quartz Scheduler (v2.2.1) 'schedulerFactoryBean' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2018-06-14 17:09:28 -Quartz scheduler 'schedulerFactoryBean' initialized from an externally provided properties instance.
+2018-06-14 17:09:28 -Quartz scheduler version: 2.2.1
+2018-06-14 17:09:28 -JobFactory set to: com.jghmall.common.quartz.factory.JobFactory@544c885
+2018-06-14 17:09:29 -Initializing ExecutorService  'clientInboundChannelExecutor'
+2018-06-14 17:09:29 -Initializing ExecutorService  'clientOutboundChannelExecutor'
+2018-06-14 17:09:29 -Mapped "{[/blog/open/post/{cid}],methods=[GET]}" onto java.lang.String com.jghmall.blog.controller.BlogController.post(java.lang.Long,org.springframework.ui.Model)
+2018-06-14 17:09:29 -Mapped "{[/blog/open/page/{categories}],methods=[GET]}" onto java.lang.String com.jghmall.blog.controller.BlogController.about(java.lang.String,org.springframework.ui.Model)
+2018-06-14 17:09:29 -Mapped "{[/blog],methods=[GET]}" onto java.lang.String com.jghmall.blog.controller.BlogController.blog()
+2018-06-14 17:09:29 -Mapped "{[/blog/open/list],methods=[GET]}" onto public com.jghmall.common.utils.PageUtils com.jghmall.blog.controller.BlogController.opentList(java.util.Map<java.lang.String, java.lang.Object>)
+2018-06-14 17:09:29 -Mapped "{[/blog/bContent/add],methods=[GET]}" onto java.lang.String com.jghmall.blog.controller.ContentController.add()
+2018-06-14 17:09:29 -Mapped "{[/blog/bContent/remove],methods=[POST]}" onto public com.jghmall.common.utils.R com.jghmall.blog.controller.ContentController.remove(java.lang.Long)
+2018-06-14 17:09:29 -Mapped "{[/blog/bContent/batchRemove],methods=[POST]}" onto public com.jghmall.common.utils.R com.jghmall.blog.controller.ContentController.remove(java.lang.Long[])
+2018-06-14 17:09:29 -Mapped "{[/blog/bContent/update]}" onto public com.jghmall.common.utils.R com.jghmall.blog.controller.ContentController.update(com.jghmall.blog.domain.ContentDO)
+2018-06-14 17:09:29 -Mapped "{[/blog/bContent/list],methods=[GET]}" onto public com.jghmall.common.utils.PageUtils com.jghmall.blog.controller.ContentController.list(java.util.Map<java.lang.String, java.lang.Object>)
+2018-06-14 17:09:29 -Mapped "{[/blog/bContent/save],methods=[POST]}" onto public com.jghmall.common.utils.R com.jghmall.blog.controller.ContentController.save(com.jghmall.blog.domain.ContentDO)
+2018-06-14 17:09:29 -Mapped "{[/blog/bContent],methods=[GET]}" onto java.lang.String com.jghmall.blog.controller.ContentController.bContent()
+2018-06-14 17:09:29 -Mapped "{[/blog/bContent/edit/{cid}],methods=[GET]}" onto java.lang.String com.jghmall.blog.controller.ContentController.edit(java.lang.Long,org.springframework.ui.Model)
+2018-06-14 17:09:29 -Mapped "{[/common/dict/add],methods=[GET]}" onto java.lang.String com.jghmall.common.controller.DictController.add()
+2018-06-14 17:09:29 -Mapped "{[/common/dict/remove],methods=[POST]}" onto public com.jghmall.common.utils.R com.jghmall.common.controller.DictController.remove(java.lang.Long)
+2018-06-14 17:09:29 -Mapped "{[/common/dict/batchRemove],methods=[POST]}" onto public com.jghmall.common.utils.R com.jghmall.common.controller.DictController.remove(java.lang.Long[])
+2018-06-14 17:09:29 -Mapped "{[/common/dict/update]}" onto public com.jghmall.common.utils.R com.jghmall.common.controller.DictController.update(com.jghmall.common.domain.DictDO)
+2018-06-14 17:09:29 -Mapped "{[/common/dict/list],methods=[GET]}" onto public com.jghmall.common.utils.PageUtils com.jghmall.common.controller.DictController.list(java.util.Map<java.lang.String, java.lang.Object>)
+2018-06-14 17:09:29 -Mapped "{[/common/dict/save],methods=[POST]}" onto public com.jghmall.common.utils.R com.jghmall.common.controller.DictController.save(com.jghmall.common.domain.DictDO)
+2018-06-14 17:09:29 -Mapped "{[/common/dict/type],methods=[GET]}" onto public java.util.List<com.jghmall.common.domain.DictDO> com.jghmall.common.controller.DictController.listType()
+2018-06-14 17:09:29 -Mapped "{[/common/dict/edit/{id}],methods=[GET]}" onto java.lang.String com.jghmall.common.controller.DictController.edit(java.lang.Long,org.springframework.ui.Model)
+2018-06-14 17:09:29 -Mapped "{[/common/dict],methods=[GET]}" onto java.lang.String com.jghmall.common.controller.DictController.dict()
+2018-06-14 17:09:29 -Mapped "{[/common/dict/add/{type}/{description}],methods=[GET]}" onto java.lang.String com.jghmall.common.controller.DictController.addD(org.springframework.ui.Model,java.lang.String,java.lang.String)
+2018-06-14 17:09:29 -Mapped "{[/common/dict/list/{type}],methods=[GET]}" onto public java.util.List<com.jghmall.common.domain.DictDO> com.jghmall.common.controller.DictController.listByType(java.lang.String)
+2018-06-14 17:09:29 -Mapped "{[/common/sysFile/add],methods=[GET]}" onto java.lang.String com.jghmall.common.controller.FileController.add()
+2018-06-14 17:09:29 -Mapped "{[/common/sysFile/remove],methods=[POST]}" onto public com.jghmall.common.utils.R com.jghmall.common.controller.FileController.remove(java.lang.Long,javax.servlet.http.HttpServletRequest)
+2018-06-14 17:09:29 -Mapped "{[/common/sysFile/batchRemove],methods=[POST]}" onto public com.jghmall.common.utils.R com.jghmall.common.controller.FileController.remove(java.lang.Long[])
+2018-06-14 17:09:29 -Mapped "{[/common/sysFile/update]}" onto public com.jghmall.common.utils.R com.jghmall.common.controller.FileController.update(com.jghmall.common.domain.FileDO)
+2018-06-14 17:09:29 -Mapped "{[/common/sysFile/list],methods=[GET]}" onto public com.jghmall.common.utils.PageUtils com.jghmall.common.controller.FileController.list(java.util.Map<java.lang.String, java.lang.Object>)
+2018-06-14 17:09:29 -Mapped "{[/common/sysFile/save],methods=[POST]}" onto public com.jghmall.common.utils.R com.jghmall.common.controller.FileController.save(com.jghmall.common.domain.FileDO)
+2018-06-14 17:09:29 -Mapped "{[/common/sysFile/info/{id}]}" onto public com.jghmall.common.utils.R com.jghmall.common.controller.FileController.info(java.lang.Long)
+2018-06-14 17:09:29 -Mapped "{[/common/sysFile/edit],methods=[GET]}" onto java.lang.String com.jghmall.common.controller.FileController.edit(java.lang.Long,org.springframework.ui.Model)
+2018-06-14 17:09:29 -Mapped "{[/common/sysFile],methods=[GET]}" onto java.lang.String com.jghmall.common.controller.FileController.sysFile(org.springframework.ui.Model)
+2018-06-14 17:09:29 -Mapped "{[/common/sysFile/upload],methods=[POST]}" onto com.jghmall.common.utils.R com.jghmall.common.controller.FileController.upload(org.springframework.web.multipart.MultipartFile,javax.servlet.http.HttpServletRequest)
+2018-06-14 17:09:29 -Mapped "{[/common/generator/update],methods=[POST]}" onto com.jghmall.common.utils.R com.jghmall.common.controller.GeneratorController.update(java.util.Map<java.lang.String, java.lang.Object>)
+2018-06-14 17:09:29 -Mapped "{[/common/generator/list],methods=[GET]}" onto java.util.List<java.util.Map<java.lang.String, java.lang.Object>> com.jghmall.common.controller.GeneratorController.list()
+2018-06-14 17:09:29 -Mapped "{[/common/generator/code/{tableName}]}" onto public void com.jghmall.common.controller.GeneratorController.code(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.String) throws java.io.IOException
+2018-06-14 17:09:29 -Mapped "{[/common/generator],methods=[GET]}" onto java.lang.String com.jghmall.common.controller.GeneratorController.generator()
+2018-06-14 17:09:29 -Mapped "{[/common/generator/edit],methods=[GET]}" onto public java.lang.String com.jghmall.common.controller.GeneratorController.edit(org.springframework.ui.Model)
+2018-06-14 17:09:29 -Mapped "{[/common/generator/batchCode]}" onto public void com.jghmall.common.controller.GeneratorController.batchCode(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.String) throws java.io.IOException
+2018-06-14 17:09:29 -Mapped "{[/common/job/add],methods=[GET]}" onto java.lang.String com.jghmall.common.controller.JobController.add()
+2018-06-14 17:09:29 -Mapped "{[/common/job/remove],methods=[POST]}" onto public com.jghmall.common.utils.R com.jghmall.common.controller.JobController.remove(java.lang.Long)
+2018-06-14 17:09:29 -Mapped "{[/common/job/batchRemove],methods=[POST]}" onto public com.jghmall.common.utils.R com.jghmall.common.controller.JobController.remove(java.lang.Long[])
+2018-06-14 17:09:29 -Mapped "{[/common/job/update],methods=[POST]}" onto public com.jghmall.common.utils.R com.jghmall.common.controller.JobController.update(com.jghmall.common.domain.TaskDO)
+2018-06-14 17:09:29 -Mapped "{[/common/job/list],methods=[GET]}" onto public com.jghmall.common.utils.PageUtils com.jghmall.common.controller.JobController.list(java.util.Map<java.lang.String, java.lang.Object>)
+2018-06-14 17:09:29 -Mapped "{[/common/job/save],methods=[POST]}" onto public com.jghmall.common.utils.R com.jghmall.common.controller.JobController.save(com.jghmall.common.domain.TaskDO)
+2018-06-14 17:09:29 -Mapped "{[/common/job/info/{id}]}" onto public com.jghmall.common.utils.R com.jghmall.common.controller.JobController.info(java.lang.Long)
+2018-06-14 17:09:29 -Mapped "{[/common/job/edit/{id}],methods=[GET]}" onto java.lang.String com.jghmall.common.controller.JobController.edit(java.lang.Long,org.springframework.ui.Model)
+2018-06-14 17:09:29 -Mapped "{[/common/job/changeJobStatus],methods=[POST]}" onto public com.jghmall.common.utils.R com.jghmall.common.controller.JobController.changeJobStatus(java.lang.Long,java.lang.String)
+2018-06-14 17:09:29 -Mapped "{[/common/job],methods=[GET]}" onto java.lang.String com.jghmall.common.controller.JobController.taskScheduleJob()
+2018-06-14 17:09:29 -Mapped "{[/common/log/remove],methods=[POST]}" onto com.jghmall.common.utils.R com.jghmall.common.controller.LogController.remove(java.lang.Long)
+2018-06-14 17:09:29 -Mapped "{[/common/log],methods=[GET]}" onto java.lang.String com.jghmall.common.controller.LogController.log()
+2018-06-14 17:09:29 -Mapped "{[/common/log/list],methods=[GET]}" onto com.jghmall.common.domain.PageDO<com.jghmall.common.domain.LogDO> com.jghmall.common.controller.LogController.list(java.util.Map<java.lang.String, java.lang.Object>)
+2018-06-14 17:09:29 -Mapped "{[/common/log/batchRemove],methods=[POST]}" onto com.jghmall.common.utils.R com.jghmall.common.controller.LogController.batchRemove(java.lang.Long[])
+2018-06-14 17:09:29 -Mapped "{[/error]}" onto public com.jghmall.common.utils.R com.jghmall.common.exception.MainsiteErrorController.handleError(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-06-14 17:09:29 -Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView com.jghmall.common.exception.MainsiteErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-06-14 17:09:29 -Mapped "{[/goodsgroup/goodsGroup/add],methods=[GET]}" onto java.lang.String com.jghmall.goodsgroup.controller.GoodsGroupController.add()
+2018-06-14 17:09:29 -Mapped "{[/goodsgroup/goodsGroup/remove],methods=[POST]}" onto public com.jghmall.common.utils.R com.jghmall.goodsgroup.controller.GoodsGroupController.remove(java.lang.Integer)
+2018-06-14 17:09:29 -Mapped "{[/goodsgroup/goodsGroup/batchRemove],methods=[POST]}" onto public com.jghmall.common.utils.R com.jghmall.goodsgroup.controller.GoodsGroupController.remove(java.lang.Integer[])
+2018-06-14 17:09:29 -Mapped "{[/goodsgroup/goodsGroup/update]}" onto public com.jghmall.common.utils.R com.jghmall.goodsgroup.controller.GoodsGroupController.update(com.jghmall.goodsgroup.domain.GoodsGroupDO)
+2018-06-14 17:09:29 -Mapped "{[/goodsgroup/goodsGroup/list],methods=[GET]}" onto public com.jghmall.common.utils.PageUtils com.jghmall.goodsgroup.controller.GoodsGroupController.list(java.util.Map<java.lang.String, java.lang.Object>)
+2018-06-14 17:09:29 -Mapped "{[/goodsgroup/goodsGroup/save],methods=[POST]}" onto public com.jghmall.common.utils.R com.jghmall.goodsgroup.controller.GoodsGroupController.save(com.jghmall.goodsgroup.domain.GoodsGroupDO)
+2018-06-14 17:09:29 -Mapped "{[/goodsgroup/goodsGroup/edit/{id}],methods=[GET]}" onto java.lang.String com.jghmall.goodsgroup.controller.GoodsGroupController.edit(java.lang.Integer,org.springframework.ui.Model)
+2018-06-14 17:09:29 -Mapped "{[/goodsgroup/goodsGroup],methods=[GET]}" onto java.lang.String com.jghmall.goodsgroup.controller.GoodsGroupController.GoodsGroup()
+2018-06-14 17:09:29 -Mapped "{[/jghmall/goods/add],methods=[GET]}" onto java.lang.String com.jghmall.jghmall.controller.GoodsController.add()
+2018-06-14 17:09:29 -Mapped "{[/jghmall/goods/remove],methods=[POST]}" onto public com.jghmall.common.utils.R com.jghmall.jghmall.controller.GoodsController.remove(java.lang.Integer)
+2018-06-14 17:09:29 -Mapped "{[/jghmall/goods/batchRemove],methods=[POST]}" onto public com.jghmall.common.utils.R com.jghmall.jghmall.controller.GoodsController.remove(java.lang.Integer[])
+2018-06-14 17:09:29 -Mapped "{[/jghmall/goods/update]}" onto public com.jghmall.common.utils.R com.jghmall.jghmall.controller.GoodsController.update(com.jghmall.jghmall.domain.GoodsDO)
+2018-06-14 17:09:29 -Mapped "{[/jghmall/goods/list],methods=[GET]}" onto public com.jghmall.common.utils.PageUtils com.jghmall.jghmall.controller.GoodsController.list(java.util.Map<java.lang.String, java.lang.Object>)
+2018-06-14 17:09:29 -Mapped "{[/jghmall/goods/save],methods=[POST]}" onto public com.jghmall.common.utils.R com.jghmall.jghmall.controller.GoodsController.save(com.jghmall.jghmall.domain.GoodsDO)
+2018-06-14 17:09:29 -Mapped "{[/jghmall/goods/edit/{id}],methods=[GET]}" onto java.lang.String com.jghmall.jghmall.controller.GoodsController.edit(java.lang.Integer,org.springframework.ui.Model)
+2018-06-14 17:09:29 -Mapped "{[/jghmall/goods],methods=[GET]}" onto java.lang.String com.jghmall.jghmall.controller.GoodsController.Goods()
+2018-06-14 17:09:29 -Mapped "{[/oa/notify/add],methods=[GET]}" onto java.lang.String com.jghmall.oa.controller.NotifyController.add()
+2018-06-14 17:09:29 -Mapped "{[/oa/notify/remove],methods=[POST]}" onto public com.jghmall.common.utils.R com.jghmall.oa.controller.NotifyController.remove(java.lang.Long)
+2018-06-14 17:09:29 -Mapped "{[/oa/notify/batchRemove],methods=[POST]}" onto public com.jghmall.common.utils.R com.jghmall.oa.controller.NotifyController.remove(java.lang.Long[])
+2018-06-14 17:09:29 -Mapped "{[/oa/notify/update]}" onto public com.jghmall.common.utils.R com.jghmall.oa.controller.NotifyController.update(com.jghmall.oa.domain.NotifyDO)
+2018-06-14 17:09:29 -Mapped "{[/oa/notify/read/{id}],methods=[GET]}" onto java.lang.String com.jghmall.oa.controller.NotifyController.read(java.lang.Long,org.springframework.ui.Model)
+2018-06-14 17:09:29 -Mapped "{[/oa/notify/list],methods=[GET]}" onto public com.jghmall.common.utils.PageUtils com.jghmall.oa.controller.NotifyController.list(java.util.Map<java.lang.String, java.lang.Object>)
+2018-06-14 17:09:29 -Mapped "{[/oa/notify/save],methods=[POST]}" onto public com.jghmall.common.utils.R com.jghmall.oa.controller.NotifyController.save(com.jghmall.oa.domain.NotifyDO)
+2018-06-14 17:09:29 -Mapped "{[/oa/notify/message],methods=[GET]}" onto com.jghmall.common.utils.PageUtils com.jghmall.oa.controller.NotifyController.message()
+2018-06-14 17:09:29 -Mapped "{[/oa/notify/selfList],methods=[GET]}" onto com.jghmall.common.utils.PageUtils com.jghmall.oa.controller.NotifyController.selfList(java.util.Map<java.lang.String, java.lang.Object>)
+2018-06-14 17:09:29 -Mapped "{[/oa/notify/selfNotify],methods=[GET]}" onto java.lang.String com.jghmall.oa.controller.NotifyController.selefNotify()
+2018-06-14 17:09:29 -Mapped "{[/oa/notify/edit/{id}],methods=[GET]}" onto java.lang.String com.jghmall.oa.controller.NotifyController.edit(java.lang.Long,org.springframework.ui.Model)
+2018-06-14 17:09:29 -Mapped "{[/oa/notify],methods=[GET]}" onto java.lang.String com.jghmall.oa.controller.NotifyController.oaNotify()
+2018-06-14 17:09:29 -Mapped "{[/system/sysDept/add/{pId}],methods=[GET]}" onto java.lang.String com.jghmall.system.controller.DeptController.add(java.lang.Long,org.springframework.ui.Model)
+2018-06-14 17:09:29 -Mapped "{[/system/sysDept/remove],methods=[POST]}" onto public com.jghmall.common.utils.R com.jghmall.system.controller.DeptController.remove(java.lang.Long)
+2018-06-14 17:09:29 -Mapped "{[/system/sysDept/batchRemove],methods=[POST]}" onto public com.jghmall.common.utils.R com.jghmall.system.controller.DeptController.remove(java.lang.Long[])
+2018-06-14 17:09:29 -Mapped "{[/system/sysDept/update],methods=[POST]}" onto public com.jghmall.common.utils.R com.jghmall.system.controller.DeptController.update(com.jghmall.system.domain.DeptDO)
+2018-06-14 17:09:29 -Mapped "{[/system/sysDept/list],methods=[GET]}" onto public java.util.List<com.jghmall.system.domain.DeptDO> com.jghmall.system.controller.DeptController.list()
+2018-06-14 17:09:29 -Mapped "{[/system/sysDept/save],methods=[POST]}" onto public com.jghmall.common.utils.R com.jghmall.system.controller.DeptController.save(com.jghmall.system.domain.DeptDO)
+2018-06-14 17:09:29 -Mapped "{[/system/sysDept/tree],methods=[GET]}" onto public com.jghmall.common.domain.Tree<com.jghmall.system.domain.DeptDO> com.jghmall.system.controller.DeptController.tree()
+2018-06-14 17:09:29 -Mapped "{[/system/sysDept],methods=[GET]}" onto java.lang.String com.jghmall.system.controller.DeptController.dept()
+2018-06-14 17:09:29 -Mapped "{[/system/sysDept/treeView],methods=[GET]}" onto java.lang.String com.jghmall.system.controller.DeptController.treeView()
+2018-06-14 17:09:29 -Mapped "{[/system/sysDept/edit/{deptId}],methods=[GET]}" onto java.lang.String com.jghmall.system.controller.DeptController.edit(java.lang.Long,org.springframework.ui.Model)
+2018-06-14 17:09:29 -Mapped "{[/index],methods=[GET]}" onto java.lang.String com.jghmall.system.controller.LoginController.index(org.springframework.ui.Model)
+2018-06-14 17:09:29 -Mapped "{[/main],methods=[GET]}" onto java.lang.String com.jghmall.system.controller.LoginController.main()
+2018-06-14 17:09:29 -Mapped "{[/logout],methods=[GET]}" onto java.lang.String com.jghmall.system.controller.LoginController.logout()
+2018-06-14 17:09:29 -Mapped "{[/ || ],methods=[GET]}" onto java.lang.String com.jghmall.system.controller.LoginController.welcome(org.springframework.ui.Model)
+2018-06-14 17:09:29 -Mapped "{[/login],methods=[POST]}" onto com.jghmall.common.utils.R com.jghmall.system.controller.LoginController.ajaxLogin(java.lang.String,java.lang.String)
+2018-06-14 17:09:29 -Mapped "{[/login],methods=[GET]}" onto java.lang.String com.jghmall.system.controller.LoginController.login()
+2018-06-14 17:09:29 -Mapped "{[/sys/menu/add/{pId}],methods=[GET]}" onto java.lang.String com.jghmall.system.controller.MenuController.add(org.springframework.ui.Model,java.lang.Long)
+2018-06-14 17:09:29 -Mapped "{[/sys/menu/remove],methods=[POST]}" onto com.jghmall.common.utils.R com.jghmall.system.controller.MenuController.remove(java.lang.Long)
+2018-06-14 17:09:29 -Mapped "{[/sys/menu/update],methods=[POST]}" onto com.jghmall.common.utils.R com.jghmall.system.controller.MenuController.update(com.jghmall.system.domain.MenuDO)
+2018-06-14 17:09:29 -Mapped "{[/sys/menu/list],methods=[GET]}" onto java.util.List<com.jghmall.system.domain.MenuDO> com.jghmall.system.controller.MenuController.list(java.util.Map<java.lang.String, java.lang.Object>)
+2018-06-14 17:09:29 -Mapped "{[/sys/menu/save],methods=[POST]}" onto com.jghmall.common.utils.R com.jghmall.system.controller.MenuController.save(com.jghmall.system.domain.MenuDO)
+2018-06-14 17:09:29 -Mapped "{[/sys/menu/tree/{roleId}],methods=[GET]}" onto com.jghmall.common.domain.Tree<com.jghmall.system.domain.MenuDO> com.jghmall.system.controller.MenuController.tree(java.lang.Long)
+2018-06-14 17:09:29 -Mapped "{[/sys/menu/tree],methods=[GET]}" onto com.jghmall.common.domain.Tree<com.jghmall.system.domain.MenuDO> com.jghmall.system.controller.MenuController.tree()
+2018-06-14 17:09:29 -Mapped "{[/sys/menu],methods=[GET]}" onto java.lang.String com.jghmall.system.controller.MenuController.menu(org.springframework.ui.Model)
+2018-06-14 17:09:29 -Mapped "{[/sys/menu/edit/{id}],methods=[GET]}" onto java.lang.String com.jghmall.system.controller.MenuController.edit(org.springframework.ui.Model,java.lang.Long)
+2018-06-14 17:09:29 -Mapped "{[/sys/role/add],methods=[GET]}" onto java.lang.String com.jghmall.system.controller.RoleController.add()
+2018-06-14 17:09:29 -Mapped "{[/sys/role/update],methods=[POST]}" onto com.jghmall.common.utils.R com.jghmall.system.controller.RoleController.update(com.jghmall.system.domain.RoleDO)
+2018-06-14 17:09:29 -Mapped "{[/sys/role/list],methods=[GET]}" onto java.util.List<com.jghmall.system.domain.RoleDO> com.jghmall.system.controller.RoleController.list()
+2018-06-14 17:09:29 -Mapped "{[/sys/role/remove],methods=[POST]}" onto com.jghmall.common.utils.R com.jghmall.system.controller.RoleController.save(java.lang.Long)
+2018-06-14 17:09:29 -Mapped "{[/sys/role/save],methods=[POST]}" onto com.jghmall.common.utils.R com.jghmall.system.controller.RoleController.save(com.jghmall.system.domain.RoleDO)
+2018-06-14 17:09:29 -Mapped "{[/sys/role/batchRemove],methods=[POST]}" onto com.jghmall.common.utils.R com.jghmall.system.controller.RoleController.batchRemove(java.lang.Long[])
+2018-06-14 17:09:29 -Mapped "{[/sys/role],methods=[GET]}" onto java.lang.String com.jghmall.system.controller.RoleController.role()
+2018-06-14 17:09:29 -Mapped "{[/sys/role/edit/{id}],methods=[GET]}" onto java.lang.String com.jghmall.system.controller.RoleController.edit(java.lang.Long,org.springframework.ui.Model)
+2018-06-14 17:09:29 -Mapped "{[/sys/online/list]}" onto public java.util.List<com.jghmall.system.domain.UserOnline> com.jghmall.system.controller.SessionController.list()
+2018-06-14 17:09:29 -Mapped "{[/sys/online/sessionList]}" onto public java.util.Collection<org.apache.shiro.session.Session> com.jghmall.system.controller.SessionController.sessionList()
+2018-06-14 17:09:29 -Mapped "{[/sys/online],methods=[GET]}" onto public java.lang.String com.jghmall.system.controller.SessionController.online()
+2018-06-14 17:09:29 -Mapped "{[/sys/online/forceLogout/{sessionId}]}" onto public com.jghmall.common.utils.R com.jghmall.system.controller.SessionController.forceLogout(java.lang.String,org.springframework.web.servlet.mvc.support.RedirectAttributes)
+2018-06-14 17:09:29 -Mapped "{[/sys/online/sysInfo]}" onto public com.jghmall.common.utils.R com.jghmall.system.controller.SessionController.sysInfo(javax.servlet.http.HttpServletRequest)
+2018-06-14 17:09:29 -Mapped "{[/sys/user/exit],methods=[POST]}" onto boolean com.jghmall.system.controller.UserController.exit(java.util.Map<java.lang.String, java.lang.Object>)
+2018-06-14 17:09:29 -Mapped "{[/sys/user/add],methods=[GET]}" onto java.lang.String com.jghmall.system.controller.UserController.add(org.springframework.ui.Model)
+2018-06-14 17:09:29 -Mapped "{[/sys/user/remove],methods=[POST]}" onto com.jghmall.common.utils.R com.jghmall.system.controller.UserController.remove(java.lang.Long)
+2018-06-14 17:09:29 -Mapped "{[/sys/user/update],methods=[POST]}" onto com.jghmall.common.utils.R com.jghmall.system.controller.UserController.update(com.jghmall.system.domain.UserDO)
+2018-06-14 17:09:29 -Mapped "{[/sys/user/list],methods=[GET]}" onto com.jghmall.common.utils.PageUtils com.jghmall.system.controller.UserController.list(java.util.Map<java.lang.String, java.lang.Object>)
+2018-06-14 17:09:29 -Mapped "{[/sys/user/save],methods=[POST]}" onto com.jghmall.common.utils.R com.jghmall.system.controller.UserController.save(com.jghmall.system.domain.UserDO)
+2018-06-14 17:09:29 -Mapped "{[/sys/user/batchRemove],methods=[POST]}" onto com.jghmall.common.utils.R com.jghmall.system.controller.UserController.batchRemove(java.lang.Long[])
+2018-06-14 17:09:29 -Mapped "{[/sys/user/tree],methods=[GET]}" onto public com.jghmall.common.domain.Tree<com.jghmall.system.domain.DeptDO> com.jghmall.system.controller.UserController.tree()
+2018-06-14 17:09:29 -Mapped "{[/sys/user],methods=[GET]}" onto java.lang.String com.jghmall.system.controller.UserController.user(org.springframework.ui.Model)
+2018-06-14 17:09:29 -Mapped "{[/sys/user/treeView],methods=[GET]}" onto java.lang.String com.jghmall.system.controller.UserController.treeView()
+2018-06-14 17:09:29 -Mapped "{[/sys/user/updatePeronal],methods=[POST]}" onto com.jghmall.common.utils.R com.jghmall.system.controller.UserController.updatePeronal(com.jghmall.system.domain.UserDO)
+2018-06-14 17:09:29 -Mapped "{[/sys/user/resetPwd],methods=[POST]}" onto com.jghmall.common.utils.R com.jghmall.system.controller.UserController.resetPwd(com.jghmall.system.vo.UserVO)
+2018-06-14 17:09:29 -Mapped "{[/sys/user/resetPwd/{id}],methods=[GET]}" onto java.lang.String com.jghmall.system.controller.UserController.resetPwd(java.lang.Long,org.springframework.ui.Model)
+2018-06-14 17:09:29 -Mapped "{[/sys/user/adminResetPwd],methods=[POST]}" onto com.jghmall.common.utils.R com.jghmall.system.controller.UserController.adminResetPwd(com.jghmall.system.vo.UserVO)
+2018-06-14 17:09:29 -Mapped "{[/sys/user/personal],methods=[GET]}" onto java.lang.String com.jghmall.system.controller.UserController.personal(org.springframework.ui.Model)
+2018-06-14 17:09:29 -Mapped "{[/sys/user/uploadImg],methods=[POST]}" onto com.jghmall.common.utils.R com.jghmall.system.controller.UserController.uploadImg(org.springframework.web.multipart.MultipartFile,java.lang.String,javax.servlet.http.HttpServletRequest)
+2018-06-14 17:09:29 -Mapped "{[/sys/user/edit/{id}],methods=[GET]}" onto java.lang.String com.jghmall.system.controller.UserController.edit(org.springframework.ui.Model,java.lang.Long)
+2018-06-14 17:09:29 -Mapped "{[/v2/api-docs],methods=[GET],produces=[application/json || application/hal+json]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)
+2018-06-14 17:09:29 -Mapped "{[/swagger-resources/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2018-06-14 17:09:29 -Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2018-06-14 17:09:29 -Mapped "{[/swagger-resources/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2018-06-14 17:09:30 -Initializing ExecutorService  'messageBrokerTaskScheduler'
+2018-06-14 17:09:30 -Mapped URL path [/endpointChat/**] onto handler of type [class org.springframework.web.socket.sockjs.support.SockJsHttpRequestHandler]
+2018-06-14 17:09:30 -Initializing ExecutorService  'brokerChannelExecutor'
+2018-06-14 17:09:30 -Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@102519b7: startup date [Thu Jun 14 17:09:24 CST 2018]; root of context hierarchy
+2018-06-14 17:09:30 -Mapped URL path [/files/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-06-14 17:09:30 -Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-06-14 17:09:30 -Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-06-14 17:09:30 -Detected @ExceptionHandler methods in BDExceptionHandler
+2018-06-14 17:09:30 -Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-06-14 17:09:31 -Unable to start LiveReload server
+2018-06-14 17:09:31 -Registering beans for JMX exposure on startup
+2018-06-14 17:09:31 -Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-06-14 17:09:31 -Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2018-06-14 17:09:31 -Starting beans in phase 2147483647
+2018-06-14 17:09:31 -Context refreshed
+2018-06-14 17:09:31 -Found 1 custom documentation plugin(s)
+2018-06-14 17:09:31 -Scanning for api listing references
+2018-06-14 17:09:31 -Generating unique operation named: removeUsingPOST_1
+2018-06-14 17:09:31 -Generating unique operation named: addUsingGET_1
+2018-06-14 17:09:31 -Generating unique operation named: editUsingGET_1
+2018-06-14 17:09:31 -Generating unique operation named: listUsingGET_1
+2018-06-14 17:09:31 -Generating unique operation named: removeUsingPOST_2
+2018-06-14 17:09:31 -Generating unique operation named: removeUsingPOST_3
+2018-06-14 17:09:31 -Generating unique operation named: saveUsingPOST_1
+2018-06-14 17:09:31 -Generating unique operation named: updateUsingPOST_1
+2018-06-14 17:09:31 -Generating unique operation named: addUsingGET_2
+2018-06-14 17:09:31 -Generating unique operation named: editUsingGET_2
+2018-06-14 17:09:31 -Generating unique operation named: listUsingGET_2
+2018-06-14 17:09:31 -Generating unique operation named: removeUsingPOST_4
+2018-06-14 17:09:31 -Generating unique operation named: removeUsingPOST_5
+2018-06-14 17:09:31 -Generating unique operation named: saveUsingPOST_2
+2018-06-14 17:09:31 -Generating unique operation named: updateUsingGET_1
+2018-06-14 17:09:31 -Generating unique operation named: updateUsingHEAD_1
+2018-06-14 17:09:31 -Generating unique operation named: updateUsingPOST_2
+2018-06-14 17:09:32 -Generating unique operation named: updateUsingPUT_1
+2018-06-14 17:09:32 -Generating unique operation named: updateUsingPATCH_1
+2018-06-14 17:09:32 -Generating unique operation named: updateUsingDELETE_1
+2018-06-14 17:09:32 -Generating unique operation named: updateUsingOPTIONS_1
+2018-06-14 17:09:32 -Generating unique operation named: updateUsingTRACE_1
+2018-06-14 17:09:32 -Generating unique operation named: addUsingGET_3
+2018-06-14 17:09:32 -Generating unique operation named: editUsingGET_3
+2018-06-14 17:09:32 -Generating unique operation named: listUsingGET_3
+2018-06-14 17:09:32 -Generating unique operation named: removeUsingPOST_6
+2018-06-14 17:09:32 -Generating unique operation named: removeUsingPOST_7
+2018-06-14 17:09:32 -Generating unique operation named: saveUsingPOST_3
+2018-06-14 17:09:32 -Generating unique operation named: updateUsingGET_2
+2018-06-14 17:09:32 -Generating unique operation named: updateUsingHEAD_2
+2018-06-14 17:09:32 -Generating unique operation named: updateUsingPOST_3
+2018-06-14 17:09:32 -Generating unique operation named: updateUsingPUT_2
+2018-06-14 17:09:32 -Generating unique operation named: updateUsingPATCH_2
+2018-06-14 17:09:32 -Generating unique operation named: updateUsingDELETE_2
+2018-06-14 17:09:32 -Generating unique operation named: updateUsingOPTIONS_2
+2018-06-14 17:09:32 -Generating unique operation named: updateUsingTRACE_2
+2018-06-14 17:09:32 -Generating unique operation named: editUsingGET_4
+2018-06-14 17:09:32 -Generating unique operation named: listUsingGET_4
+2018-06-14 17:09:32 -Generating unique operation named: updateUsingPOST_4
+2018-06-14 17:09:32 -Generating unique operation named: addUsingGET_4
+2018-06-14 17:09:32 -Generating unique operation named: editUsingGET_5
+2018-06-14 17:09:32 -Generating unique operation named: listUsingGET_5
+2018-06-14 17:09:32 -Generating unique operation named: removeUsingPOST_8
+2018-06-14 17:09:32 -Generating unique operation named: removeUsingPOST_9
+2018-06-14 17:09:32 -Generating unique operation named: saveUsingPOST_4
+2018-06-14 17:09:32 -Generating unique operation named: updateUsingGET_3
+2018-06-14 17:09:32 -Generating unique operation named: updateUsingHEAD_3
+2018-06-14 17:09:32 -Generating unique operation named: updateUsingPOST_5
+2018-06-14 17:09:32 -Generating unique operation named: updateUsingPUT_3
+2018-06-14 17:09:32 -Generating unique operation named: updateUsingPATCH_3
+2018-06-14 17:09:32 -Generating unique operation named: updateUsingDELETE_3
+2018-06-14 17:09:32 -Generating unique operation named: updateUsingOPTIONS_3
+2018-06-14 17:09:32 -Generating unique operation named: updateUsingTRACE_3
+2018-06-14 17:09:32 -Generating unique operation named: addUsingGET_5
+2018-06-14 17:09:32 -Generating unique operation named: editUsingGET_6
+2018-06-14 17:09:32 -Generating unique operation named: listUsingGET_6
+2018-06-14 17:09:32 -Generating unique operation named: removeUsingPOST_10
+2018-06-14 17:09:32 -Generating unique operation named: removeUsingPOST_11
+2018-06-14 17:09:32 -Generating unique operation named: saveUsingPOST_5
+2018-06-14 17:09:32 -Generating unique operation named: updateUsingGET_4
+2018-06-14 17:09:32 -Generating unique operation named: updateUsingHEAD_4
+2018-06-14 17:09:32 -Generating unique operation named: updateUsingPOST_6
+2018-06-14 17:09:32 -Generating unique operation named: updateUsingPUT_4
+2018-06-14 17:09:32 -Generating unique operation named: updateUsingPATCH_4
+2018-06-14 17:09:32 -Generating unique operation named: updateUsingDELETE_4
+2018-06-14 17:09:32 -Generating unique operation named: updateUsingOPTIONS_4
+2018-06-14 17:09:32 -Generating unique operation named: updateUsingTRACE_4
+2018-06-14 17:09:32 -Generating unique operation named: addUsingGET_6
+2018-06-14 17:09:32 -Generating unique operation named: editUsingGET_7
+2018-06-14 17:09:32 -Generating unique operation named: infoUsingGET_1
+2018-06-14 17:09:32 -Generating unique operation named: infoUsingHEAD_1
+2018-06-14 17:09:32 -Generating unique operation named: infoUsingPOST_1
+2018-06-14 17:09:32 -Generating unique operation named: infoUsingPUT_1
+2018-06-14 17:09:32 -Generating unique operation named: infoUsingPATCH_1
+2018-06-14 17:09:32 -Generating unique operation named: infoUsingDELETE_1
+2018-06-14 17:09:32 -Generating unique operation named: infoUsingOPTIONS_1
+2018-06-14 17:09:32 -Generating unique operation named: infoUsingTRACE_1
+2018-06-14 17:09:32 -Generating unique operation named: listUsingGET_7
+2018-06-14 17:09:32 -Generating unique operation named: removeUsingPOST_12
+2018-06-14 17:09:32 -Generating unique operation named: removeUsingPOST_13
+2018-06-14 17:09:32 -Generating unique operation named: saveUsingPOST_6
+2018-06-14 17:09:32 -Generating unique operation named: updateUsingPOST_7
+2018-06-14 17:09:32 -Generating unique operation named: listUsingGET_8
+2018-06-14 17:09:32 -Generating unique operation named: removeUsingPOST_14
+2018-06-14 17:09:32 -Generating unique operation named: welcomeUsingGET_1
+2018-06-14 17:09:32 -Generating unique operation named: addUsingGET_7
+2018-06-14 17:09:32 -Generating unique operation named: editUsingGET_8
+2018-06-14 17:09:32 -Generating unique operation named: listUsingGET_9
+2018-06-14 17:09:32 -Generating unique operation named: removeUsingPOST_15
+2018-06-14 17:09:32 -Generating unique operation named: saveUsingPOST_7
+2018-06-14 17:09:32 -Generating unique operation named: treeUsingGET_1
+2018-06-14 17:09:32 -Generating unique operation named: treeUsingGET_2
+2018-06-14 17:09:32 -Generating unique operation named: updateUsingPOST_8
+2018-06-14 17:09:32 -Generating unique operation named: addUsingGET_8
+2018-06-14 17:09:32 -Generating unique operation named: editUsingGET_9
+2018-06-14 17:09:32 -Generating unique operation named: listUsingGET_10
+2018-06-14 17:09:32 -Generating unique operation named: removeUsingPOST_16
+2018-06-14 17:09:32 -Generating unique operation named: removeUsingPOST_17
+2018-06-14 17:09:32 -Generating unique operation named: saveUsingPOST_8
+2018-06-14 17:09:32 -Generating unique operation named: updateUsingGET_5
+2018-06-14 17:09:32 -Generating unique operation named: updateUsingHEAD_5
+2018-06-14 17:09:32 -Generating unique operation named: updateUsingPOST_9
+2018-06-14 17:09:32 -Generating unique operation named: updateUsingPUT_5
+2018-06-14 17:09:32 -Generating unique operation named: updateUsingPATCH_5
+2018-06-14 17:09:32 -Generating unique operation named: updateUsingDELETE_5
+2018-06-14 17:09:32 -Generating unique operation named: updateUsingOPTIONS_5
+2018-06-14 17:09:32 -Generating unique operation named: updateUsingTRACE_5
+2018-06-14 17:09:32 -Generating unique operation named: addUsingGET_9
+2018-06-14 17:09:32 -Generating unique operation named: batchRemoveUsingPOST_1
+2018-06-14 17:09:32 -Generating unique operation named: editUsingGET_10
+2018-06-14 17:09:32 -Generating unique operation named: listUsingGET_11
+2018-06-14 17:09:32 -Generating unique operation named: saveUsingPOST_9
+2018-06-14 17:09:32 -Generating unique operation named: saveUsingPOST_10
+2018-06-14 17:09:32 -Generating unique operation named: updateUsingPOST_10
+2018-06-14 17:09:32 -Generating unique operation named: listUsingGET_12
+2018-06-14 17:09:32 -Generating unique operation named: addUsingGET_10
+2018-06-14 17:09:32 -Generating unique operation named: batchRemoveUsingPOST_2
+2018-06-14 17:09:32 -Generating unique operation named: editUsingGET_11
+2018-06-14 17:09:32 -Generating unique operation named: listUsingGET_13
+2018-06-14 17:09:32 -Generating unique operation named: removeUsingPOST_18
+2018-06-14 17:09:32 -Generating unique operation named: saveUsingPOST_11
+2018-06-14 17:09:32 -Generating unique operation named: treeUsingGET_3
+2018-06-14 17:09:32 -Generating unique operation named: treeViewUsingGET_1
+2018-06-14 17:09:32 -Generating unique operation named: updateUsingPOST_11
+2018-06-14 17:09:32 -Starting Quartz Scheduler now
+2018-06-14 17:09:32 -Scheduler schedulerFactoryBean_$_NON_CLUSTERED started.
+2018-06-14 17:09:32 -Starting...
+2018-06-14 17:09:32 -BrokerAvailabilityEvent[available=true, SimpleBrokerMessageHandler [DefaultSubscriptionRegistry[cache[0 destination(s)], registry[0 sessions]]]]
+2018-06-14 17:09:32 -Started.
+2018-06-14 17:09:32 -Initializing ProtocolHandler ["http-nio-80"]
+2018-06-14 17:09:32 -Starting ProtocolHandler ["http-nio-80"]
+2018-06-14 17:09:32 -Failed to start end point associated with ProtocolHandler ["http-nio-80"]
+java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Unknown Source)
+	at sun.nio.ch.Net.bind(Unknown Source)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(Unknown Source)
+	at sun.nio.ch.ServerSocketAdaptor.bind(Unknown Source)
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:210)
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:990)
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:635)
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1022)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:225)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.addPreviouslyRemovedConnectors(TomcatEmbeddedServletContainer.java:250)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.start(TomcatEmbeddedServletContainer.java:193)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.startEmbeddedServletContainer(EmbeddedWebApplicationContext.java:297)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.finishRefresh(EmbeddedWebApplicationContext.java:145)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:546)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107)
+	at com.jghmall.JghmallApplication.main(JghmallApplication.java:18)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+2018-06-14 17:09:32 -Failed to start connector [Connector[HTTP/1.1-80]]
+org.apache.catalina.LifecycleException: Failed to start component [Connector[HTTP/1.1-80]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:167)
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:225)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.addPreviouslyRemovedConnectors(TomcatEmbeddedServletContainer.java:250)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.start(TomcatEmbeddedServletContainer.java:193)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.startEmbeddedServletContainer(EmbeddedWebApplicationContext.java:297)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.finishRefresh(EmbeddedWebApplicationContext.java:145)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:546)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107)
+	at com.jghmall.JghmallApplication.main(JghmallApplication.java:18)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.apache.catalina.LifecycleException: service.getName(): "Tomcat";  Protocol handler start failed
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1031)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	... 18 common frames omitted
+Caused by: java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Unknown Source)
+	at sun.nio.ch.Net.bind(Unknown Source)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(Unknown Source)
+	at sun.nio.ch.ServerSocketAdaptor.bind(Unknown Source)
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:210)
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:990)
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:635)
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1022)
+	... 19 common frames omitted
+2018-06-14 17:09:32 -Pausing ProtocolHandler ["http-nio-80"]
+2018-06-14 17:09:32 -Stopping service [Tomcat]
+2018-06-14 17:09:32 -The stop() method was called on component [StandardServer[-1]] after stop() had already been called. The second call will be ignored.
+2018-06-14 17:09:32 -Stopping ProtocolHandler ["http-nio-80"]
+2018-06-14 17:09:32 -Destroying ProtocolHandler ["http-nio-80"]
+2018-06-14 17:09:32 -
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2018-06-14 17:09:32 -
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The Tomcat connector configured to listen on port 80 failed to start. The port may already be in use or the connector may be misconfigured.
+
+Action:
+
+Verify the connector's configuration, identify and stop any process that's listening on port 80, or configure this application to listen on another port.
+
+2018-06-14 17:09:32 -Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@102519b7: startup date [Thu Jun 14 17:09:24 CST 2018]; root of context hierarchy
+2018-06-14 17:09:32 -Stopping beans in phase 2147483647
+2018-06-14 17:09:32 -Scheduler schedulerFactoryBean_$_NON_CLUSTERED paused.
+2018-06-14 17:09:32 -Stopping...
+2018-06-14 17:09:32 -BrokerAvailabilityEvent[available=false, SimpleBrokerMessageHandler [DefaultSubscriptionRegistry[cache[0 destination(s)], registry[0 sessions]]]]
+2018-06-14 17:09:32 -Stopped.
+2018-06-14 17:09:32 -Unregistering JMX-exposed beans on shutdown
+2018-06-14 17:09:32 -Unregistering JMX-exposed beans
+2018-06-14 17:09:32 -Shutting down ExecutorService 'brokerChannelExecutor'
+2018-06-14 17:09:32 -Shutting down ExecutorService 'messageBrokerTaskScheduler'
+2018-06-14 17:09:32 -Shutting down ExecutorService 'clientOutboundChannelExecutor'
+2018-06-14 17:09:32 -Shutting down ExecutorService 'clientInboundChannelExecutor'
+2018-06-14 17:09:32 -Scheduler schedulerFactoryBean_$_NON_CLUSTERED shutting down.
+2018-06-14 17:09:32 -Scheduler schedulerFactoryBean_$_NON_CLUSTERED paused.
+2018-06-14 17:09:32 -Scheduler schedulerFactoryBean_$_NON_CLUSTERED shutdown complete.
+2018-06-14 17:09:32 -Shutting down Quartz Scheduler
+2018-06-14 17:09:32 -{dataSource-1} closed
+2018-06-14 17:09:39 -请求地址 : http://localhost/index
+2018-06-14 17:09:39 -HTTP METHOD : GET
+2018-06-14 17:09:39 -CLASS_METHOD : com.jghmall.system.controller.LoginController.index
+2018-06-14 17:09:39 -参数 : [{}]
+2018-06-14 17:09:39 -耗时 : 26
+2018-06-14 17:09:39 -请求地址 : http://localhost/main
+2018-06-14 17:09:39 -HTTP METHOD : GET
+2018-06-14 17:09:39 -CLASS_METHOD : com.jghmall.system.controller.LoginController.main
+2018-06-14 17:09:39 -参数 : []
+2018-06-14 17:09:39 -耗时 : 1
+2018-06-14 17:09:39 -请求地址 : http://localhost/oa/notify/message
+2018-06-14 17:09:39 -HTTP METHOD : GET
+2018-06-14 17:09:39 -CLASS_METHOD : com.jghmall.oa.controller.NotifyController.message
+2018-06-14 17:09:39 -参数 : []
+2018-06-14 17:09:39 -耗时 : 5
+2018-06-14 17:09:39 -请求地址 : http://localhost/main
+2018-06-14 17:09:39 -HTTP METHOD : GET
+2018-06-14 17:09:39 -CLASS_METHOD : com.jghmall.system.controller.LoginController.main
+2018-06-14 17:09:39 -参数 : []
+2018-06-14 17:09:39 -耗时 : 0
+2018-06-14 17:09:41 -请求地址 : http://localhost/index
+2018-06-14 17:09:41 -HTTP METHOD : GET
+2018-06-14 17:09:41 -CLASS_METHOD : com.jghmall.system.controller.LoginController.index
+2018-06-14 17:09:41 -参数 : [{}]
+2018-06-14 17:09:41 -耗时 : 9
+2018-06-14 17:09:41 -请求地址 : http://localhost/main
+2018-06-14 17:09:41 -HTTP METHOD : GET
+2018-06-14 17:09:41 -CLASS_METHOD : com.jghmall.system.controller.LoginController.main
+2018-06-14 17:09:41 -参数 : []
+2018-06-14 17:09:41 -耗时 : 1
+2018-06-14 17:09:41 -请求地址 : http://localhost/oa/notify/message
+2018-06-14 17:09:41 -HTTP METHOD : GET
+2018-06-14 17:09:41 -CLASS_METHOD : com.jghmall.oa.controller.NotifyController.message
+2018-06-14 17:09:41 -参数 : []
+2018-06-14 17:09:41 -耗时 : 4
+2018-06-14 17:09:41 -请求地址 : http://localhost/main
+2018-06-14 17:09:41 -HTTP METHOD : GET
+2018-06-14 17:09:41 -CLASS_METHOD : com.jghmall.system.controller.LoginController.main
+2018-06-14 17:09:41 -参数 : []
+2018-06-14 17:09:41 -耗时 : 1
+2018-06-14 17:09:46 -Application shutdown requested.
+2018-06-14 17:09:46 -Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5cfc24e3: startup date [Thu Jun 14 16:44:17 CST 2018]; root of context hierarchy
+2018-06-14 17:09:46 -Stopping beans in phase 2147483647
+2018-06-14 17:09:46 -Scheduler schedulerFactoryBean_$_NON_CLUSTERED paused.
+2018-06-14 17:09:46 -Stopping...
+2018-06-14 17:09:46 -BrokerAvailabilityEvent[available=false, SimpleBrokerMessageHandler [DefaultSubscriptionRegistry[cache[0 destination(s)], registry[0 sessions]]]]
+2018-06-14 17:09:46 -Stopped.
+2018-06-14 17:09:46 -Unregistering JMX-exposed beans on shutdown
+2018-06-14 17:09:46 -Unregistering JMX-exposed beans
+2018-06-14 17:09:46 -Shutting down ExecutorService 'brokerChannelExecutor'
+2018-06-14 17:09:46 -Shutting down ExecutorService 'messageBrokerTaskScheduler'
+2018-06-14 17:09:46 -Shutting down ExecutorService 'clientOutboundChannelExecutor'
+2018-06-14 17:09:46 -Shutting down ExecutorService 'clientInboundChannelExecutor'
+2018-06-14 17:09:46 -Scheduler schedulerFactoryBean_$_NON_CLUSTERED shutting down.
+2018-06-14 17:09:46 -Scheduler schedulerFactoryBean_$_NON_CLUSTERED paused.
+2018-06-14 17:09:46 -Scheduler schedulerFactoryBean_$_NON_CLUSTERED shutdown complete.
+2018-06-14 17:09:46 -Shutting down Quartz Scheduler
+2018-06-14 17:09:46 -{dataSource-1} closed
+2018-06-14 17:09:46 -Disabled session validation scheduler.
