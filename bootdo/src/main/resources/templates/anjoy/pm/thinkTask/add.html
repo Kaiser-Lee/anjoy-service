@@ -17,7 +17,7 @@
 								</div>
 								
 								<label class="col-sm-1 control-label">执行人：</label>
-								<input type="hidden" id="userId">
+								<input type="hidden" id="userId" name="userId">
 								<div class="col-sm-5">
 									<input id="userName" name="userName" class="form-control" type="text" 
 									style="cursor: pointer;" readonly="readonly"  placeholder="任务执行人" onclick="openUser()">
@@ -27,7 +27,7 @@
 							<div class="form-group">	
 								<label class="col-sm-1 control-label">任务等级：</label>
 								<div class="col-sm-5">
-									<input id="taskLevel" name="taskLevel" class="form-control" type="hidden">
+									<input id="taskLevel" name="taskLevel" type="hidden">
 									<select class="form-control m-b" id="level" onchange="changeLevel()">
 		                               <option value="A">A</option>
 		                               <option value="B">B</option>
@@ -61,7 +61,7 @@
 									class="col-sm-1 control-label">任务描述：</label>
 								<div class="col-sm-11">
 									<div class="ibox-content no-padding">
-										<div id="taskDesc" class="summernote"></div>
+										<div id="Desc" class="summernote"></div>
 									</div>
 								</div>
 							</div>

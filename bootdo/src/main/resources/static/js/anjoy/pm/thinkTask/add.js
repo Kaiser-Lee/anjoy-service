@@ -24,10 +24,12 @@ $(function () {
 
 $.validator.setDefaults({
 	submitHandler : function() {
-		//save();
+		save();
 	}
 });
 function save() {
+	var content_sn = $("#Desc").summernote('code');
+	$("#taskDesc").val(content_sn);
 	$.ajax({
 		cache : true,
 		type : "POST",
@@ -80,4 +82,7 @@ function openUser(){
 function loadUser( userId,userName){
 	$("#userId").val(userId);
 	$("#userName").val(userName);
+}
+function changeLevel(){
+	$("#taskLevel").val($("#level").val());
 }
