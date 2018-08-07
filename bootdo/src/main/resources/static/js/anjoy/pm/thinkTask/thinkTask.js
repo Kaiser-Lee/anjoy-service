@@ -21,7 +21,7 @@ function load() {
 						// queryParamsType : "limit",
 						// //设置为limit则会发送符合RESTFull格式的参数
 						singleSelect : false, // 设置为true将禁止多选
-						// contentType : "application/x-www-form-urlencoded",
+						contentType : "application/x-www-form-urlencoded",
 						// //发送到服务器的数据编码类型
 						pageSize : 10, // 如果设置了分页，每页数据条数
 						pageNumber : 1, // 如果设置了分布，首页页码
@@ -31,10 +31,9 @@ function load() {
 						queryParams : function(params) {
 							return {
 								//说明：传入后台的参数包括offset开始索引，limit步长，sort排序列，order：desc或者,以及所有列的键值对
-								limit: params.limit,
-								offset:params.offset
-					           // name:$('#searchName').val(),
-					           // username:$('#searchName').val()
+								limit:params.limit,
+								offset:params.offset,
+								keyword:$('#searchName').val()
 							};
 						},
 						// //请求服务器数据时，你可以通过重写参数的方式添加一些额外的参数，例如 toolbar 中的参数 如果
@@ -44,108 +43,53 @@ function load() {
 						// sortOrder.
 						// 返回false将会终止请求
 						columns : [
-								{
+								/*{
 									checkbox : true
 								},
 																{
 									field : 'id', 
 									title : '' 
-								},
-																{
-									field : 'taskPid', 
-									title : '' 
-								},
+								},*/
 																{
 									field : 'taskName', 
-									title : '' 
+									title : '任务标题' 
 								},
 																{
 									field : 'taskDesc', 
-									title : '' 
+									title : '任务描述' 
 								},
 																{
 									field : 'taskLevel', 
-									title : '' 
+									title : '任务等级' 
 								},
 																{
 									field : 'taskBeg', 
-									title : '' 
+									title : '开始时间' 
 								},
 																{
 									field : 'taskEnd', 
-									title : '' 
+									title : '结束时间' 
 								},
 																{
 									field : 'taskState', 
-									title : '0：进行中 1：已完成 3：代码审查 4:代码部署中' 
-								},
-																{
-									field : 'taskDelay', 
-									title : '' 
-								},
-																{
-									field : 'taskUdc', 
-									title : '' 
-								},
-																{
-									field : 'taskDeleted', 
-									title : '' 
-								},
-																{
-									field : 'taskHours', 
-									title : '任务工时' 
+									//title : '0：进行中 1：已完成 3：代码审查 4:代码部署中' 
+									title : '状态'
 								},
 																{
 									field : 'createrId', 
-									title : '' 
+									title : '任务创建人' 
 								},
 																{
 									field : 'createTime', 
-									title : '' 
+									title : '创建时间' 
 								},
 																{
 									field : 'taskTime', 
-									title : '' 
-								},
-																{
-									field : 'delayTime', 
-									title : '' 
-								},
-																{
-									field : 'lableId', 
-									title : '' 
-								},
-																{
-									field : 'msggroupId', 
-									title : '' 
-								},
-																{
-									field : 'taskBiFlag', 
-									title : '' 
-								},
-																{
-									field : 'taskBiFlagType', 
-									title : '' 
-								},
-																{
-									field : 'tmpImport', 
-									title : '' 
-								},
-																{
-									field : 'backState', 
-									title : '1 申请退回' 
+									title : '任务完成时间' 
 								},
 																{
 									field : 'ispm', 
-									title : '是否pm提单' 
-								},
-																{
-									field : 'filenames', 
-									title : '' 
-								},
-																{
-									field : 'isdeploy', 
-									title : '是否需要部署代码' 
+									title : '是否外部提单' 
 								},
 																{
 									title : '操作',
@@ -175,7 +119,7 @@ function add() {
 		title : '增加',
 		maxmin : true,
 		shadeClose : false, // 点击遮罩关闭层
-		area : [ '800px', '520px' ],
+		area : [ '1000px', '620px' ],
 		content : prefix + '/add' // iframe的url
 	});
 }

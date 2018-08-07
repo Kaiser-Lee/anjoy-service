@@ -274,20 +274,24 @@ $(function () {
 
     $('.J_menuTabs').on('click', '.J_menuTab', activeTab);
 
-    //刷新iframe
+  //刷新iframe
     function refreshTab() {
         var target = $('.J_iframe[data-id="' + $(this).data('id') + '"]');
         var url = target.attr('src');
-//        //显示loading提示
-//        var loading = layer.load();
-//        target.attr('src', url).load(function () {
-//            //关闭loading提示
-//            layer.close(loading);
-//        });
+        //显示loading提示
+        var loading = layer.load();
+        target.attr('src', url).load(function () {
+            //关闭loading提示
+            layer.close(loading);
+        });
     }
 
     $('.J_menuTabs').on('dblclick', '.J_menuTab', refreshTab);
-
+  //刷新页面
+    $('.J_tabRefresh').on('click', function(){
+    	var active = $('.J_menuTab.active')[0];
+    	refreshTab.call(active);
+    });
     // 左移按扭
     $('.J_tabLeft').on('click', scrollTabLeft);
 

@@ -241,4 +241,14 @@ public class UserController extends BaseController {
 			return R.error("更新图像失败！");
 		}
 	}
+	
+	@ResponseBody
+	@GetMapping("/findUser")
+	R findUser(Long id) {
+		UserDO user = userService.get(id);
+		if(user!=null) {
+			return R.ok().put("user", user);
+		}
+		return R.error();
+	}
 }

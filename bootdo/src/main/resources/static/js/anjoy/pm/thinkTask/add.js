@@ -1,10 +1,30 @@
 $().ready(function() {
+	$('.summernote').summernote({
+		height : '220px',
+		lang : 'zh-CN',
+		callbacks: {
+            onImageUpload: function(files, editor, $editable) {
+                sendFile(files);
+            }
+        }
+	});
 	validateRule();
+});
+
+$(function () {
+    laydate({
+        elem : '#taskBeg',
+        min: Date()
+    });
+    laydate({
+        elem : '#taskEnd',
+        min: Date()
+    });
 });
 
 $.validator.setDefaults({
 	submitHandler : function() {
-		save();
+		//save();
 	}
 });
 function save() {
@@ -46,4 +66,18 @@ function validateRule() {
 			}
 		}
 	})
+}
+function openUser(){
+	layer.open({
+		type : 2,
+		title : '选择执行人',
+		maxmin : true,
+		shadeClose : false, // 点击遮罩关闭层
+		area : [ '90%', '85%' ],
+		content : '/pm/thinkTask/findExecutor/' // iframe的url
+	});
+}
+function loadUser( userId,userName){
+	$("#userId").val(userId);
+	$("#userName").val(userName);
 }

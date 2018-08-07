@@ -38,7 +38,7 @@ public class ThinkTaskController {
 	@GetMapping()
 	@RequiresPermissions("pm:thinkTask:thinkTask")
 	String ThinkTask(){
-	    return "pm/thinkTask/thinkTask";
+	    return "anjoy/pm/thinkTask/thinkTask";
 	}
 	
 	@ResponseBody
@@ -56,7 +56,7 @@ public class ThinkTaskController {
 	@GetMapping("/add")
 	@RequiresPermissions("pm:thinkTask:add")
 	String add(){
-	    return "pm/thinkTask/add";
+	    return "anjoy/pm/thinkTask/add";
 	}
 
 	@GetMapping("/edit/{id}")
@@ -64,7 +64,7 @@ public class ThinkTaskController {
 	String edit(@PathVariable("id") Integer id,Model model){
 		ThinkTaskDO thinkTask = thinkTaskService.get(id);
 		model.addAttribute("thinkTask", thinkTask);
-	    return "pm/thinkTask/edit";
+	    return "anjoy/pm/thinkTask/edit";
 	}
 	
 	/**
@@ -114,4 +114,8 @@ public class ThinkTaskController {
 		return R.ok();
 	}
 	
+	@GetMapping("/findExecutor")
+	String findExecutor() {
+		return "anjoy/pm/thinkTask/executor";
+	}
 }
