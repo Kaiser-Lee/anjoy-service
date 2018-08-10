@@ -7,41 +7,46 @@
 		select `id`,`task_pid`,`task_name`,`task_desc`,`task_level`,`task_beg`,`task_end`,`task_state`,`task_delay`,`task_udc`,`task_deleted`,`task_hours`,`creater_id`,`create_time`,`task_time`,`delay_time`,`lable_id`,`msggroup_id`,`task_bi_flag`,`task_bi_flag_type`,`tmp_import`,`back_state`,`ispm`,`filenames`,`isdeploy` from think_task where id = #{value}
 	</select>
 
-	<select id="list" resultType="com.anjoy.pm.task.domain.ThinkTaskDO">
-		select `id`,`task_pid`,`task_name`,`task_desc`,`task_level`,`task_beg`,`task_end`,`task_state`,`task_delay`,`task_udc`,`task_deleted`,`task_hours`,`creater_id`,`create_time`,`task_time`,`delay_time`,`lable_id`,`msggroup_id`,`task_bi_flag`,`task_bi_flag_type`,`tmp_import`,`back_state`,`ispm`,`filenames`,`isdeploy` from think_task
+	<select id="list" resultType="hashMap">
+		select a.`id`,a.`task_pid`,a.`task_name`,a.`task_desc`,a.`task_level`,a.`task_beg`,a.`task_end`,a.`task_state`,a.`task_delay`,a.`task_udc`,a.`task_deleted`,a.`task_hours`,a.`creater_id`,a.`create_time`,a.`task_time`,a.`delay_time`,a.`lable_id`,a.`msggroup_id`,a.`task_bi_flag`,a.`task_bi_flag_type`,a.`tmp_import`,a.`back_state`,a.`ispm`,a.`filenames`,a.`isdeploy` 
+		,b.name,(select d.name from sys_user d where d.user_id=c.user_id) as holder_name
+		from think_task a
+        left join sys_user b on a.creater_id = b.user_id
+        left join think_task_user c on a.id = c.task_id
         <where>  
-		  		  <if test="id != null and id != ''"> and id = #{id} </if>
-		  		  <if test="taskPid != null and taskPid != ''"> and task_pid = #{taskPid} </if>
-		  		  <if test="taskName != null and taskName != ''"> and task_name = #{taskName} </if>
-		  		  <if test="taskDesc != null and taskDesc != ''"> and task_desc = #{taskDesc} </if>
-		  		  <if test="taskLevel != null and taskLevel != ''"> and task_level = #{taskLevel} </if>
-		  		  <if test="taskBeg != null and taskBeg != ''"> and task_beg = #{taskBeg} </if>
-		  		  <if test="taskEnd != null and taskEnd != ''"> and task_end = #{taskEnd} </if>
-		  		  <if test="taskState != null and taskState != ''"> and task_state = #{taskState} </if>
-		  		  <if test="taskDelay != null and taskDelay != ''"> and task_delay = #{taskDelay} </if>
-		  		  <if test="taskUdc != null and taskUdc != ''"> and task_udc = #{taskUdc} </if>
-		  		  <if test="taskDeleted != null and taskDeleted != ''"> and task_deleted = #{taskDeleted} </if>
-		  		  <if test="taskHours != null and taskHours != ''"> and task_hours = #{taskHours} </if>
-		  		  <if test="createrId != null and createrId != ''"> and creater_id = #{createrId} </if>
-		  		  <if test="createTime != null and createTime != ''"> and create_time = #{createTime} </if>
-		  		  <if test="taskTime != null and taskTime != ''"> and task_time = #{taskTime} </if>
-		  		  <if test="delayTime != null and delayTime != ''"> and delay_time = #{delayTime} </if>
-		  		  <if test="lableId != null and lableId != ''"> and lable_id = #{lableId} </if>
-		  		  <if test="msggroupId != null and msggroupId != ''"> and msggroup_id = #{msggroupId} </if>
-		  		  <if test="taskBiFlag != null and taskBiFlag != ''"> and task_bi_flag = #{taskBiFlag} </if>
-		  		  <if test="taskBiFlagType != null and taskBiFlagType != ''"> and task_bi_flag_type = #{taskBiFlagType} </if>
-		  		  <if test="tmpImport != null and tmpImport != ''"> and tmp_import = #{tmpImport} </if>
-		  		  <if test="backState != null and backState != ''"> and back_state = #{backState} </if>
-		  		  <if test="ispm != null and ispm != ''"> and ispm = #{ispm} </if>
-		  		  <if test="filenames != null and filenames != ''"> and filenames = #{filenames} </if>
-		  		  <if test="isdeploy != null and isdeploy != ''"> and isdeploy = #{isdeploy} </if>
+		  		  <if test="id != null and id != ''"> and a.id = #{id} </if>
+		  		  <if test="taskPid != null and taskPid != ''"> and a.task_pid = #{taskPid} </if>
+		  		  <if test="taskName != null and taskName != ''"> and a.task_name = #{taskName} </if>
+		  		  <if test="taskDesc != null and taskDesc != ''"> and a.task_desc = #{taskDesc} </if>
+		  		  <if test="taskLevel != null and taskLevel != ''"> and a.task_level = #{taskLevel} </if>
+		  		  <if test="taskBeg != null and taskBeg != ''"> and a.task_beg = #{taskBeg} </if>
+		  		  <if test="taskEnd != null and taskEnd != ''"> and a.task_end = #{taskEnd} </if>
+		  		  <if test="taskState != null and taskState != ''"> and a.task_state = #{taskState} </if>
+		  		  <if test="taskDelay != null and taskDelay != ''"> and a.task_delay = #{taskDelay} </if>
+		  		  <if test="taskUdc != null and taskUdc != ''"> and a.task_udc = #{taskUdc} </if>
+		  		  <if test="taskDeleted != null and taskDeleted != ''"> and a.task_deleted = #{taskDeleted} </if>
+		  		  <if test="taskHours != null and taskHours != ''"> and a.task_hours = #{taskHours} </if>
+		  		  <if test="createrId != null and createrId != ''"> and a.creater_id = #{createrId} </if>
+		  		  <if test="createTime != null and createTime != ''"> and a.create_time = #{createTime} </if>
+		  		  <if test="taskTime != null and taskTime != ''"> and a.task_time = #{taskTime} </if>
+		  		  <if test="delayTime != null and delayTime != ''"> and a.delay_time = #{delayTime} </if>
+		  		  <if test="lableId != null and lableId != ''"> and a.lable_id = #{lableId} </if>
+		  		  <if test="msggroupId != null and msggroupId != ''"> and a.msggroup_id = #{msggroupId} </if>
+		  		  <if test="taskBiFlag != null and taskBiFlag != ''"> and a.task_bi_flag = #{taskBiFlag} </if>
+		  		  <if test="taskBiFlagType != null and taskBiFlagType != ''"> and a.task_bi_flag_type = #{taskBiFlagType} </if>
+		  		  <if test="tmpImport != null and tmpImport != ''"> and a.tmp_import = #{tmpImport} </if>
+		  		  <if test="backState != null and backState != ''"> and a.back_state = #{backState} </if>
+		  		  <if test="ispm != null and ispm != ''"> and a.ispm = #{ispm} </if>
+		  		  <if test="filenames != null and filenames != ''"> and a.filenames = #{filenames} </if>
+		  		  <if test="isdeploy != null and isdeploy != ''"> and a.isdeploy = #{isdeploy} </if>
+		  		  <if test="taskUserId != null and taskUserId != ''"> and c.user_id = #{taskUserId} </if>
 		  		</where>
         <choose>
             <when test="sort != null and sort.trim() != ''">
                 order by ${sort} ${order}
             </when>
 			<otherwise>
-                order by id desc
+                order by a.create_time desc
 			</otherwise>
         </choose>
 		<if test="offset != null and limit != null">
@@ -50,33 +55,35 @@
 	</select>
 	
  	<select id="count" resultType="int">
-		select count(*) from think_task
+		select count(*) from think_task a
+		left join think_task_user c on a.id = c.task_id
 		 <where>  
-		  		  <if test="id != null and id != ''"> and id = #{id} </if>
-		  		  <if test="taskPid != null and taskPid != ''"> and task_pid = #{taskPid} </if>
-		  		  <if test="taskName != null and taskName != ''"> and task_name = #{taskName} </if>
-		  		  <if test="taskDesc != null and taskDesc != ''"> and task_desc = #{taskDesc} </if>
-		  		  <if test="taskLevel != null and taskLevel != ''"> and task_level = #{taskLevel} </if>
-		  		  <if test="taskBeg != null and taskBeg != ''"> and task_beg = #{taskBeg} </if>
-		  		  <if test="taskEnd != null and taskEnd != ''"> and task_end = #{taskEnd} </if>
-		  		  <if test="taskState != null and taskState != ''"> and task_state = #{taskState} </if>
-		  		  <if test="taskDelay != null and taskDelay != ''"> and task_delay = #{taskDelay} </if>
-		  		  <if test="taskUdc != null and taskUdc != ''"> and task_udc = #{taskUdc} </if>
-		  		  <if test="taskDeleted != null and taskDeleted != ''"> and task_deleted = #{taskDeleted} </if>
-		  		  <if test="taskHours != null and taskHours != ''"> and task_hours = #{taskHours} </if>
-		  		  <if test="createrId != null and createrId != ''"> and creater_id = #{createrId} </if>
-		  		  <if test="createTime != null and createTime != ''"> and create_time = #{createTime} </if>
-		  		  <if test="taskTime != null and taskTime != ''"> and task_time = #{taskTime} </if>
-		  		  <if test="delayTime != null and delayTime != ''"> and delay_time = #{delayTime} </if>
-		  		  <if test="lableId != null and lableId != ''"> and lable_id = #{lableId} </if>
-		  		  <if test="msggroupId != null and msggroupId != ''"> and msggroup_id = #{msggroupId} </if>
-		  		  <if test="taskBiFlag != null and taskBiFlag != ''"> and task_bi_flag = #{taskBiFlag} </if>
-		  		  <if test="taskBiFlagType != null and taskBiFlagType != ''"> and task_bi_flag_type = #{taskBiFlagType} </if>
-		  		  <if test="tmpImport != null and tmpImport != ''"> and tmp_import = #{tmpImport} </if>
-		  		  <if test="backState != null and backState != ''"> and back_state = #{backState} </if>
-		  		  <if test="ispm != null and ispm != ''"> and ispm = #{ispm} </if>
-		  		  <if test="filenames != null and filenames != ''"> and filenames = #{filenames} </if>
-		  		  <if test="isdeploy != null and isdeploy != ''"> and isdeploy = #{isdeploy} </if>
+		  		  <if test="id != null and id != ''"> and a.id = #{id} </if>
+		  		  <if test="taskPid != null and taskPid != ''"> and a.task_pid = #{taskPid} </if>
+		  		  <if test="taskName != null and taskName != ''"> and a.task_name = #{taskName} </if>
+		  		  <if test="taskDesc != null and taskDesc != ''"> and a.task_desc = #{taskDesc} </if>
+		  		  <if test="taskLevel != null and taskLevel != ''"> and a.task_level = #{taskLevel} </if>
+		  		  <if test="taskBeg != null and taskBeg != ''"> and a.task_beg = #{taskBeg} </if>
+		  		  <if test="taskEnd != null and taskEnd != ''"> and a.task_end = #{taskEnd} </if>
+		  		  <if test="taskState != null and taskState != ''"> and a.task_state = #{taskState} </if>
+		  		  <if test="taskDelay != null and taskDelay != ''"> and a.task_delay = #{taskDelay} </if>
+		  		  <if test="taskUdc != null and taskUdc != ''"> and a.task_udc = #{taskUdc} </if>
+		  		  <if test="taskDeleted != null and taskDeleted != ''"> and a.task_deleted = #{taskDeleted} </if>
+		  		  <if test="taskHours != null and taskHours != ''"> and a.task_hours = #{taskHours} </if>
+		  		  <if test="createrId != null and createrId != ''"> and a.creater_id = #{createrId} </if>
+		  		  <if test="createTime != null and createTime != ''"> and a.create_time = #{createTime} </if>
+		  		  <if test="taskTime != null and taskTime != ''"> and a.task_time = #{taskTime} </if>
+		  		  <if test="delayTime != null and delayTime != ''"> and a.delay_time = #{delayTime} </if>
+		  		  <if test="lableId != null and lableId != ''"> and a.lable_id = #{lableId} </if>
+		  		  <if test="msggroupId != null and msggroupId != ''"> and a.msggroup_id = #{msggroupId} </if>
+		  		  <if test="taskBiFlag != null and taskBiFlag != ''"> and a.task_bi_flag = #{taskBiFlag} </if>
+		  		  <if test="taskBiFlagType != null and taskBiFlagType != ''"> and a.task_bi_flag_type = #{taskBiFlagType} </if>
+		  		  <if test="tmpImport != null and tmpImport != ''"> and a.tmp_import = #{tmpImport} </if>
+		  		  <if test="backState != null and backState != ''"> and a.back_state = #{backState} </if>
+		  		  <if test="ispm != null and ispm != ''"> and a.ispm = #{ispm} </if>
+		  		  <if test="filenames != null and filenames != ''"> and a.filenames = #{filenames} </if>
+		  		  <if test="isdeploy != null and isdeploy != ''"> and a.isdeploy = #{isdeploy} </if>
+		  		  <if test="taskUserId != null and taskUserId != ''"> and c.user_id = #{taskUserId} </if>
 		  		</where>
 	</select>
 	 

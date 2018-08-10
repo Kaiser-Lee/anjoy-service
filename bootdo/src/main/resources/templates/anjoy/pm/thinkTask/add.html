@@ -28,7 +28,7 @@
 							<div class="form-group">	
 								<label class="col-sm-1 control-label">任务等级：</label>
 								<div class="col-sm-5">
-									<input id="taskLevel" name="taskLevel" type="hidden">
+									<input id="taskLevel" name="taskLevel" type="hidden" value="A">
 									<select class="form-control m-b" id="level" onchange="changeLevel()">
 		                               <option value="A">A</option>
 		                               <option value="B">B</option>
@@ -37,9 +37,13 @@
 								</div>
 								
 								<label class="col-sm-1 control-label">上级任务：</label>
-								<input type="hidden" id="taskPid">
 								<div class="col-sm-5">
-									<input id="taskDesc" name="taskDesc" class="form-control" type="text">
+									<input type="hidden" id="taskPid" name="taskPid">
+									<!-- <input id="supTask" name="supTask" class="form-control" type="text"> -->
+									<select data-placeholder="选择上级任务" class="form-control chosen-select"
+										tabindex="2" id="supTask">
+										<option value="">选择上级任务</option>
+									</select>
 								</div>
 							</div>
 							
@@ -80,7 +84,7 @@
 									class="btn btn-primary waves-effect waves-light" type="submit">提交</button>
 								<button type="button"
 									class="btn btn-warning waves-effect waves-light"
-									onclick="save(0)">存为草稿</button>
+									>存为草稿</button>
 							</div>
 							<!-- <div class="form-group">
 								<div class="col-sm-8 col-sm-offset-3">

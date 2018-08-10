@@ -16,6 +16,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
+import com.anjoy.pm.message.service.MessageService;
 import com.anjoy.pm.task.domain.ThinkTaskDO;
 import com.anjoy.pm.task.service.ThinkTaskService;
 import com.anjoy.pm.taskUser.domain.ThinkTaskUserDO;
@@ -24,6 +25,8 @@ import com.base.common.controller.BaseController;
 import com.base.common.utils.PageUtils;
 import com.base.common.utils.Query;
 import com.base.common.utils.R;
+import com.base.system.domain.UserDO;
+import com.base.system.service.UserService;
 
 /**
  * 
@@ -43,6 +46,13 @@ public class ThinkTaskController extends BaseController{
 	@Autowired
 	private ThinkTaskUserService thinkTaskUserService;
 	
+	@Autowired
+	private UserService userService;
+	
+	@Autowired
+	private MessageService messageService;
+	
+	
 	@GetMapping()
 	@RequiresPermissions("pm:thinkTask:thinkTask")
 	String ThinkTask(){
@@ -52,14 +62,16 @@ public class ThinkTaskController extends BaseController{
 	@ResponseBody
 	@GetMapping("/list")
 	@RequiresPermissions("pm:thinkTask:thinkTask")
-	public List<ThinkTaskDO> list(@RequestParam Map<String, Object> params){
+	public List list(@RequestParam Map<String, Object> params){
 		//查询列表数据
+		params.put("taskState", "0");
+		params.put("taskUserId", this.getUserId());
        /* Query query = new Query(params);
 		List<ThinkTaskDO> thinkTaskList = thinkTaskService.list(query);
 		int total = thinkTaskService.count(query);
 		PageUtils pageUtils = new PageUtils(thinkTaskList, total);*/
 		//Query query = new Query(params);
-		List<ThinkTaskDO> thinkTaskList = thinkTaskService.list(params);
+		List thinkTaskList = thinkTaskService.list(params);
 		//int total = thinkTaskService.count(query);
 		//PageUtils pageUtils = new PageUtils(thinkTaskList, total);
 		return thinkTaskList;
@@ -77,6 +89,15 @@ public class ThinkTaskController extends BaseController{
 		ThinkTaskDO thinkTask = thinkTaskService.get(id);
 		model.addAttribute("thinkTask", thinkTask);
 	    return "anjoy/pm/thinkTask/edit";
+	}
+	
+	@GetMapping("/detail/{id}")
+	String detail(@PathVariable("id") Integer id,Model model){
+		ThinkTaskDO thinkTask = thinkTaskService.get(id);
+		model.addAttribute("thinkTask", thinkTask);
+		UserDO creUser = userService.get(Long.valueOf(thinkTask.getCreaterId()));//任务创建者
+		model.addAttribute("creUser", creUser);
+	    return "anjoy/pm/thinkTask/detail";
 	}
 	
 	/**
@@ -99,6 +120,18 @@ public class ThinkTaskController extends BaseController{
 			user.setDeleted("否");
 			user.setUpdataDate(format.format(new Date()));
 			if(thinkTaskUserService.save(user)>0) {
+				
+				//邮箱通知
+				messageService.sendEmail(this.getUser().getName(),
+						userService.get(Long.valueOf(user.getUserId())).getName(),
+						format.format(new Date()),
+						thinkTask.getTaskName(),
+						userService.get(Long.valueOf(user.getUserId())).getEmail());
+				
+				//阿里云短信通知
+				messageService.sendMessages(userService.get(Long.valueOf(user.getUserId())).getName(), 
+						this.getUser().getName(),thinkTask.getTaskName());
+				
 				return R.ok();
 			}
 		}
@@ -143,4 +176,50 @@ public class ThinkTaskController extends BaseController{
 	String findExecutor() {
 		return "anjoy/pm/thinkTask/executor";
 	}
+	
+	@ResponseBody
+	@GetMapping("/getTaskSupList")
+	public List getTaskSupList(@RequestParam Map<String, Object> params){
+		//查询列表数据
+       /* Query query = new Query(params);
+		List<ThinkTaskDO> thinkTaskList = thinkTaskService.list(query);
+		int total = thinkTaskService.count(query);
+		PageUtils pageUtils = new PageUtils(thinkTaskList, total);*/
+		//Query query = new Query(params);
+		params.put("taskDeleted", "否");
+		List thinkTaskList = thinkTaskService.list(params);
+		//int total = thinkTaskService.count(query);
+		//PageUtils pageUtils = new PageUtils(thinkTaskList, total);
+		return thinkTaskList;
+	}
+	
+	/**
+	 * 结束任务
+	 */
+	@ResponseBody
+	@RequestMapping("/endTask")
+	public R endTask( ThinkTaskDO thinkTask){
+		SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+		thinkTask.setTaskTime(format.format(new Date()));
+		thinkTaskService.update(thinkTask);
+		return R.ok();
+	}
+	
+	@ResponseBody
+	@GetMapping("/completed")
+	public PageUtils completed(@RequestParam Map<String, Object> params){
+		//查询列表数据
+		params.put("taskUserId", this.getUserId());
+		Query query = new Query(params);
+		List<ThinkTaskDO> thinkTaskList = thinkTaskService.list(query);
+		int total = thinkTaskService.count(query);
+		PageUtils pageUtils = new PageUtils(thinkTaskList, total);
+		return pageUtils;
+	}
+	
+	@GetMapping("/toCompleted")
+	String toCompleted() {
+		return "anjoy/pm/thinkTask/completed";
+	}
+	
 }

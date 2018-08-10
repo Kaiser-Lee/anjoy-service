@@ -5,32 +5,83 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>欢迎页</title>
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link href="/css/font-awesome.css?v=4.4.0" rel="stylesheet">
+    <link href="/css/animate.css" rel="stylesheet">
+    <link href="/css/style.css?v=4.1.0" rel="stylesheet">
 </head>
 <body>
 <div class="panel panel-default">
-    <div class="panel-heading">信息服务、创新未来</div>
-    <div style="padding: 10px 0 20px 10px;">
-        <h3>&nbsp;&nbsp;&nbsp;项目介绍</h3>
-        <ul>
-            <li>面向学习型的开源框架，简洁高效，减少过渡封装，展现技术本质</li>
-            <li>Springboot作为基础框架，使用mybatis作为持久层框架</li>
-            <li>使用官方推荐的thymeleaf做为模板引擎，shiro作为安全框架,主流技术，“一网打尽”</li>
-            <li>极简配置，一键前后台代码生成</li>
-        </ul>
-
-        <h3>&nbsp;&nbsp;&nbsp;获取源码</h3>
-        <ul>
-            <li>Github地址：<a href="https://github.com/lcg0124/bootdo.git" th:href="@{https://github.com/lcg0124/bootdo.git}" target="_blank">https://github.com/lcg0124/bootdo.git</a></li>
-            <li>Oschina地址：<a href="https://gitee.com/lcg0124/bootdo.git" target="_blank">https://gitee.com/lcg0124/bootdo.git</a></li>
-        </ul>
-
-        <h3>&nbsp;&nbsp;&nbsp;官方QQ群</h3>
-        <ul>
-            <li>点击链接加入群【BootDo交流群】：<a href="https://jq.qq.com/?_wv=1027&k=5EYXfiZ">669039323(满)</a></li>
-            <li>点击链接加入群聊【BootDo交流二群】：<a href="https://jq.qq.com/?_wv=1027&k=5M659N4">614726589</a></li>
-        </ul>
+    <div class="wrapper wrapper-content gray-bg">
+        <div class="row">
+            <div class="col-sm-12"> 
+                <div class="row">
+	                <div class="row">
+	                    <div class="col-sm-6">
+	                        <div class="ibox">
+	                            <div class="ibox-content">
+	                                <h5>最近一周任务</h5>
+	                                <h2>&nbsp;</h2>
+	                                <div class="text-center">
+	                                        <div id="last7Income"  style="display: inline-block; width:720px; height: 240px; vertical-align: top;"></div>
+	                                </div>
+	                            </div>
+	                        </div>
+	                    </div>
+	                  </div>
+	               </div>  
+            <!-- 右侧首页信息结束位置 -->
+            </div>
+        </div>
     </div>
 </div>
 </body>
+<script src="/js/jquery.min.js?v=2.1.4"></script>
+<script src="/js/bootstrap.min.js?v=3.3.6"></script>
+<script src="/js/plugins/echarts/echarts-all.js"></script>
+<script type="text/javascript">
+initPage();
+function initPage(){
+	option = {
+		    title: {
+		        text: '折线图堆叠'
+		    },
+		    tooltip: {
+		        trigger: 'axis'
+		    },
+		    legend: {
+		        data:['我的任务']
+		    },
+		    grid: {
+		        left: '3%',
+		        right: '4%',
+		        bottom: '3%',
+		        containLabel: true
+		    },
+		    toolbox: {
+		        feature: {
+		            saveAsImage: {}
+		        }
+		    },
+		    xAxis: {
+		        type: 'category',
+		        boundaryGap: false,
+		        data: ['周一','周二','周三','周四','周五','周六','周日']
+		    },
+		    yAxis: {
+		        type: 'value'
+		    },
+		    series: [
+		        {
+		            name:'我的任务',
+		            type:'line',
+		            stack: '总量',
+		            data:[120, 132, 101, 134, 90, 230, 210]
+		        }
+		    ]
+		};
+	var last7Income = echarts.init(document.getElementById('last7Income'));
+	last7Income.setOption(option);
+}
+</script>
 </html>
