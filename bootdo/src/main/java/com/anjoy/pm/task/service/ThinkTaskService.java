@@ -16,7 +16,7 @@ public interface ThinkTaskService {
 	
 	ThinkTaskDO get(Integer id);
 	
-	List<ThinkTaskDO> list(Map<String, Object> map);
+	List list(Map<String, Object> map);
 	
 	int count(Map<String, Object> map);
 	

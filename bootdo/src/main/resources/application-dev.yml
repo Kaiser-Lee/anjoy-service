@@ -1,3 +1,12 @@
+message:
+  mail:
+    account: 18650018670@163.com
+    stmp: lufangbu123
+  shortmessage:
+    accessKeyId: LTAIaLqYXzO2YiaR
+    AccessKeySecret: OQb3X5KH22vaRhJH4RFVcTwko1BCOU
+    templatecode: SMS_142050118
+    phoneNumber: 18650018670
 jghmall:
   uploadPath: D:/var/uploaded_files/
 logging:

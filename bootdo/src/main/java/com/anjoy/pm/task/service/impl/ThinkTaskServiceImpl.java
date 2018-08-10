@@ -23,7 +23,7 @@ public class ThinkTaskServiceImpl implements ThinkTaskService {
 	}
 	
 	@Override
-	public List<ThinkTaskDO> list(Map<String, Object> map){
+	public List list(Map<String, Object> map){
 		return thinkTaskDao.list(map);
 	}
 	
