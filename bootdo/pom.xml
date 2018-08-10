@@ -245,12 +245,6 @@
 		    <artifactId>spring-boot-devtools</artifactId>
 		    <optional>true</optional> <!-- 这个需要为 true 热部署才有效 -->
 		</dependency>
-		<!-- https://mvnrepository.com/artifact/javax.mail/mail -->
-		<dependency>
-		    <groupId>javax.mail</groupId>
-		    <artifactId>mail</artifactId>
-		    <version>1.4.7</version>
-		</dependency>
     </dependencies>
     <build>
         <plugins>

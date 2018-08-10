@@ -10,20 +10,24 @@ function load() {
 					{
 						id : 'id',
 						code : 'id',
-		                parentCode : 'task_pid',
+		                parentCode : 'taskPid',
 						type : "GET", // 请求数据的ajax类型
 						url : prefix + '/list', // 请求数据的ajax的url
 						ajaxParams : {}, // 请求数据的ajax的data属性
-						expandColumn : '0', // 在哪一列上面显示展开按钮
+						expandColumn : '1', // 在哪一列上面显示展开按钮
 						striped : true, // 是否各行渐变色
 						bordered : true, // 是否显示边框
 						expandAll : false, // 是否全部展开
 						columns : [
 								/*{
 									checkbox : true
+								},
+																{
+									field : 'id', 
+									title : '' 
 								},*/
 																{
-									field : 'task_name', 
+									field : 'taskName', 
 									title : '任务标题' 
 								},
 																/*{
@@ -31,57 +35,38 @@ function load() {
 									title : '任务描述' 
 								},*/
 																{
-									field : 'task_level', 
+									field : 'taskLevel', 
 									title : '任务等级' 
 								},
 																{
-									field : 'task_beg', 
+									field : 'taskBeg', 
 									title : '开始时间' 
 								},
 																{
-									field : 'task_end', 
+									field : 'taskEnd', 
 									title : '结束时间' 
 								},
-								
-								{
-									field : 'holder_name', 
-									title : '任务执行人' 
-								},
 																{
-									field : 'task_state', 
+									field : 'taskState', 
 									//title : '0：进行中 1：已完成 3：代码审查 4:代码部署中' 
-									title : '状态',
-									formatter : function (row){
-										if(row.task_state==0){
-											return "进行中";
-										}
-										return "已完成";
-										
-									}
+									title : '状态'
 								},
 																{
-									field : 'name', 
+									field : 'createrId', 
 									title : '任务创建人' 
 								},
 																{
-									field : 'create_time', 
+									field : 'createTime', 
 									title : '创建时间'
 								},
 																{
-									field : 'task_delay', 
-									title : '是否延期' ,
-									formatter : function (row, value, index) {
-										if (row.task_delay=='是'){
-											return "<span style='color:red;'>已延期</span>";
-										}
-										return  "<span>未延期</span>";
-									}
+									field : 'taskTime', 
+									title : '任务完成时间' 
 								},
 																{
 									field : 'ispm', 
 									title : '是否外部提单' ,
 									formatter : function (row, value, index){
-										//console.log(row);
 										if(row.ispm==0){
 											return "否";
 										}
@@ -91,29 +76,25 @@ function load() {
 																{
 									title : '操作',
 									field : 'id',
+									align : 'center',
 									formatter : function(row, value, index) {
-										//console.log(row.id);
-										var e = '<a class="btn btn-primary btn-sm '+s_edit_h+'" href="#" mce_href="#" title="任务详情" onclick="edit(\''
+										console.log(row.id);
+										var e = '<a class="btn btn-primary btn-sm '+s_edit_h+'" href="#" mce_href="#" title="编辑" onclick="edit(\''
 												+ row.id
-												+ '\')">任务详情</a> ';
-										
-										var a = '<a class="btn btn-primary btn-sm '+s_edit_h+'" href="#" mce_href="#" title="结束任务" onclick="finish(\''
-										+ row.id
-										+ '\')">结束任务</a> ';
-										
+												+ '\')"><i class="fa fa-edit"></i></a> ';
 										var d = '<a class="btn btn-warning btn-sm '+s_remove_h+'" href="#" title="删除"  mce_href="#" onclick="remove(\''
 												+ row.id
 												+ '\')"><i class="fa fa-remove"></i></a> ';
 										var f = '<a class="btn btn-success btn-sm" href="#" title="备用"  mce_href="#" onclick="resetPwd(\''
 												+ row.id
 												+ '\')"><i class="fa fa-key"></i></a> ';
-										return e + d + a;
+										return e + d ;
 									}
 								} ]
 					});
 }
 function reLoad() {
-	load();
+	$('#exampleTable').bootstrapTable('refresh');
 }
 function add() {
 	layer.open({
@@ -128,11 +109,11 @@ function add() {
 function edit(id) {
 	layer.open({
 		type : 2,
-		title : '查看任务明细',
+		title : '编辑',
 		maxmin : true,
 		shadeClose : false, // 点击遮罩关闭层
-		area : [ '60%', '80%' ],
-		content : prefix + '/detail/' + id // iframe的url
+		area : [ '800px', '520px' ],
+		content : prefix + '/edit/' + id // iframe的url
 	});
 }
 function remove(id) {
@@ -192,28 +173,4 @@ function batchRemove() {
 	}, function() {
 
 	});
-}
-
-function finish(id){
-		$.ajax({
-			cache : true,
-			type : "POST",
-			url : "/pm/thinkTask/endTask",
-			data : {
-				id: id,
-				taskState: '1'
-			},
-			async : false,
-			error : function(request) {
-				parent.layer.alert("Connection error");
-			},
-			success : function(data) {
-				if (data.code == 0) {
-					reLoad();
-				} else {
-					parent.layer.alert(data.msg)
-				}
-	
-			}
-		});
 }

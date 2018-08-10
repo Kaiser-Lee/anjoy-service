@@ -18,7 +18,7 @@ public interface ThinkTaskDao {
 
 	ThinkTaskDO get(Integer id);
 	
-	List list(Map<String,Object> map);
+	List<ThinkTaskDO> list(Map<String,Object> map);
 	
 	int count(Map<String,Object> map);
 	
